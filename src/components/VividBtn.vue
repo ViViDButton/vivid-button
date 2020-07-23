@@ -1,10 +1,14 @@
 <template>
-    <div class="vivid-btn elevation-4 "  v-ripple>
-        <div class="vivid-btn-bg"></div>
-        <div class="vivid-btn-color"></div>
-        <div class="vivid-btn-color-linear"></div>
-        <div class="vivid-btn-content"><slot></slot></div>
-    </div>
+
+    <v-hover v-slot:default="{hover}">
+        <div class="vivid-btn" :class="hover?'elevation-8':'elevation-3'" v-ripple>
+            <div class="vivid-btn-bg"></div>
+            <div class="vivid-btn-color"></div>
+            <div class="vivid-btn-color-linear"></div>
+            <div class="vivid-btn-content"><slot></slot></div>
+        </div>
+    </v-hover>
+
 </template>
 
 <script>
@@ -15,12 +19,16 @@
 
 <style scoped>
     .vivid-btn {
+        display: inline-block;
         position: relative;
         z-index: 4;
+        margin: 5px;
         min-width: 100px;
         text-align: center;
         border-radius: 30px;
         overflow: hidden;
+        vertical-align:middle;
+        transition: 0.2s;
     }
 
     .vivid-btn-bg {
@@ -54,8 +62,8 @@
         z-index: 0;
         font-size: 18px;
         font-family: "汉仪方黑", "HYHeiFangJ", "Microsoft YaHei",serif;
-        line-height: 40px;
-        vertical-align:middle;
+        line-height: 44px;
+        font-weight: 700;
         width: 100%;
         height: 100%;
         padding: 0 60px 0 20px;

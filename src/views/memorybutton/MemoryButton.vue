@@ -1,14 +1,15 @@
 <template>
-	<v-container class="fill-height" fluid>
-		<v-row align="center" justify="center">
-			MemoryButton
-		</v-row>
-	</v-container>
+
+	<container></container>
+
 </template>
 
 <script>
+
+	import Container from "../container/Container";
 	export default {
-		name: "MemoryButton"
+		name: "MemoryButton",
+		components: {Container}
 	}
 </script>
 
