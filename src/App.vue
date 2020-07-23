@@ -75,13 +75,13 @@
 
 
     <!--内容-->
-    <v-main >
+    <v-main>
 
-      <v-sheet id="scrolling" class="overflow-y-auto" max-height="1000">
-        <keep-alive>
-          <router-view />
-        </keep-alive>
-      </v-sheet>
+        <v-sheet id="scrolling-techniques-5" class="overflow-y-auto" max-height="100%">
+          <keep-alive>
+            <router-view />
+          </keep-alive>
+        </v-sheet>
 
     </v-main>
 
