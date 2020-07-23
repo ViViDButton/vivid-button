@@ -1,14 +1,19 @@
 <template>
 	<v-container class="fill-height" fluid>
 		<v-row align="center" justify="center">
-			AnkoButton
+			<vivid-btn><v-icon>mdi-bell</v-icon>Bell天下第一</vivid-btn>
 		</v-row>
 	</v-container>
 </template>
 
 <script>
+	import VividBtn from "../../components/VividBtn";
+
 	export default {
-		name: "AnkoButton"
+		name: "AnkoButton",
+		components: {
+			VividBtn
+		}
 	}
 </script>
 
