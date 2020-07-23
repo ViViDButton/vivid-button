@@ -4,8 +4,8 @@
         <div class="vivid-btn" :class="hover?'elevation-8':'elevation-3'" v-ripple>
             <div class="vivid-btn-bg"></div>
             <div class="vivid-btn-color"></div>
-            <div class="vivid-btn-color-linear"></div>
-            <div class="vivid-btn-content"><slot></slot></div>
+            <div ref="VividBtnLinear" class="vivid-btn-color-linear"></div>
+            <div ref="VividBtnContent" class="vivid-btn-content"><slot></slot></div>
         </div>
     </v-hover>
 
@@ -13,7 +13,17 @@
 
 <script>
     export default {
-        name: "VividBtn"
+        name: "VividBtn",
+        mounted() {
+            this.resizeBtn()
+        },
+        methods: {
+            resizeBtn() {
+                let zoom = Math.floor((this.$refs.VividBtnContent.offsetHeight - 20) / 20)
+                this.$refs.VividBtnLinear.style.right = 20 * zoom + 10 + "px"
+                this.$refs.VividBtnContent.style.paddingRight = (40 * zoom) + 10 + "px";
+            }
+        }
     }
 </script>
 
@@ -62,10 +72,11 @@
         z-index: 0;
         font-size: 18px;
         font-family: "汉仪方黑", "HYHeiFangJ", "Microsoft YaHei",serif;
-        line-height: 44px;
+        line-height: 20px;
         font-weight: 700;
+        vertical-align:middle;
         width: 100%;
         height: 100%;
-        padding: 0 60px 0 20px;
+        padding: 10px 60px 10px 20px;
     }
 </style>

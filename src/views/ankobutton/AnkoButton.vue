@@ -1,7 +1,9 @@
 <template>
 	<v-container class="fill-height" fluid>
 		<v-row align="center" justify="center">
-			<vivid-btn>Bell天下第一sssssssssssssssssssssssssssssssssssssssssss</vivid-btn>
+
+			<vivid-btn>prpr<br />Bell天下第一</vivid-btn>
+
 		</v-row>
 	</v-container>
 </template>
