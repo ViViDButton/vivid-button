@@ -1,32 +1,125 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app id="inspire">
+
+    <!--侧边栏-->
+    <v-navigation-drawer v-model="drawer" app :clipped="$vuetify.breakpoint.lgAndUp">
+      <v-list dense>
+        <template v-for="item in items">
+          <router-link :to="item.link">
+            <v-list-item :key="item.text" link>
+
+              <!--图标-->
+              <v-list-item-action>
+                <v-icon large :color="item.iconcolor">{{ item.icon }}</v-icon>
+              </v-list-item-action>
+
+              <!--文字-->
+              <v-list-item-content>
+                <v-list-item-title style="font-size: 16px">
+                  {{ item.text }}
+                </v-list-item-title>
+              </v-list-item-content>
+
+            </v-list-item>
+          </router-link>
+        </template>
+
+        <!--分割线-->
+        <v-divider></v-divider>
+
+      </v-list>
+    </v-navigation-drawer>
+
+    <v-app-bar
+            :clipped-left="$vuetify.breakpoint.lgAndUp"
+            app
+            color="pink lighten-3"
+            dark
+            dense
+            prominent
+            shrink-on-scroll
+            src="../public/topbg.jpg"
+            fade-img-on-scroll
+            scroll-target="#scrolling"
+            scroll-threshold="500"
+    >
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-toolbar-title
+              style="width: 300px"
+              class="ml-0 pl-4"
+      >
+        <span class="hidden-sm-and-down">BellButton</span>
+      </v-toolbar-title>
+
+      <v-spacer></v-spacer>
+      <v-btn icon>
+        <v-icon>mdi-apps</v-icon>
+      </v-btn>
+      <v-btn icon>
+        <v-icon>mdi-bell</v-icon>
+      </v-btn>
+      <v-btn
+              icon
+              large
+      >
+        <v-avatar
+                size="32px"
+                item
+        >
+          <v-img
+                  src="https://cdn.vuetifyjs.com/images/logos/logo.svg"
+                  alt="Vuetify"
+          ></v-img></v-avatar>
+      </v-btn>
+    </v-app-bar>
+
+
+    <!--内容-->
+    <v-main >
+
+      <v-sheet id="scrolling" class="overflow-y-auto" max-height="1000">
+        <keep-alive>
+          <router-view />
+        </keep-alive>
+      </v-sheet>
+
+    </v-main>
+
+
+    <!--右下浮动按钮-->
+    <v-btn
+            bottom
+            color="pink"
+            dark
+            fab
+            fixed
+            right
+            @click="dialog = !dialog"
+    >
+      <v-icon>mdi-plus</v-icon>
+    </v-btn>
+
+  </v-app>
 </template>
 
+<script>
+export default {
+  name: 'App',
+  data: () => ({
+    dialog: false,
+    drawer: null,
+    items: [
+      { icon: 'mdi-bell', iconcolor: "yellow accent-4", text: 'BellButton', link: "/bell"},
+      { icon: 'mdi-bell', iconcolor: "yellow accent-4", text: 'MemoryButton', link: "/memory" },
+      { icon: 'mdi-bell', iconcolor: "yellow accent-4", text: 'LilyButton', link: "/lily" },
+      { icon: 'mdi-bell', iconcolor: "yellow accent-4", text: 'ElenaButton', link: "/elena" },
+      { icon: 'mdi-bell', iconcolor: "yellow accent-4", text: 'AnkoButton', link: "/anko" },
+      { icon: 'mdi-bell', iconcolor: "yellow accent-4", text: 'LockButton', link: "/lock" },
+    ],
+  }),
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+  @import "assets/css/base.css";
 </style>

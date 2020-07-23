@@ -1,23 +1,44 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
   const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    redirect: '/bell'
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+    path: '/bell',
+    name: 'BellButton',
+    component: () => import('../views/bellbutton/BellButton.vue')
+  },
+  {
+    path: '/memory',
+    name: 'MemoryButton',
+    component: () => import('../views/memorybutton/MemoryButton.vue')
+  },
+  {
+    path: '/lily',
+    name: 'LilyButton',
+    component: () => import('../views/lilybutton/LilyButton.vue')
+  },
+  {
+    path: '/elena',
+    name: 'ElenaButton',
+    component: () => import('../views/elenabutton/ElenaButton.vue')
+  },
+  {
+    path: '/anko',
+    name: 'AnkoButton',
+    component: () => import('../views/ankobutton/AnkoButton.vue')
+  },
+  {
+    path: '/lock',
+    name: 'LockButton',
+    component: () => import('../views/lockbutton/LockButton.vue')
+  },
+
 ]
 
 const router = new VueRouter({

@@ -1,0 +1,44 @@
+@import './normalize.css';
+
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+	user-select: none; /*进制用户用鼠标在页面上选取文字、图片等*/
+	-webkit-tap-highlight-color: transparent;
+	background: var(--color-background);
+	color: var(--color-text);
+	width: 100vw;
+}
+
+a{
+	color: var(--color-text);
+	text-decoration: none;
+}
+
+.clear-fix::after{
+	clear: both;
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+
+.clear-fix{
+	zoom: 1;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
