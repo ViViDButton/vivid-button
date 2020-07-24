@@ -2,7 +2,7 @@
 
     <v-hover v-slot:default="{hover}">
         <div :style="{'--color': color}" class="vivid-btn-box">
-            <div class="vivid-btn-new" v-if="isNew">NEW</div>
+            <div class="vivid-btn-new" v-if="isNew">new</div>
             <div class="vivid-btn" :class="hover?'elevation-8':'elevation-3'" v-ripple>
                 <div ref="VividBtnBg" class="vivid-btn-bg" :style="{'background-image':  'url(' + bgImg + ')'}"></div>
                 <div class="vivid-btn-color"></div>
@@ -86,6 +86,7 @@
     .vivid-btn-new {
         position: absolute;
         z-index: 10;
+        top: -3px;
         right: -5px;
         padding: 0 6px;
         font-size: 9px;
@@ -127,9 +128,9 @@
     .vivid-btn-content {
         position: relative;
         z-index: 0;
-        font-size: 18px;
-        font-family: "汉仪方黑", "HYHeiFangJ", "Microsoft YaHei",serif;
-        color: #000000;
+        font-size: 20px;
+        font-family: "Microsoft YaHei UI", "Microsoft YaHei",serif;
+        color: #585858;
         line-height: 20px;
         font-weight: 700;
         vertical-align:middle;

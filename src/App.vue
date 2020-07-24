@@ -2,20 +2,41 @@
   <v-app id="inspire">
 
     <!--侧边栏-->
-    <v-navigation-drawer v-model="drawer" app :clipped="$vuetify.breakpoint.lgAndUp">
+    <v-navigation-drawer class="elevation-3" v-model="drawer" app :clipped="$vuetify.breakpoint.lgAndUp">
       <v-list dense>
+
+        <router-link to="/">
+          <v-list-item link @click="changePage('Home')">
+
+            <!--图标-->
+            <v-list-item-action style="font-size: 20px">📺</v-list-item-action>
+
+            <!--文字-->
+            <v-list-item-content>
+              <v-list-item-title style="font-size: 18px">
+                Home
+              </v-list-item-title>
+            </v-list-item-content>
+
+          </v-list-item>
+        </router-link>
+
+        <!--分割线-->
+        <v-divider></v-divider>
+
         <template v-for="item in items">
           <router-link :to="item.link">
-            <v-list-item :key="item.text" link>
+            <v-list-item :key="item.text" link @click="changePage(item.text,item.color)">
 
               <!--图标-->
-              <v-list-item-action>
-                <v-icon large :color="item.iconcolor">{{ item.icon }}</v-icon>
+              <v-list-item-action style="font-size: 20px">
+<!--                <v-icon large :color="item.iconcolor">{{ item.icon }}</v-icon>-->
+                {{ item.icon }}
               </v-list-item-action>
 
               <!--文字-->
               <v-list-item-content>
-                <v-list-item-title style="font-size: 16px">
+                <v-list-item-title style="font-size: 18px">
                   {{ item.text }}
                 </v-list-item-title>
               </v-list-item-content>
@@ -27,13 +48,46 @@
         <!--分割线-->
         <v-divider></v-divider>
 
+        <router-link to="/links">
+          <v-list-item link @click="changePage('Links')">
+
+            <!--图标-->
+            <v-list-item-action style="font-size: 20px">➡</v-list-item-action>
+
+            <!--文字-->
+            <v-list-item-content>
+              <v-list-item-title style="font-size: 18px">
+                友情链接
+              </v-list-item-title>
+            </v-list-item-content>
+
+          </v-list-item>
+        </router-link>
+
+        <router-link to="/about">
+          <v-list-item link @click="changePage('About')">
+
+            <!--图标-->
+            <v-list-item-action style="font-size: 20px">➡</v-list-item-action>
+
+            <!--文字-->
+            <v-list-item-content>
+              <v-list-item-title style="font-size: 18px">
+                About
+              </v-list-item-title>
+            </v-list-item-content>
+
+          </v-list-item>
+        </router-link>
+
+
       </v-list>
     </v-navigation-drawer>
 <!--   scroll-threshold="500" shrink-on-scroll-->
     <v-app-bar
             :clipped-left="$vuetify.breakpoint.lgAndUp"
             app
-            color="pink lighten-3"
+            :color="current_color"
             dark
             dense
             prominent
@@ -45,7 +99,7 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-toolbar-title style="width: 300px" class="ml-0 pl-4">
-        <span class="hidden-sm-and-down">BellButton</span>
+        <span class="hidden-sm-and-down" style="color: #1a1a1a">{{current_page}}</span>
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
@@ -69,18 +123,6 @@
     </v-main>
 
 
-    <!--右下浮动按钮-->
-    <v-btn
-            bottom
-            color="pink"
-            dark
-            fab
-            fixed
-            right
-            @click="dialog = !dialog"
-    >
-      <v-icon>mdi-plus</v-icon>
-    </v-btn>
 
   </v-app>
 </template>
@@ -89,15 +131,17 @@
 export default {
   name: 'App',
   data: () => ({
+    current_page: 'Home',
+    current_color: 'pink lighten-3',
     dialog: false,
     drawer: null,
     items: [
-      { icon: 'mdi-bell', iconcolor: "yellow accent-4", text: 'BellButton', link: "/bell"},
-      { icon: 'mdi-bell', iconcolor: "yellow accent-4", text: 'MemoryButton', link: "/memory" },
-      { icon: 'mdi-bell', iconcolor: "yellow accent-4", text: 'LilyButton', link: "/lily" },
-      { icon: 'mdi-bell', iconcolor: "yellow accent-4", text: 'ElenaButton', link: "/elena" },
-      { icon: 'mdi-bell', iconcolor: "yellow accent-4", text: 'AnkoButton', link: "/anko" },
-      { icon: 'mdi-bell', iconcolor: "yellow accent-4", text: 'LockButton', link: "/lock" },
+      { icon: '🔔', color: "pink lighten-3", text: 'BellButton', link: "/bell"},
+      { icon: '👻', color: "deep-purple lighten-2", text: 'MemoryButton', link: "/memory" },
+      { icon: '💸', color: "yellow accent-4", text: 'LilyButton', link: "/lily" },
+      { icon: '🍯', color: "yellow accent-4", text: 'ElenaButton', link: "/elena" },
+      { icon: '🍡', color: "yellow accent-4", text: 'AnkoButton', link: "/anko" },
+      { icon: '⏳', color: "yellow accent-4", text: 'LockButton', link: "/lock" },/*mdi-bell*/
     ],
   }),
   mounted() {
@@ -111,6 +155,10 @@ export default {
     },
     onScroll(e) {
       // TODO:自制滚动条
+    },
+    changePage(page,color){
+      this.current_page = page;
+      this.current_color = color;
     }
   }
 };

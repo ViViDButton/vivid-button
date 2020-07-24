@@ -4,9 +4,14 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
   const routes = [
+  // {
+  //   path: '/',
+  //   redirect: '/bell'
+  // },
   {
     path: '/',
-    redirect: '/bell'
+    name: 'Home',
+    component: () => import('../views/home/Home.vue')
   },
   {
     path: '/bell',
@@ -37,6 +42,16 @@ Vue.use(VueRouter)
     path: '/lock',
     name: 'LockButton',
     component: () => import('../views/lockbutton/LockButton.vue')
+  },
+  {
+    path: '/links',
+    name: 'LockButton',
+    component: () => import('../views/links/Links.vue')
+  },
+  {
+    path: '/about',
+    name: 'LockButton',
+    component: () => import('../views/about/About.vue')
   },
 
 ]

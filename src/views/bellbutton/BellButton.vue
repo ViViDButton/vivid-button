@@ -1,18 +1,23 @@
 <template>
-	<v-container class="fill-height" fluid >
-		<v-row align="center" justify="center">
-			<v-btn icon x-large>
-				<v-badge content="new">
-					<v-icon>mdi-vuetify</v-icon>
-				</v-badge>
-			</v-btn>
-		</v-row>
-	</v-container>
+
+	<container :voice-list="Voices"
+	           :color="'rgb(255, 219, 233)'"
+	           :bg-img="'https://img.mczhengyi.top/A3D3AB578BBC9BD9D3219A932E34A210.jpg'">
+	</container>
+
 </template>
 
 <script>
+
+	import Container from "../container/Container";
+	import Voices from "assets/bellvoices.json";
+
 	export default {
-		name: "BellButton"
+		name: "MemoryButton",
+		components: {Container},
+		data: ()=>({
+			Voices
+		}),
 	}
 </script>
 

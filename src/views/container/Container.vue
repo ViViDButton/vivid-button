@@ -1,69 +1,72 @@
 <template>
 		<v-container class="fill-height" style="padding: 12px">
 
-			<v-card style="margin: 8px auto;">
-				<v-card-title class="headline mb-1">分类1</v-card-title>
-				<v-card-text class="">
-					<vivid-btn :is-new="true">prprppr</vivid-btn>
-					<vivid-btn :bg-img="'https://img.mczhengyi.top/A3D3AB578BBC9BD9D3219A932E34A210.jpg'">prprpttttttttrprpr</vivid-btn>
-					<vivid-btn>prprprprpr</vivid-btn>
-					<vivid-btn>prprpr</vivid-btn>
-					<vivid-btn>prprprprpr</vivid-btn>
-					<vivid-btn>prprprkkkkkkkkkkkkkkkkkprprprprprprprprprprprprprprprpr</vivid-btn>
-					<vivid-btn>prprprprpr</vivid-btn>
-					<vivid-btn>prprprpr</vivid-btn>
-					<vivid-btn>prprprprpr</vivid-btn>
-					<vivid-btn :is-new="true">prprprpdfgrpr</vivid-btn>
-					<vivid-btn>prprprprpr</vivid-btn>
-					<vivid-btn>prpprrpr</vivid-btn>
-					<vivid-btn>prrpr</vivid-btn>
-					<vivid-btn :is-new="true">prdfgdrpr</vivid-btn>
-					<vivid-btn>prprpdfgsdfsdfrprpr</vivid-btn>
-					<vivid-btn>prpprpr</vivid-btn>
+			<v-card style="width: 100%; margin: 8px auto;">
+				<v-card-title class="headline mb-1"> <v-icon>mdi-account</v-icon> Bell情报</v-card-title>
+				<v-card-text>
+					<v-btn rounded color="#009ffc" >
+						B站客人们:99999
+					</v-btn>
 				</v-card-text>
 			</v-card>
 
-			<v-card style="margin: 8px auto;">
-				<v-card-title class="headline mb-1">分类1</v-card-title>
-				<v-card-text class="">
-					<vivid-btn>prprppr</vivid-btn>
-					<vivid-btn>prprpttttttttrprpr</vivid-btn>
-					<vivid-btn>prprprprpr</vivid-btn>
-					<vivid-btn>prprpr</vivid-btn>
-					<vivid-btn>prprprprpr</vivid-btn>
-					<vivid-btn>prprprkkkkkkkkkkkkkkkkkprpr</vivid-btn>
-					<vivid-btn>prprprprpr</vivid-btn>
-					<vivid-btn>prprprpr</vivid-btn>
-					<vivid-btn>prprprprpr</vivid-btn>
-					<vivid-btn>prprprpdfgrpr</vivid-btn>
-					<vivid-btn>prprprprpr</vivid-btn>
-					<vivid-btn>prpprrpr</vivid-btn>
-					<vivid-btn>prrpr</vivid-btn>
-					<vivid-btn>prdfgdrpr</vivid-btn>
-					<vivid-btn>prprpdfgsdfsdfrprpr</vivid-btn>
-					<vivid-btn>prpprpr</vivid-btn>
+			<v-card v-for="(group,index1) in voiceList.groups" :key="index1+group.name" style="width: 100%; margin: 8px auto;">
+				<v-card-title class="headline mb-1">{{group.translation[current_language]}}</v-card-title>
+				<v-card-text>
+					<vivid-btn v-for="(voice,index2) in group.voicelist"
+					           :key="index2+voice.name"
+					           :is-new="voice.update===voiceList.last_update"
+					           :color="color"
+					           :bg-img="bgImg">
+						{{voice.translation[current_language]}}
+					</vivid-btn>
 				</v-card-text>
 			</v-card>
+
+			<!--右下浮动按钮-->
+			<v-btn
+							bottom
+							color="pink"
+							dark
+							fab
+							fixed
+							right
+							@click="dialog = !dialog">
+				<v-icon>mdi-plus</v-icon>
+			</v-btn>
+			<v-footer padless>
+				<v-col
+								class="text-center"
+								cols="12"
+				>
+					{{ new Date().getFullYear() }} — <strong><a href="https://github.com/Colter23" target="_blank">Colter</a> & <a href="https://github.com/justice2001" target="_blank">Zhengyi</a></strong>
+				</v-col>
+			</v-footer>
 
 		</v-container>
 </template>
 
 <script>
-	import VividBtn from "../../components/VividBtn";
+	import VividBtn from "components/VividBtn";
 	export default {
 		name: "Container",
 		components: {VividBtn},
+		props: {
+			voiceList:{},
+			bgImg: "",
+			color: ""
+		},
 		data: () => ({
 
-		})
+		}),
+		computed: {
+			current_language() {
+				return this.$i18n.locale;
+			}
+		}
 	}
 </script>
 
 <style scoped>
-	v-container{
 
-	}
-	v-card{
-
-	}
 </style>
