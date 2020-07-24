@@ -1,5 +1,5 @@
 <template>
-		<v-container class="fill-height" style="padding: 12px 28px 12px 28px">
+		<v-container class="fill-height" style="padding: 12px">
 
 			<v-card style="margin: 8px auto;">
 				<v-card-title class="headline mb-1">分类1</v-card-title>

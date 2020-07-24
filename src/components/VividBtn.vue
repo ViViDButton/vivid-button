@@ -27,13 +27,13 @@
                 // 调整渐变的位置
                 this.$refs.VividBtnLinear.style.right = 25 * zoom + "px"
                 // 排除单行撑开后变双行的按钮
-                if (zoom === 1 && this.$refs.VividBtnContent.offsetWidth > window.innerWidth - 70 - 88){
+                if (zoom === 1 && this.$refs.VividBtnContent.offsetWidth > window.innerWidth - 70 - 56){
                     zoom ++
 
                 }
                 if (zoom !== 1) {
                     // 多行背景图半透明并被文字盖住
-                    this.$refs.VividBtnContent.style.paddingRight = 10 + "px"
+                    this.$refs.VividBtnContent.style.paddingRight = 20 + "px"
                     this.$refs.VividBtnBg.style.opacity = 0.5
                 }else {
                     // 单行背景图显示在外
@@ -68,13 +68,13 @@
     .vivid-btn-box {
         position: relative;
         display: inline-block;
-        max-width: calc(100vw - 88px);
+        max-width: calc(100vw - 56px);
     }
 
     .vivid-btn {
         position: relative;
         z-index: 4;
-        margin: 5px;
+        margin: 2px 5px;
         min-width: 100px;
         text-align: center;
         border-radius: 30px;
