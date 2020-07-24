@@ -4,7 +4,7 @@
         <div :style="{'--color': color}" class="vivid-btn-box">
             <div class="vivid-btn-new" v-if="isNew">NEW</div>
             <div class="vivid-btn" :class="hover?'elevation-8':'elevation-3'" v-ripple>
-                <div class="vivid-btn-bg" :style="{'background-image':  'url(' + bgImg + ')'}"></div>
+                <div ref="VividBtnBg" class="vivid-btn-bg" :style="{'background-image':  'url(' + bgImg + ')'}"></div>
                 <div class="vivid-btn-color"></div>
                 <div ref="VividBtnLinear" class="vivid-btn-color-linear"></div>
                 <div ref="VividBtnContent" class="vivid-btn-content"><slot></slot></div>
@@ -22,9 +22,23 @@
         },
         methods: {
             resizeBtn() {
+                // 行
                 let zoom = Math.floor((this.$refs.VividBtnContent.offsetHeight - 20) / 20)
-                this.$refs.VividBtnLinear.style.right = 20 * zoom + 10 + "px"
-                this.$refs.VividBtnContent.style.paddingRight = (40 * zoom) + 10 + "px";
+                // 调整渐变的位置
+                this.$refs.VividBtnLinear.style.right = 25 * zoom + "px"
+                // 排除单行撑开后变双行的按钮
+                if (zoom === 1 && this.$refs.VividBtnContent.offsetWidth > window.innerWidth - 70 - 88){
+                    zoom ++
+
+                }
+                if (zoom !== 1) {
+                    // 多行背景图半透明并被文字盖住
+                    this.$refs.VividBtnContent.style.paddingRight = 10 + "px"
+                    this.$refs.VividBtnBg.style.opacity = 0.5
+                }else {
+                    // 单行背景图显示在外
+                    this.$refs.VividBtnContent.style.paddingRight = (40 * zoom) + 10 + "px";
+                }
             }
         },
         props: {
@@ -37,13 +51,13 @@
             bgImg: {
                 type: String,
                 default() {
-                    return require("../assets/test.png")
+                    return require("../assets/test.jpg")
                 }
             },
             color: {
                 type: String,
                 default() {
-                    return "rgb(255, 218, 233)"
+                    return "rgb(255, 219, 233)"
                 }
             }
         }
@@ -54,10 +68,10 @@
     .vivid-btn-box {
         position: relative;
         display: inline-block;
+        max-width: calc(100vw - 88px);
     }
 
     .vivid-btn {
-        display: inline-block;
         position: relative;
         z-index: 4;
         margin: 5px;
@@ -87,7 +101,7 @@
         z-index: -3;
         width: 100%;
         height: 100%;
-        background-image: url("../assets/test.png");
+        background-image: url("../assets/test.jpg");
         background-repeat: no-repeat;
         background-position: right;
         background-size: contain;
@@ -95,9 +109,9 @@
 
     .vivid-btn-color-linear {
         position: absolute;
-        right: 30px;
+        right: 20px;
         z-index: -1;
-        width: 45px;
+        width: 20px;
         height: 100%;
         background: linear-gradient(to right, var(--color) 30%, transparent);
     }
@@ -115,11 +129,12 @@
         z-index: 0;
         font-size: 18px;
         font-family: "汉仪方黑", "HYHeiFangJ", "Microsoft YaHei",serif;
+        color: #000000;
         line-height: 20px;
         font-weight: 700;
         vertical-align:middle;
         width: 100%;
         height: 100%;
-        padding: 10px 60px 10px 20px;
+        padding: 10px 0 10px 20px;
     }
 </style>

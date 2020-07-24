@@ -60,9 +60,9 @@
     <!--内容-->
     <v-main ref="appMain">
 
-        <v-sheet ref="appSheet" @scroll="scrolled" id="scrolling" class="overflow-y-auto">
+        <v-sheet ref="appSheet" @scroll="scrolled"  v-scroll.self="onScroll" id="scrolling" class="overflow-y-auto">
           <keep-alive>
-            <router-view/>
+            <router-view />
           </keep-alive>
         </v-sheet>
 
@@ -108,6 +108,9 @@ export default {
       let pageH = window.innerHeight
       let padding = parseInt(this.$refs.appMain.$el.style.paddingTop)
       this.$refs.appSheet.$el.style.maxHeight = pageH - padding + "px"
+    },
+    onScroll(e) {
+      // TODO:自制滚动条
     }
   }
 };
@@ -115,4 +118,19 @@ export default {
 
 <style>
   @import "assets/css/base.css";
+
+  html {
+    overflow: hidden !important;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
+  }
+
+  #scrolling::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
 </style>
