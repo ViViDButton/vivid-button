@@ -2,7 +2,7 @@
 
     <v-hover v-slot:default="{hover}">
         <div :style="{'--color': color}" class="vivid-btn-box">
-            <div class="vivid-btn-new" v-if="isNew">new</div>
+            <div class="vivid-btn-new" v-if="isNew">NEW</div>
             <div class="vivid-btn" :class="hover?'elevation-8':'elevation-3'" v-ripple>
                 <div class="vivid-btn-bg" :style="{'background-image':  'url(' + bgImg + ')'}"></div>
                 <div class="vivid-btn-color"></div>
@@ -74,7 +74,8 @@
         z-index: 10;
         right: -5px;
         padding: 0 6px;
-        font-size: 10px;
+        font-size: 9px;
+        font-weight: bold;
         text-align: center;
         color: white;
         background-color: rgb(24, 102, 193);
