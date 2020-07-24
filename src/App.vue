@@ -58,9 +58,9 @@
 
 
     <!--内容-->
-    <v-main>
+    <v-main ref="appMain">
 
-        <v-sheet id="scrolling" class="overflow-y-auto" max-height="100vh">
+        <v-sheet ref="appSheet" @scroll="scrolled" id="scrolling" class="overflow-y-auto">
           <keep-alive>
             <router-view/>
           </keep-alive>
@@ -100,6 +100,16 @@ export default {
       { icon: 'mdi-bell', iconcolor: "yellow accent-4", text: 'LockButton', link: "/lock" },
     ],
   }),
+  mounted() {
+    this.scrolled()
+  },
+  methods: {
+    scrolled() {
+      let pageH = window.innerHeight
+      let padding = parseInt(this.$refs.appMain.$el.style.paddingTop)
+      this.$refs.appSheet.$el.style.maxHeight = pageH - padding + "px"
+    }
+  }
 };
 </script>
 
