@@ -1,10 +1,10 @@
 <template>
 
     <v-hover v-slot:default="{hover}">
-        <div :style="{'--color': color}" class="vivid-btn-box">
+        <div :style="{'--color': color,'--text-color': $vuetify.theme.dark?'#e8e8e8':'#454545'}" class="vivid-btn-box">
             <div class="vivid-btn-new" v-if="isNew">new</div>
             <div class="vivid-btn" :class="hover?'elevation-8':'elevation-3'" v-ripple>
-                <div ref="VividBtnBg" class="vivid-btn-bg" :style="{'background-image':  'url(' + bgImg + ')'}"></div>
+                <div ref="VividBtnBg" class="vivid-btn-bg" :style="{'background-image': 'url(' + bgImg + ')'}"></div>
                 <div class="vivid-btn-color"></div>
                 <div ref="VividBtnLinear" class="vivid-btn-color-linear"></div>
                 <div ref="VividBtnContent" class="vivid-btn-content"><slot></slot></div>
@@ -73,7 +73,7 @@
 
     .vivid-btn {
         position: relative;
-        z-index: 4;
+        z-index: 1;
         margin: 2px 5px;
         min-width: 100px;
         text-align: center;
@@ -85,7 +85,7 @@
 
     .vivid-btn-new {
         position: absolute;
-        z-index: 10;
+        z-index: 2;
         top: -3px;
         right: -5px;
         padding: 0 6px;
@@ -130,7 +130,7 @@
         z-index: 0;
         font-size: 20px;
         font-family: "Microsoft YaHei UI", "Microsoft YaHei",serif;
-        color: #585858;
+        color: var(--text-color);
         line-height: 20px;
         font-weight: 700;
         vertical-align:middle;

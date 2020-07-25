@@ -85,20 +85,18 @@
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
-<!--   scroll-threshold="500" shrink-on-scroll-->
+<!--   scroll-threshold="500" shrink-on-scroll   shrink-on-scroll-->
     <v-app-bar
             :clipped-left="$vuetify.breakpoint.lgAndUp"
             app
             :color="current_color"
-            dark
-            dense
             prominent
             shrink-on-scroll
             :src="current_topbg"
             fade-img-on-scroll
             scroll-target="#scrolling">
 
-      <v-app-bar-nav-icon  @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-toolbar-title style="width: 300px" class="ml-0 pl-4">
         <span class="hidden-sm-and-down" >{{current_page}}</span>
@@ -106,12 +104,55 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn icon>
-        <v-icon color="#fff">mdi-brightness-4</v-icon>
-      </v-btn>
-      <v-btn icon>
-        <v-icon color="#fff">mdi-translate</v-icon>
-      </v-btn>
+      <v-tooltip bottom>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn icon
+                 :color="current_color"
+                 dark
+                 v-bind="attrs"
+                 v-on="on"
+                 @click="$vuetify.theme.dark = !$vuetify.theme.dark">
+            <v-icon color="#fff">mdi-brightness-4</v-icon>
+          </v-btn>
+        </template>
+        <span>夜间模式</span>
+      </v-tooltip>
+
+      <v-tooltip bottom>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn icon
+                 :color="current_color"
+                 dark
+                 v-bind="attrs"
+                 v-on="on"
+                 @click="isLanguageBoxOn = !isLanguageBoxOn">
+            <v-icon color="#fff">mdi-translate</v-icon>
+          </v-btn>
+        </template>
+        <span>切换语言</span>
+      </v-tooltip>
+
+      <v-card class="elevation-6" v-show="isLanguageBoxOn" style="position: absolute; top: 50px; right: 10px">
+        <v-list dense>
+          <v-list-item-group color="primary">
+            <v-list-item @click="changeLanguage('zh')">
+              <v-list-item-content>
+                <v-list-item-title >简体中文</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+            <v-list-item @click="changeLanguage('ja')">
+              <v-list-item-content>
+                <v-list-item-title>日本語</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+            <v-list-item @click="changeLanguage('en')">
+              <v-list-item-content>
+                <v-list-item-title>English</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list-item-group>
+        </v-list>
+      </v-card>
 
     </v-app-bar>
 
@@ -140,7 +181,7 @@ export default {
     current_page: 'Home',
     current_color: 'pink lighten-3',
     current_topbg: 'https://img.colter.top/vivid/img/bell/topbg01.png',
-    dialog: false,
+    isLanguageBoxOn: false,
     drawer: null,
     items: [
       { icon: '🔔', color: "pink lighten-3", text: 'BellButton', link: "/bell"},
@@ -148,12 +189,11 @@ export default {
       { icon: '💸', color: "light-blue lighten-4", text: 'LilyButton', link: "/lily" },
       { icon: '🍯', color: "yellow accent-4", text: 'ElenaButton', link: "/elena" },
       { icon: '🍡', color: "cyan lighten-1", text: 'AnkoButton', link: "/anko" },
-      { icon: '⏳', color: "grey darken-3", text: 'LockButton', link: "/lock" },/*mdi-bell*/
+      { icon: '⏳', color: "grey darken-3", text: 'LockButton', link: "/lock" }
     ],
   }),
   mounted() {
     this.scrolled();
-
     // 初始化top
     for(let i=0; i<this.items.length;i++){
       if (this.items[i].link===window.location.pathname){
@@ -175,6 +215,13 @@ export default {
       this.current_page = page;
       this.current_color = color;
       this.current_topbg = 'https://img.colter.top/vivid/img'+link+'/topbg01.png'
+    },
+    changeLanguage(type){
+      localStorage.setItem('locale',type);
+      this.$i18n.locale = type;
+      this.isLanguageBoxOn = false;
+
+      this.$store.state.lang = this.$i18n.locale
     }
   }
 };

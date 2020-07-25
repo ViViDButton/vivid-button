@@ -33,25 +33,27 @@
 			<v-card v-for="(group,index1) in voiceList.groups" :key="index1+group.name" style="width: 100%; margin: 8px auto;">
 				<v-card-title class="headline mb-1">{{group.translation[current_language]}}</v-card-title>
 				<v-card-text>
-					<vivid-btn v-for="(voice,index2) in group.voicelist"
-					           :key="index2+voice.name"
-					           :is-new="voice.update===voiceList.last_update"
-					           :color="color"
-					           :bg-img="bgImg">
-						{{voice.translation[current_language]}}
-					</vivid-btn>
+					<span v-for="(voice,index2) in group.voicelist"
+					      :key="index2+voice.name"
+					      @click="loadAudio(voice.path)">
+						<vivid-btn :is-new="voice.update===voiceList.last_update"
+						           :color="color"
+						           :bg-img="bgImg">
+							{{voice.translation[current_language]}}
+						</vivid-btn>
+					</span>
 				</v-card-text>
 			</v-card>
 
 			<!--右下浮动按钮-->
-			<v-btn
-							bottom
-							:color="color"
-							dark
-							fab
-							fixed
-							right
-							@click="dialog = !dialog">
+			<v-btn bottom
+			       :color="color"
+             dark
+             fab
+             fixed
+             right
+             @click="dialog = !dialog"
+             style="z-index: 3">
 				<v-icon>mdi-plus</v-icon>
 			</v-btn>
 
@@ -62,7 +64,10 @@
 				</v-col>
 			</v-footer>
 
+			<audio :src="audioSrc" ref="audioPlayer" @loadedmetadata="playAudio" class="audio-player"/>
+
 		</v-container>
+
 </template>
 
 <script>
@@ -102,7 +107,8 @@
 		data: () => ({
 			voiceList:{},
 			bilibilifan: "NULL",
-			youtubefan: "NULL"
+			youtubefan: "NULL",
+			audioSrc: ""
 		}),
 		computed: {
 			current_language() {
@@ -110,6 +116,12 @@
 			}
 		},
 		methods: {
+			loadAudio(path){
+				this.audioSrc = "https://img.colter.top/vivid/voices/"+ this.info.name.toLowerCase() +"/"+path;
+			},
+			playAudio(){
+				this.$refs.audioPlayer.play();
+			}
 
 		},
 		mounted() {

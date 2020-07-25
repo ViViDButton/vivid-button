@@ -1,6 +1,6 @@
 <template>
 
-	<container color="rgb(255, 219, 233)"
+	<container :color="$vuetify.theme.dark?'#880E4F':'#ffdbe9'"
 	           bg-img="https://img.colter.top/vivid/img/bell/btnbg04.png!web"
 	           :info="bellInfo">
 	</container>
