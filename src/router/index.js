@@ -16,32 +16,32 @@ Vue.use(VueRouter)
   {
     path: '/bell',
     name: 'BellButton',
-    component: () => import('../views/bellbutton/BellButton.vue')
+    component: () => import('../views/vividviews/BellButton.vue')
   },
   {
     path: '/memory',
     name: 'MemoryButton',
-    component: () => import('../views/memorybutton/MemoryButton.vue')
+    component: () => import('../views/vividviews/MemoryButton.vue')
   },
   {
     path: '/lily',
     name: 'LilyButton',
-    component: () => import('../views/lilybutton/LilyButton.vue')
+    component: () => import('../views/vividviews/LilyButton.vue')
   },
   {
     path: '/elena',
     name: 'ElenaButton',
-    component: () => import('../views/elenabutton/ElenaButton.vue')
+    component: () => import('../views/vividviews/ElenaButton.vue')
   },
   {
     path: '/anko',
     name: 'AnkoButton',
-    component: () => import('../views/ankobutton/AnkoButton.vue')
+    component: () => import('../views/vividviews/AnkoButton.vue')
   },
   {
     path: '/lock',
     name: 'LockButton',
-    component: () => import('../views/lockbutton/LockButton.vue')
+    component: () => import('../views/vividviews/LockButton.vue')
   },
   {
     path: '/links',

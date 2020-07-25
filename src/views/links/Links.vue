@@ -1,5 +1,8 @@
 <template>
-	
+	<div>
+		http://shirayuri-lilly.chu.jp/
+	</div>
+
 </template>
 
 <script>
