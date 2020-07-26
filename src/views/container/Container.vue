@@ -1,5 +1,6 @@
 <template>
-		<v-container class="fill-height" style="padding: 12px">
+	<div>
+		<v-container class="fill-height" style="padding: 12px" >
 
 			<v-card style="width: 100%; margin: 8px auto;">
 				<v-card-title class="headline mb-1"> <v-icon>mdi-account</v-icon> {{info.name}}情报</v-card-title>
@@ -23,7 +24,6 @@
 							<v-icon color="#fff" style="font-size: 30px">mdi-twitter</v-icon>
 							<span class="link-text" >{{info.twitter.name}}</span>
 						</v-btn>
-
 					</div>
 
 				</v-card-text>
@@ -52,22 +52,26 @@
              fab
              fixed
              right
-             @click="dialog = !dialog"
+             @click="pauseAudio"
              style="z-index: 3">
-				<v-icon>mdi-plus</v-icon>
+				<v-icon>mdi-play</v-icon>
 			</v-btn>
-
-			<!--页脚-->
-			<v-footer padless>
-				<v-col class="text-center" cols="12">
-					&copy;{{ new Date().getFullYear() }} — <strong><a href="https://github.com/Colter23" target="_blank">Colter</a> & <a href="https://github.com/justice2001" target="_blank">Zhengyi</a></strong>
-				</v-col>
-			</v-footer>
 
 			<audio :src="audioSrc" ref="audioPlayer" @loadedmetadata="playAudio" class="audio-player"/>
 
 		</v-container>
 
+		<!--页脚-->
+		<v-footer padless>
+			<v-col class="text-left" cols="12" style="padding-bottom: 5px">
+				&copy;{{ new Date().getFullYear() }} — <strong><a href="https://github.com/Colter23" target="_blank">Colter</a> & <a href="https://github.com/justice2001" target="_blank">Zhengyi</a></strong><v-icon style="margin: -2px 0 0 3px">mdi-github</v-icon>
+			</v-col>
+			<v-col class="text-left" cols="12" style="padding-top: 0">
+				本站为爱好者作品，和ViViD官方没有关联
+			</v-col>
+		</v-footer>
+
+	</div>
 </template>
 
 <script>
@@ -121,6 +125,9 @@
 			},
 			playAudio(){
 				this.$refs.audioPlayer.play();
+			},
+			pauseAudio(){
+				this.$refs.audioPlayer.pause();
 			}
 
 		},
