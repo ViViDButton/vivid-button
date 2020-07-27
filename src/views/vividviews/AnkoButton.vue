@@ -1,9 +1,6 @@
 <template>
 
-	<container color="rgb(207, 179, 217)"
-	           bg-img="https://img.colter.top/vivid/img/bell/btnbg03.png!web"
-	           :info="ankoInfo">
-	</container>
+	<container :info="ankoInfo" />
 
 </template>
 
@@ -17,6 +14,9 @@
 		data: ()=>({
 			ankoInfo:{
 				name: "Anko",
+				btnBgCount: 1,
+				lightColor: '#a1b9e1',
+				darkColor: '#496f91',
 				bilibili: {name: "未入住",id: ""},
 				youtube: {name: "二和餅あんこ",id: "UCBKxF1PHQtT78ypcVYmBtBA"},
 				twitter: {name: "二和餅あんこ🍡ViViD所属",id: "ANKOchan_01"}

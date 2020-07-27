@@ -37,8 +37,8 @@
 					      :key="index2+voice.name"
 					      @click="loadAudio(voice.path)">
 						<vivid-btn :is-new="voice.update===voiceList.last_update"
-						           :color="color"
-						           :bg-img="bgImg">
+						           :color="$vuetify.theme.dark?info.darkColor:info.lightColor"
+						           :bg-img="'https://img.colter.top/vivid/img/'+info.name.toLowerCase()+'/btnbg0'+(index1%info.btnBgCount===0?info.btnBgCount:index1%info.btnBgCount)+'.png!web'">
 							{{voice.translation[current_language]}}
 						</vivid-btn>
 					</span>
@@ -47,7 +47,7 @@
 
 			<!--右下浮动按钮-->
 			<v-btn bottom
-			       :color="color"
+			       :color="$vuetify.theme.dark?info.darkColor:info.lightColor"
              dark
              fab
              fixed
@@ -83,36 +83,26 @@
 		name: "Container",
 		components: {VividBtn},
 		props: {
-			bgImg: {
-				type: String,
-				default(){
-					return "https://img.colter.top/vivid/img/bell/btnbg04.png!web"
-				}
-			},
-			color: {
-				type: String,
-				default(){
-					return "rgb(255, 219, 233)"
-				}
-			},
 			info: {
 				type: Object,
 				default(){
 					return {
 						name: "Bell",
+						btnBgCount: 5,
+						lightColor: '#ffdbe9',
+						darkColor: '#880E4F',
 						bilibili: {name: "猫芒ベル_Official",id: "487550002"},
 						youtube: {name: "猫芒ベル-Bell Nekonogi",id: "UCflNPJUJ4VQh1hGDNK7bsFg"},
 						twitter: {name: "猫芒ベル🔔ViViD所属",id: "bell_nekonogi"}
 					}
 				}
 			}
-
 		},
 		data: () => ({
 			voiceList:{},
 			bilibilifan: "NULL",
 			youtubefan: "NULL",
-			audioSrc: ""
+			audioSrc: "",
 		}),
 		computed: {
 			current_language() {
@@ -121,7 +111,7 @@
 		},
 		methods: {
 			loadAudio(path){
-				this.audioSrc = "https://img.colter.top/vivid/voices/"+ this.info.name.toLowerCase() +"/"+path;
+				this.audioSrc = this.$store.state.serverUrl + "voices/"+ this.info.name.toLowerCase() +"/"+path;
 			},
 			playAudio(){
 				this.$refs.audioPlayer.play();
@@ -139,7 +129,6 @@
 			getYouTubeFan(this.info.youtube.id).then(res => {
 				this.youtubefan = res.items[0].statistics.subscriberCount;
 			})*/
-
 			getVoiceList(this.info.name.toLowerCase()).then(res => {
 				this.voiceList = res;
 			})

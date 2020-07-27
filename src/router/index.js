@@ -4,15 +4,15 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
   const routes = [
-  // {
-  //   path: '/',
-  //   redirect: '/bell'
-  // },
   {
     path: '/',
-    name: 'Home',
-    component: () => import('../views/home/Home.vue')
+    redirect: '/bell'
   },
+  // {
+  //   path: '/',
+  //   name: 'Home',
+  //   component: () => import('../views/home/Home.vue')
+  // },
   {
     path: '/bell',
     name: 'BellButton',

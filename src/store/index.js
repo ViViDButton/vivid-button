@@ -5,6 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    serverUrl: 'https://img.colter.top/vivid/'
   },
   mutations: {
   },

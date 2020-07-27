@@ -77,7 +77,7 @@
         margin: 2px 5px;
         min-width: 100px;
         text-align: center;
-        border-radius: 30px;
+        border-radius: 19px;
         overflow: hidden;
         vertical-align:middle;
         transition: 0.2s;
@@ -102,10 +102,12 @@
         z-index: -3;
         width: 100%;
         height: 100%;
-        background-image: url("../assets/test.jpg");
+        /*margin-left: 3px;*/
+        background-image:url("../assets/test.jpg");
         background-repeat: no-repeat;
         background-position: right;
         background-size: contain;
+
     }
 
     .vivid-btn-color-linear {
@@ -114,7 +116,7 @@
         z-index: -1;
         width: 20px;
         height: 100%;
-        background: linear-gradient(to right, var(--color) 30%, transparent);
+        /*background: linear-gradient(to right, var(--color) 30%, transparent);*/
     }
 
     .vivid-btn-color {

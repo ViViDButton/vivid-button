@@ -1,9 +1,6 @@
 <template>
 
-	<container color="rgb(207, 179, 217)"
-	           bg-img="https://img.colter.top/vivid/img/bell/btnbg03.png!web"
-	           :info="lilyInfo">
-	</container>
+	<container :info="lilyInfo" />
 
 </template>
 
@@ -16,6 +13,9 @@
 		data: ()=>({
 			lilyInfo:{
 				name: "Lily",
+				btnBgCount: 1,
+				lightColor: '#f9f8fd',
+				darkColor: '#7b7b7b',
 				bilibili: {name: "白百合リリィOfficial",id: "421347849"},
 				youtube: {name: "しらゆりヘブンちゃんねる",id: "UCl-3q6t6zdZwgIsFZELb7Zg"},
 				twitter: {name: "白百合リリィ💸🍮@ビビフェス",id: "SRYR_0"}

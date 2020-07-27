@@ -8,37 +8,37 @@
 
 					<a href="https://fubuki.moe" target="_blank">
 						<vivid-btn color="#64b5f6"
-						           bg-img="https://img.colter.top/vivid/img/bell/btnbg04.png!web">
+						           :bg-img="this.$store.state.serverUrl+'img/others/fbk-btn-bg.png!web'">
 							<span  style="font-size: 21px; color: #f1f1f1">狐按钮</span>
 						</vivid-btn>
 					</a>
 					<a href="https://peko.top" target="_blank">
-						<vivid-btn color="#fb8c00"
-						           bg-img="https://img.colter.top/vivid/img/bell/btnbg04.png!web">
+						<vivid-btn color="#919edf"
+						           :bg-img="this.$store.state.serverUrl+'img/others/peko-btn-bg.png!web'">
 							<span  style="font-size: 21px; color: #f1f1f1">Peko按钮</span>
 						</vivid-btn>
 					</a>
 					<a href="https://sepeach.com" target="_blank">
 						<vivid-btn color="#f06292"
-						           bg-img="https://img.colter.top/vivid/img/bell/btnbg04.png!web">
+						           :bg-img="this.$store.state.serverUrl+'img/others/echo-btn-bg.png!web'">
 							<span  style="font-size: 21px; color: #f1f1f1">桃按钮</span>
 						</vivid-btn>
 					</a>
 					<a href="http://shirayuri-lilly.chu.jp" target="_blank">
 						<vivid-btn color="#f9f8fd"
-						           bg-img="https://img.colter.top/vivid/img/bell/btnbg04.png!web">
+						           :bg-img="this.$store.state.serverUrl+'img/others/lily-btn-bg.png!web'">
 							<span  style="font-size: 21px; color: #242424">Lily按钮</span>
 						</vivid-btn>
 					</a>
 					<a href="https://vtbbtn.org" target="_blank">
 						<vivid-btn color="#64b5f6"
-						           bg-img="https://img.colter.top/vivid/img/bell/btnbg04.png!web">
+						           :bg-img="this.$store.state.serverUrl+'img/others/vvbc-btn-bg.png'">
 							<span  style="font-size: 21px; color: #f1f1f1">VTuber按钮合集</span>
 						</vivid-btn>
 					</a>
 					<a href="https://vtbmusic.com" target="_blank">
-						<vivid-btn color="#00b8d4"
-						           bg-img="https://img.colter.top/vivid/img/bell/btnbg04.png!web">
+						<vivid-btn color="#11dbfe"
+						           :bg-img="this.$store.state.serverUrl+'img/others/vm-btn-bg.png'">
 							<span  style="font-size: 21px; color: #f1f1f1">VTuber Music</span>
 						</vivid-btn>
 					</a>
@@ -69,7 +69,7 @@
 
 	export default {
 		name: "Links",
-		components: {VividBtn},
+		components: {VividBtn}
 	}
 </script>
 

@@ -7,28 +7,28 @@
 
         <v-list-item-group v-model="item" color="primary">
 
-          <router-link to="/">
-            <v-list-item link key="0" @click="changePage('Home')">
+<!--          <router-link to="/">-->
+<!--            <v-list-item link key="0" @click="changePage('Home')">-->
 
-              <!--图标-->
-              <v-list-item-action style="font-size: 20px">📺</v-list-item-action>
+<!--              &lt;!&ndash;图标&ndash;&gt;-->
+<!--              <v-list-item-action style="font-size: 20px">📺</v-list-item-action>-->
 
-              <!--文字-->
-              <v-list-item-content>
-                <v-list-item-title style="font-size: 18px">
-                  ViViDnia
-                </v-list-item-title>
-              </v-list-item-content>
+<!--              &lt;!&ndash;文字&ndash;&gt;-->
+<!--              <v-list-item-content>-->
+<!--                <v-list-item-title style="font-size: 18px">-->
+<!--                  ViViDnia-->
+<!--                </v-list-item-title>-->
+<!--              </v-list-item-content>-->
 
-            </v-list-item>
-          </router-link>
+<!--            </v-list-item>-->
+<!--          </router-link>-->
 
-          <!--分割线-->
-          <v-divider></v-divider>
+<!--          &lt;!&ndash;分割线&ndash;&gt;-->
+<!--          <v-divider></v-divider>-->
 
           <template v-for="(item,index) in items">
             <router-link :to="item.link">
-              <v-list-item :key="index+1" link @click="changePage(item.text,item.color,item.link)">
+              <v-list-item :key="index" link @click="changePage(item.text,item.color,item.darkColor,item.link)">
 
                 <!--图标-->
                 <v-list-item-action style="font-size: 20px">
@@ -51,7 +51,7 @@
           <v-divider></v-divider>
 
           <router-link to="/links">
-            <v-list-item link key="7" @click="changePage('Links')">
+            <v-list-item link @click="changePage('Links','blue','light-blue darken-3','/links')">
 
               <!--图标-->
               <v-list-item-action style="font-size: 20px">➡</v-list-item-action>
@@ -67,7 +67,7 @@
           </router-link>
 
           <router-link to="/about">
-            <v-list-item link key="8" @click="changePage('About')">
+            <v-list-item link @click="changePage('About','light-blue','light-blue darken-3','/about')">
 
               <!--图标-->
               <v-list-item-action style="font-size: 20px">➡</v-list-item-action>
@@ -92,14 +92,15 @@
             :color="current_color"
             prominent
             shrink-on-scroll
-            :src="current_topbg"
+            :src="$vuetify.theme.dark?'':current_topbg"
             fade-img-on-scroll
             scroll-target="#scrolling">
 
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-toolbar-title style="width: 300px" class="ml-0 pl-4">
-        <span class="hidden-sm-and-down" >{{current_page}}</span>
+        <img class="hidden-sm-and-down" v-show="current_page==='BellButton'&&isShowLogo" src="../public/BellButton.png" style="width: 200px; margin-left: -20px; margin-bottom: -20px">
+        <span v-show="current_page!=='BellButton'||!isShowLogo" >{{current_page}}</span>
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
@@ -111,7 +112,7 @@
                  dark
                  v-bind="attrs"
                  v-on="on"
-                 @click="$vuetify.theme.dark = !$vuetify.theme.dark">
+                 @click="$vuetify.theme.dark = !$vuetify.theme.dark,setTopBg()">
             <v-icon color="#fff">mdi-brightness-4</v-icon>
           </v-btn>
         </template>
@@ -178,42 +179,41 @@ export default {
   name: 'App',
   data: () => ({
     item: 0,
-    current_page: 'Home',
+    current_page: 'BellButton',
     current_color: 'pink lighten-3',
     current_topbg: 'https://img.colter.top/vivid/img/bell/topbg01.png',
     isLanguageBoxOn: false,
+    isShowLogo: true,
     drawer: null,
     items: [
-      { icon: '🔔', color: "pink lighten-3", text: 'BellButton', link: "/bell"},
-      { icon: '👻', color: "deep-purple lighten-2", text: 'MemoryButton', link: "/memory" },
-      { icon: '💸', color: "light-blue lighten-4", text: 'LilyButton', link: "/lily" },
-      { icon: '🍯', color: "yellow accent-4", text: 'ElenaButton', link: "/elena" },
-      { icon: '🍡', color: "cyan lighten-1", text: 'AnkoButton', link: "/anko" },
-      { icon: '⏳', color: "grey darken-3", text: 'LockButton', link: "/lock" }
+      { icon: '🔔', color: '#f48fb1', darkColor: '#c8527a',text: 'BellButton', link: '/bell'},
+      { icon: '👻', color: '#9575cd', darkColor: '#7255a7',text: 'MemoryButton', link: '/memory'},
+      { icon: '💸', color: '#b3e5fc', darkColor: '#438296',text: 'LilyButton', link: '/lily'},
+      { icon: '🍯', color: '#fba150', darkColor: '#bd793e',text: 'ElenaButton', link: '/elena'},
+      { icon: '🍡', color: '#21b9da', darkColor: '#1e8b99',text: 'AnkoButton', link: '/anko'},
+      { icon: '⏳', color: '#e55555', darkColor: '#934848',text: 'LockButton', link: '/lock'}
     ],
   }),
   mounted() {
     this.scrolled();
+
     // 初始化top
-    for(let i=0; i<this.items.length;i++){
-      if (this.items[i].link===window.location.pathname){
-        this.changePage(this.items[i].text,this.items[i].color,window.location.pathname);
-        this.item = i+1;
-      }
-    }
+    this.setTopBg();
+
   },
   methods: {
     scrolled() {
       let pageH = window.innerHeight
       let padding = parseInt(this.$refs.appMain.$el.style.paddingTop)
       this.$refs.appSheet.$el.style.maxHeight = pageH - padding + "px"
+      this.isShowLogo = padding !== 56;
     },
     onScroll(e) {
       // TODO:自制滚动条
     },
-    changePage(page,color,link){
+    changePage(page,color,darkColor,link){
       this.current_page = page;
-      this.current_color = color;
+      this.current_color = this.$vuetify.theme.dark?darkColor:color;
       this.current_topbg = 'https://img.colter.top/vivid/img'+link+'/topbg01.png'
     },
     changeLanguage(type){
@@ -222,7 +222,29 @@ export default {
       this.isLanguageBoxOn = false;
 
       this.$store.state.lang = this.$i18n.locale
+    },
+    setTopBg(){
+      for(let i=0; i<this.items.length;i++){
+        if ('/links'===window.location.pathname){
+          this.changePage('Links','blue','light-blue darken-3','/links');
+          this.item = 6;
+          break;
+        }
+        if ('/about'===window.location.pathname){
+          this.changePage('About','light-blue','light-blue darken-3','/about');
+          this.item = 7;
+          break;
+        }
+        if (this.items[i].link===window.location.pathname){
+          this.changePage(this.items[i].text,this.items[i].color,this.items[i].darkColor,this.items[i].link);
+          this.item = i;
+          break;
+        }
+      }
     }
+  },
+  computed: {
+
   }
 };
 </script>

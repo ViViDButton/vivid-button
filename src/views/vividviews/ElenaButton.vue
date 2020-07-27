@@ -1,9 +1,6 @@
 <template>
 
-	<container color="rgb(207, 179, 217)"
-	           bg-img="https://img.colter.top/vivid/img/bell/btnbg03.png!web"
-	           :info="elenaInfo">
-	</container>
+	<container :info="elenaInfo" />
 
 </template>
 
@@ -16,6 +13,9 @@
 		data: ()=>({
 			elenaInfo:{
 				name: "Elena",
+				btnBgCount: 1,
+				lightColor: '#f8b892',
+				darkColor: '#936137',
 				bilibili: {name: "未入住",id: ""},
 				youtube: {name: "勇凪エレナ / Elena Yunagi",id: "UCKwATdrcjyzNv9c56PqJbWA"},
 				twitter: {name: "勇凪エレナ🍯@ビビフェス",id: "ELENA_YUNAGI"}

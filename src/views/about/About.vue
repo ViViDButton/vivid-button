@@ -51,7 +51,7 @@
 		</v-container>
 
 		<!--页脚-->
-		<v-footer padless style="position: absolute; bottom: 0; width: 100%">
+		<v-footer padless >
 			<v-col class="text-left" cols="12" style="padding-bottom: 5px">
 				&copy;{{ new Date().getFullYear() }} — <strong><a href="https://github.com/Colter23" target="_blank">Colter</a> & <a href="https://github.com/justice2001" target="_blank">Zhengyi</a></strong><v-icon style="margin: -2px 0 0 3px">mdi-github</v-icon>
 			</v-col>
