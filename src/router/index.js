@@ -16,42 +16,66 @@ Vue.use(VueRouter)
   {
     path: '/bell',
     name: 'BellButton',
-    component: () => import('../views/vividviews/BellButton.vue')
+    component: () => import('../views/vividviews/BellButton.vue'),
+    meta:{
+      title: 'BellButton'
+    }
   },
   {
     path: '/memory',
     name: 'MemoryButton',
-    component: () => import('../views/vividviews/MemoryButton.vue')
+    component: () => import('../views/vividviews/MemoryButton.vue'),
+    meta:{
+      title: 'MemoryButton'
+    }
   },
   {
     path: '/lily',
     name: 'LilyButton',
-    component: () => import('../views/vividviews/LilyButton.vue')
+    component: () => import('../views/vividviews/LilyButton.vue'),
+    meta:{
+      title: 'LilyButton'
+    }
   },
   {
     path: '/elena',
     name: 'ElenaButton',
-    component: () => import('../views/vividviews/ElenaButton.vue')
+    component: () => import('../views/vividviews/ElenaButton.vue'),
+    meta:{
+      title: 'ElenaButton'
+    }
   },
   {
     path: '/anko',
     name: 'AnkoButton',
-    component: () => import('../views/vividviews/AnkoButton.vue')
+    component: () => import('../views/vividviews/AnkoButton.vue'),
+    meta:{
+      title: 'AnkoButton'
+    }
   },
   {
     path: '/lock',
     name: 'LockButton',
-    component: () => import('../views/vividviews/LockButton.vue')
+    component: () => import('../views/vividviews/LockButton.vue'),
+    meta:{
+      title: 'LockButton'
+    }
   },
   {
     path: '/links',
-    name: 'LockButton',
-    component: () => import('../views/links/Links.vue')
+    name: 'Links',
+    component: () => import('../views/links/Links.vue'),
+    meta:{
+      title: 'Links'
+    }
   },
   {
     path: '/about',
-    name: 'LockButton',
-    component: () => import('../views/about/About.vue')
+    name: 'About',
+    component: () => import('../views/about/About.vue'),
+    meta:{
+      title: 'About'
+    }
   },
 
 ]

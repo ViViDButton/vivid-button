@@ -14,6 +14,10 @@ export function getYouTubeFan(user) {
 
 export function getVoiceList(name) {
 	return request({
-		url: 'https://img.colter.top/vivid/voices/'+name+'voices.json'
+		// url: 'https://img.colter.top/vivid/voices/'+name+'voices.json'
+		url: 'http://127.0.0.1:8000/get-voice',
+		params:{
+			'vtb-name':name
+		}
 	})
 }

@@ -57,7 +57,7 @@
 				<v-icon>mdi-play</v-icon>
 			</v-btn>
 
-			<audio :src="audioSrc" ref="audioPlayer" @loadedmetadata="playAudio" class="audio-player"/>
+			<audio :src="audioSrc" ref="audioPlayer" @ended="" @loadedmetadata="playAudio" class="audio-player"/>
 
 		</v-container>
 
