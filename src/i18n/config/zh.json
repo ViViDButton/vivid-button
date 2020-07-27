@@ -1,36 +1,43 @@
 {
-  "navbar": {
-    "bell_info": "Bell信息"
+  "app": {
+    "bellbutton": "Bell按钮",
+    "memorybutton": "Memory按钮",
+    "lilybutton": "Lily按钮",
+    "elenabutton": "Elena按钮",
+    "ankobutton": "Anko按钮",
+    "lockbutton": "Lock按钮",
+    "links": "友情链接",
+    "about": "关于",
+    "switch_dark_mode": "夜间模式",
+    "switch_language": "切换语言"
   },
-  "home": {
-    "touch": {
-      "before": "这么可爱的小猫咪不",
-      "after": "摸一下吗？"
-    },
-    "follow": {
-      "before": "这么可爱的小猫咪不",
-      "after": "关注一下吗？"
-    },
-    "bilifan": "B站客人们",
-    "ytbfan": "YouTube客人们",
-    "touchGet": "点击获取"
+  "footer": {
+    "content": "本站为爱好者作品，和ViViD官方没有关联，STAFF名单以及项目参与方式请查看\"关于\"页面"
   },
-  "button": {
-    "bellbtn": "Bell按钮",
-    "volume": "音量"
+  "links": {
+    "fbkbutton": "狐按钮",
+    "pekobutton": "Peko按钮",
+    "peachbutton": "桃按钮",
+    "lilybutton": "Lily按钮",
+    "vtbbutton": "VTuber按钮合集",
+    "vtbMusic": "VTuber Music"
+  },
+  "container": {
+    "info": "信息",
+    "bilifan": "B站关注数",
+    "ytbfan": "YouTube关注数"
   },
   "about": {
-    "author": "作者",
-    "partner": "合作",
-    "translate": "翻译",
-    "feedback": "建议，BUG，素材可以联系",
-    "mail": "邮箱",
+    "title": "ViViD按钮合集 / ViViDButton",
+    "join": "参与完善项目",
+    "feedback": "建议，BUG，素材可以发送至",
     "letter": "B站私信",
-    "copyright": "本站为舔食者创作，与ViViD官方无关",
-    "link": "友情链接",
-    "vtbbtn": "VTuber按钮集合",
-    "fbkbtn": "Fubuki按钮",
-    "pekobtn": "Peko按钮",
-    "peachbtn": "桃按钮"
+    "des": "发送时带上标题、内容以及您的ID（Bilibili、Twitter等均可），贡献者名单将会有您的名字。",
+    "contributor": "贡献者",
+    "dev": "开发",
+    "translate": "翻译",
+    "material": "音频素材",
+    "licence": "协议",
+    "copyright": "本站为舔食者创作，与ViViD官方无关"
   }
 }

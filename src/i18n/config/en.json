@@ -1,3 +1,43 @@
 {
-
+  "app": {
+    "bellbutton": "BellButton",
+    "memorybutton": "MemoryButton",
+    "lilybutton": "LilyButton",
+    "elenabutton": "ElenaButton",
+    "ankobutton": "AnkoButton",
+    "lockbutton": "LockButton",
+    "links": "Links",
+    "about": "About",
+    "switch_dark_mode": "Switch Dark Mode",
+    "switch_language": "Switch Language"
+  },
+  "footer": {
+    "content": "This site is a fan work and is not associated with the ViViD official. For staff and more information, please see \"About\" page."
+  },
+  "links": {
+    "fbkbutton": "Fubuki Button",
+    "pekobutton": "Pekora Button",
+    "peachbutton": "Echo Button",
+    "lilybutton": "Lily Button",
+    "vtbbutton": "VTuber Buttons Collection",
+    "vtbMusic": "VTuber Music"
+  },
+  "container": {
+    "info": "Info",
+    "bilifan": "BiliBili Follower",
+    "ytbfan": "YouTube Follower"
+  },
+  "about": {
+    "title": "ViViD Voice Button Collection",
+    "join": "Contributing",
+    "feedback": "Suggestion, BUG, Material can be sent to",
+    "letter": "BiliBili Private letters",
+    "des": "with title, content and your social ID(Twitter, Bilibili or so on). We will add your ID to the contributors list below.",
+    "contributor": "Contributors",
+    "dev": "Development",
+    "translate": "Translation",
+    "material": "Audio Material",
+    "licence": "LICENCE",
+    "copyright": "This site is a fan work and is not associated with the ViViD official."
+  }
 }

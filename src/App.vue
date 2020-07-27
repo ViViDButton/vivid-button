@@ -2,9 +2,12 @@
   <v-app id="inspire">
 
     <!--侧边栏-->
-    <v-navigation-drawer class="elevation-3" v-model="drawer" app :clipped="$vuetify.breakpoint.lgAndUp">
+    <v-navigation-drawer
+            class="elevation-3"
+            v-model="drawer"
+            app
+            :clipped="$vuetify.breakpoint.lgAndUp">
       <v-list dense>
-
         <v-list-item-group v-model="item" color="primary">
 
 <!--          <router-link to="/">-->
@@ -39,7 +42,7 @@
                 <!--文字-->
                 <v-list-item-content>
                   <v-list-item-title style="font-size: 18px">
-                    {{ item.text }}
+                    {{ $t('app.'+item.text) }}
                   </v-list-item-title>
                 </v-list-item-content>
 
@@ -48,18 +51,18 @@
           </template>
 
           <!--分割线-->
-          <v-divider></v-divider>
+          <v-divider/>
 
           <router-link to="/links">
-            <v-list-item link @click="changePage('Links','blue','light-blue darken-3','/links')">
+            <v-list-item link @click="changePage('links','blue','light-blue darken-3','/links')">
 
               <!--图标-->
-              <v-list-item-action style="font-size: 20px">➡</v-list-item-action>
+              <v-list-item-action style="font-size: 20px"><v-icon>mdi-link-variant</v-icon></v-list-item-action>
 
               <!--文字-->
               <v-list-item-content>
                 <v-list-item-title style="font-size: 18px">
-                  友情链接
+                  {{$t("app.links")}}
                 </v-list-item-title>
               </v-list-item-content>
 
@@ -67,15 +70,15 @@
           </router-link>
 
           <router-link to="/about">
-            <v-list-item link @click="changePage('About','light-blue','light-blue darken-3','/about')">
+            <v-list-item link @click="changePage('about','light-blue','light-blue darken-3','/about')">
 
               <!--图标-->
-              <v-list-item-action style="font-size: 20px">➡</v-list-item-action>
+              <v-list-item-action style="font-size: 20px"><v-icon >mdi-information-outline</v-icon></v-list-item-action>
 
               <!--文字-->
               <v-list-item-content>
                 <v-list-item-title style="font-size: 18px">
-                  About
+                  {{$t("app.about")}}
                 </v-list-item-title>
               </v-list-item-content>
 
@@ -99,11 +102,14 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-toolbar-title style="width: 300px" class="ml-0 pl-4">
-        <img class="hidden-sm-and-down" v-show="current_page==='BellButton'&&isShowLogo" src="../public/BellButton.png" style="width: 200px; margin-left: -20px; margin-bottom: -20px">
+        <img class="hidden-sm-and-down"
+             v-show="current_page==='BellButton'&&isShowLogo"
+             src="../public/BellButton.png"
+             style="width: 200px; margin-left: -20px; margin-bottom: -20px"/>
         <span v-show="current_page!=='BellButton'||!isShowLogo" >{{current_page}}</span>
       </v-toolbar-title>
 
-      <v-spacer></v-spacer>
+      <v-spacer/>
 
       <v-tooltip bottom>
         <template v-slot:activator="{ on, attrs }">
@@ -116,7 +122,7 @@
             <v-icon color="#fff">mdi-brightness-4</v-icon>
           </v-btn>
         </template>
-        <span>夜间模式</span>
+        <span>{{$t("app.switch_dark_mode")}}</span>
       </v-tooltip>
 
       <v-tooltip bottom>
@@ -130,7 +136,7 @@
             <v-icon color="#fff">mdi-translate</v-icon>
           </v-btn>
         </template>
-        <span>切换语言</span>
+        <span>{{$t("app.switch_language")}}</span>
       </v-tooltip>
 
       <v-card class="elevation-6" v-show="isLanguageBoxOn" style="position: absolute; top: 50px; right: 10px">
@@ -161,7 +167,12 @@
     <!--内容-->
     <v-main ref="appMain">
 
-        <v-sheet ref="appSheet" @scroll="scrolled"  v-scroll.self="onScroll" id="scrolling" class="overflow-y-auto">
+        <v-sheet ref="appSheet"
+                 @click="isLanguageBoxOn = false"
+                 @scroll="scrolled"
+                 v-scroll.self="onScroll"
+                 id="scrolling"
+                 class="overflow-y-auto">
           <keep-alive>
             <router-view />
           </keep-alive>
@@ -186,12 +197,12 @@ export default {
     isShowLogo: true,
     drawer: null,
     items: [
-      { icon: '🔔', color: '#f48fb1', darkColor: '#c8527a',text: 'BellButton', link: '/bell'},
-      { icon: '👻', color: '#9575cd', darkColor: '#7255a7',text: 'MemoryButton', link: '/memory'},
-      { icon: '💸', color: '#b3e5fc', darkColor: '#438296',text: 'LilyButton', link: '/lily'},
-      { icon: '🍯', color: '#fba150', darkColor: '#bd793e',text: 'ElenaButton', link: '/elena'},
-      { icon: '🍡', color: '#21b9da', darkColor: '#1e8b99',text: 'AnkoButton', link: '/anko'},
-      { icon: '⏳', color: '#e55555', darkColor: '#934848',text: 'LockButton', link: '/lock'}
+      { icon: '🔔', color: '#f48fb1', darkColor: '#c8527a',text: 'bellbutton', link: '/bell'},
+      { icon: '👻', color: '#9575cd', darkColor: '#7255a7',text: 'memorybutton', link: '/memory'},
+      { icon: '💸', color: '#b3e5fc', darkColor: '#438296',text: 'lilybutton', link: '/lily'},
+      { icon: '🍯', color: '#fba150', darkColor: '#bd793e',text: 'elenabutton', link: '/elena'},
+      { icon: '🍡', color: '#21b9da', darkColor: '#1e8b99',text: 'ankobutton', link: '/anko'},
+      { icon: '⏳', color: '#e55555', darkColor: '#934848',text: 'lockbutton', link: '/lock'}
     ],
   }),
   mounted() {
@@ -212,7 +223,7 @@ export default {
       // TODO:自制滚动条
     },
     changePage(page,color,darkColor,link){
-      this.current_page = page;
+      this.current_page = this.$t("app."+page);
       this.current_color = this.$vuetify.theme.dark?darkColor:color;
       this.current_topbg = 'https://img.colter.top/vivid/img'+link+'/topbg01.png'
     },
@@ -220,18 +231,18 @@ export default {
       localStorage.setItem('locale',type);
       this.$i18n.locale = type;
       this.isLanguageBoxOn = false;
-
-      this.$store.state.lang = this.$i18n.locale
+      this.$store.state.lang = this.$i18n.locale;
+      this.setTopBg();
     },
     setTopBg(){
       for(let i=0; i<this.items.length;i++){
         if ('/links'===window.location.pathname){
-          this.changePage('Links','blue','light-blue darken-3','/links');
+          this.changePage('links','blue','light-blue darken-3','/links');
           this.item = 6;
           break;
         }
         if ('/about'===window.location.pathname){
-          this.changePage('About','light-blue','light-blue darken-3','/about');
+          this.changePage('about','light-blue','light-blue darken-3','/about');
           this.item = 7;
           break;
         }

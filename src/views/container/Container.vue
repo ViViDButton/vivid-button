@@ -3,11 +3,11 @@
 		<v-container class="fill-height" style="padding: 12px" >
 
 			<v-card style="width: 100%; margin: 8px auto;">
-				<v-card-title class="headline mb-1"> <v-icon>mdi-account</v-icon> {{info.name}}情报</v-card-title>
+				<v-card-title class="headline mb-1"> <v-icon>mdi-account</v-icon> {{info.name}}{{$t("container.info")}}</v-card-title>
 				<v-card-text style="font-size: 21px; color: #1a1a1a">
 
-					<span style="display: inline-block;color: #01affd;margin: 0 50px 5px 5px;">B站关注数:{{bilibilifan}}</span>
-					<span style="display: inline-block;color: #ff2424;margin: 5px 0 0 5px;">YouTube关注数:{{youtubefan}}</span>
+					<span style="display: inline-block;color: #01affd;margin: 0 50px 5px 5px;">{{$t("container.bilifan")}}:{{bilibilifan}}</span>
+					<span style="display: inline-block;color: #ff2424;margin: 5px 0 0 5px;">{{$t("container.ytbfan")}}:{{youtubefan}}</span>
 
 					<div style="margin-top: 10px">
 						<v-btn rounded color="#01affd" style="margin: 5px;" :href="'https://space.bilibili.com/'+info.bilibili.id" target="_blank">
@@ -67,7 +67,7 @@
 				&copy;{{ new Date().getFullYear() }} — <strong><a href="https://github.com/Colter23" target="_blank">Colter</a> & <a href="https://github.com/justice2001" target="_blank">Zhengyi</a></strong><v-icon style="margin: -2px 0 0 3px">mdi-github</v-icon>
 			</v-col>
 			<v-col class="text-left" cols="12" style="padding-top: 0">
-				本站为爱好者作品，和ViViD官方没有关联
+				{{$t("footer.content")}}
 			</v-col>
 		</v-footer>
 

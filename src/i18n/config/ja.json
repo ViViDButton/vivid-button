@@ -1,36 +1,43 @@
 {
-  "navbar": {
-    "bell_info": "ベルじょうほう"
+  "app": {
+    "bellbutton": "Bellボタン",
+    "memorybutton": "Memoryボタン",
+    "lilybutton": "Lilyボタン",
+    "elenabutton": "Elenaボタン",
+    "ankobutton": "Ankoボタン",
+    "lockbutton": "Lockボタン",
+    "links": "友情リンク",
+    "about": "について",
+    "switch_dark_mode": "ナイトモードスイッチ",
+    "switch_language": "言語を切り替える"
   },
-  "home": {
-    "touch": {
-      "before": "この可愛い子猫には",
-      "after": "触らないの？"
-    },
-    "follow": {
-      "before": "こんなに可愛い子猫に",
-      "after": "注目しないの？"
-    },
-    "bilifan": "BiliBiliお客様",
-    "ytbfan": "YouTubeお客様",
-    "touchGet": "クリックして取得"
+  "footer": {
+    "content": "このサイトはファン作品であり、ViViD公式とは関係ありません。STAFFリストとプロジェクト参加方式は「について」ページをご覧ください。"
   },
-  "button": {
-    "bellbtn": "Bellボタン",
-    "volume": "ボリューム"
+  "links": {
+    "fbkbutton": "フブキボタン",
+    "pekobutton": "ぺこらボタン",
+    "peachbutton": "エコーボタン",
+    "lilybutton": "白百合ボタン",
+    "vtbbutton": "VTuberの音声ボタンコレクション",
+    "vtbMusic": "VTuber Music"
+  },
+  "container": {
+    "info": "じょうほう",
+    "bilifan": "BiliBiliフォロワー",
+    "ytbfan": "YouTubeフォロワー"
   },
   "about": {
-    "author": "著者",
-    "partner": "協力",
-    "translate": "翻訳",
-    "feedback": "提案，BUG，素材連絡できます",
-    "mail": "メールボックス",
+    "title": "ViViDボイスボタンコレクション",
+    "join": "このプロジェクトへの貢献",
+    "feedback": "提案，BUG，素材を直接以下のメールアドレスに送信してください",
     "letter": "BiliBiliプライベートレター",
-    "copyright": "このプロジェクトはファンによるもので、ViViD公式は一切関係ありません",
-    "link": "リンク",
-    "vtbbtn": "VTuberの音声ボタンコレクション",
-    "fbkbtn": "Fubukiボタン",
-    "pekobtn": "Pekoボタン",
-    "peachbtn": "桃ボタン"
+    "des": "またメールの中にタイトル、内容及びあなたのID（Bilibili、Twitterやその他）を記述してください。そうすることで私達は下のコントリビューターリストにあなたの名前を掲載することができます。",
+    "contributor": "コントリビューター",
+    "dev": "開発",
+    "translate": "翻訳",
+    "material": "オーディオ素材",
+    "licence": "プロトコル",
+    "copyright": "このサイトはファン作品であり、ViViD公式とは関係ありません"
   }
 }
