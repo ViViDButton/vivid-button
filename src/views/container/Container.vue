@@ -57,7 +57,7 @@
 				<v-icon>mdi-play</v-icon>
 			</v-btn>
 
-			<audio :src="audioSrc" ref="audioPlayer" @ended="" @loadedmetadata="playAudio" class="audio-player"/>
+			<audio :src="audioSrc" ref="audioPlayer" @ended="audioSrc=''" @loadedmetadata="playAudio" class="audio-player"/>
 
 		</v-container>
 
@@ -103,6 +103,7 @@
 			bilibilifan: "NULL",
 			youtubefan: "NULL",
 			audioSrc: "",
+			path: ""
 		}),
 		computed: {
 			current_language() {
@@ -111,7 +112,17 @@
 		},
 		methods: {
 			loadAudio(path){
-				this.audioSrc = this.$store.state.serverUrl + "voices/"+ this.info.name.toLowerCase() +"/"+path;
+				if(this.audioSrc==="" || this.path!==path){
+					this.audioSrc = this.$store.state.serverUrl + "voices/"+ this.info.name.toLowerCase() +"/"+path;
+					this.path = path;
+				}else {
+					if(this.$refs.audioPlayer.paused){
+						this.playAudio();
+					}else {
+						this.pauseAudio();
+					}
+				}
+
 			},
 			playAudio(){
 				this.$refs.audioPlayer.play();

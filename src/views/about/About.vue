@@ -39,6 +39,15 @@
 					<ul>
 						<li>BiliBili <a href="https://space.bilibili.com/32868931" target="_blank">Colter_null</a></li>
 					</ul>
+					<ul>
+						<li>BiliBili <a href="https://space.bilibili.com/431153994" target="_blank">NT-mare</a></li>
+					</ul>
+					<ul>
+						<li>BiliBili <a href="https://space.bilibili.com/13514116" target="_blank">月岚空</a></li>
+					</ul>
+					<ul>
+						<li>BiliBili <a href="https://space.bilibili.com/290482706" target="_blank">冬中雪初</a></li>
+					</ul>
 
 				</v-card-text>
 
