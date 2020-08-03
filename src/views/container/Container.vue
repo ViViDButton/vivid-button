@@ -11,7 +11,7 @@
 
 					<div style="margin-top: 10px">
 						<v-btn rounded color="#01affd" style="margin: 5px;" :href="'https://space.bilibili.com/'+info.bilibili.id" target="_blank">
-							<img src="../../../public/bilibili.svg" alt="" style="width: 30px; height: 30px; position: absolute; left: 2px; bottom: 50%; transform: translate3d(0px, 50%, 0px);">
+							<img src="../../../public/img/bilibili.svg" alt="" style="width: 30px; height: 30px; position: absolute; left: 2px; bottom: 50%; transform: translate3d(0px, 50%, 0px);">
 							<span class="link-text" style="margin-left: 40px">{{info.bilibili.name}}</span>
 						</v-btn>
 
@@ -33,11 +33,27 @@
 			<v-card v-for="(group,index1) in voiceList.groups" :key="index1+group.name" style="width: 100%; margin: 8px auto;">
 				<v-card-title class="headline mb-1">{{group.translation[current_language]}}</v-card-title>
 				<v-card-text>
+
+					<slot name="info"/>
+					<v-alert v-if="info[group.name]"
+					         dismissible
+					         dense
+					         close-icon="mdi-close-circle"
+					         :color="$vuetify.theme.dark?info.darkColor:info.lightColor"
+					         border="left"
+					         elevation="2"
+					         colored-border
+					         icon="mdi-alert-circle" style="overflow-wrap: break-word;">
+						{{info[group.name]}}
+					</v-alert>
+
 					<span v-for="(voice,index2) in group.voicelist"
 					      :key="index2+voice.name"
-					      @click="loadAudio(voice.path)">
-						<vivid-btn :is-new="voice.update===voiceList.last_update"
+					      @click="loadAudio(voice.path),currentIndex=index1+''+index2">
+						<vivid-btn :value="currentIndex===(index1+''+index2)?progress:0"
+						           :is-new="voice.update===voiceList.last_update"
 						           :color="$vuetify.theme.dark?info.darkColor:info.lightColor"
+						           :progress-color="info.progressColor"
 						           :bg-img="'https://img.colter.top/vivid/img/'+info.name.toLowerCase()+'/btnbg0'+(index1%info.btnBgCount===0?info.btnBgCount:index1%info.btnBgCount)+'.png!web'">
 							{{voice.translation[current_language]}}
 						</vivid-btn>
@@ -52,12 +68,17 @@
              fab
              fixed
              right
-             @click="pauseAudio"
+             @click="loopAudio"
              style="z-index: 3">
-				<v-icon>mdi-play</v-icon>
+				<v-icon color="#1d1d1d" v-text="loopicon"></v-icon>
 			</v-btn>
 
-			<audio :src="audioSrc" ref="audioPlayer" @ended="audioSrc=''" @loadedmetadata="playAudio" class="audio-player"/>
+			<audio :src="audioSrc"
+			       ref="audioPlayer"
+			       @timeupdate="update"
+			       @ended="audioSrc=''"
+			       @loadedmetadata="playAudio"
+			       class="audio-player"/>
 
 		</v-container>
 
@@ -90,7 +111,8 @@
 						name: "Bell",
 						btnBgCount: 5,
 						lightColor: '#ffdbe9',
-						darkColor: '#880E4F',
+						darkColor: '#99566f',
+						progressColor: '#f990ca',
 						bilibili: {name: "猫芒ベル_Official",id: "487550002"},
 						youtube: {name: "猫芒ベル-Bell Nekonogi",id: "UCflNPJUJ4VQh1hGDNK7bsFg"},
 						twitter: {name: "猫芒ベル🔔ViViD所属",id: "bell_nekonogi"}
@@ -99,11 +121,33 @@
 			}
 		},
 		data: () => ({
-			voiceList:{},
+			voiceList:{
+				last_update: "0721",
+				groups: [{
+				name: "请求数据。。。",
+				translation: {
+					zh: "请求数据。。。",
+					ja: "请求数据。。。",
+					en: "请求数据。。。"
+				},
+				voicelist: [
+					{
+						update: "0721",
+						name: "请求数据。。。",
+						pat: "请求数据。。。.mp3",
+						translation: {
+							zh: "请求数据。。。",
+							ja: "请求数据。。。",
+							en: "请求数据。。。"
+						}}]}]},
 			bilibilifan: "NULL",
 			youtubefan: "NULL",
 			audioSrc: "",
-			path: ""
+			path: "",
+			voiceLength: 0,
+			currentIndex: '00',
+			progress: 0,
+			loopicon: "mdi-repeat-off"
 		}),
 		computed: {
 			current_language() {
@@ -113,7 +157,8 @@
 		methods: {
 			loadAudio(path){
 				if(this.audioSrc==="" || this.path!==path){
-					this.audioSrc = this.$store.state.serverUrl + "voices/"+ this.info.name.toLowerCase() +"/"+path;
+					// this.audioSrc = this.$store.state.serverUrl + "voices/"+ this.info.name.toLowerCase() +"/"+path;
+					this.audioSrc = path;
 					this.path = path;
 				}else {
 					if(this.$refs.audioPlayer.paused){
@@ -122,13 +167,20 @@
 						this.pauseAudio();
 					}
 				}
-
 			},
 			playAudio(){
 				this.$refs.audioPlayer.play();
+				this.voiceLength = Math.round(this.$refs.audioPlayer.duration);
 			},
 			pauseAudio(){
 				this.$refs.audioPlayer.pause();
+			},
+			loopAudio(){
+				this.$refs.audioPlayer.loop = !this.$refs.audioPlayer.loop;
+				this.loopicon = "mdi-repeat" + (this.$refs.audioPlayer.loop?"":"-off")
+			},
+			update(){
+				this.progress = this.voiceLength? (Math.round(this.$refs.audioPlayer.currentTime)/this.voiceLength) *100:0;
 			}
 
 		},
@@ -141,7 +193,7 @@
 				this.youtubefan = res.items[0].statistics.subscriberCount;
 			})*/
 			getVoiceList(this.info.name.toLowerCase()).then(res => {
-				this.voiceList = res;
+				 this.voiceList = res;
 			})
 		}
 	}

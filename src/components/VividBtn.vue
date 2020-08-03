@@ -4,6 +4,9 @@
         <div :style="{'--color': color,'--text-color': $vuetify.theme.dark?'#e8e8e8':'#454545'}" class="vivid-btn-box">
             <div class="vivid-btn-new" v-if="isNew">new</div>
             <div class="vivid-btn" :class="hover?'elevation-8':'elevation-3'" v-ripple>
+                <div style="padding: 0 8px">
+                    <v-progress-linear v-if="showProgress" v-model="value" :color="progressColor" :background-color="color"/>
+                </div>
                 <div ref="VividBtnBg" class="vivid-btn-bg" :style="{'background-image': 'url(' + bgImg + ')'}"></div>
                 <div class="vivid-btn-color"></div>
                 <div ref="VividBtnLinear" class="vivid-btn-color-linear"></div>
@@ -23,7 +26,7 @@
         methods: {
             resizeBtn() {
                 // 行
-                let zoom = Math.floor((this.$refs.VividBtnContent.offsetHeight - 20) / 20)
+                let zoom = Math.floor((this.$refs.VividBtnContent.offsetHeight - 18) / 20)
                 // 调整渐变的位置
                 this.$refs.VividBtnLinear.style.right = 25 * zoom + "px"
                 // 排除单行撑开后变双行的按钮
@@ -42,11 +45,29 @@
             }
         },
         props: {
+            showProgress:{
+                type: Boolean,
+                default(){
+                    return true
+                }
+            },
+            value: {
+                type: Number,
+                default(){
+                    return 0
+                }
+            },
+            progressColor: {
+                type: String,
+                default() {
+                    return "rgb(255, 219, 233)"
+                }
+            },
             isNew: {
-                    type: Boolean,
-                    default() {
-                        return false
-                    }
+                type: Boolean,
+                default() {
+                    return false
+                }
             },
             bgImg: {
                 type: String,
@@ -81,6 +102,7 @@
         overflow: hidden;
         vertical-align:middle;
         transition: 0.2s;
+
     }
 
     .vivid-btn-new {
@@ -138,6 +160,6 @@
         vertical-align:middle;
         width: 100%;
         height: 100%;
-        padding: 10px 0 10px 20px;
+        padding: 8px 0 10px 20px;
     }
 </style>

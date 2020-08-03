@@ -5,7 +5,7 @@
 			<v-card style="width: 100%; margin: 8px auto;">
 				<v-card-title class="headline mb-1"
 				              style="font-weight: bold;">
-					<a href="https://github.com/Colter23/ViViDButton" target="_blank">
+					<a href="https://github.com/ViViDButton" target="_blank">
 						<v-icon style="font-size: 30px; margin: -4px 3px 0 0">mdi-github</v-icon>{{$t("about.title")}}
 					</a>
 				</v-card-title>
@@ -20,19 +20,29 @@
 				<v-divider></v-divider>
 
 				<v-card-text>
+
+					<!--开发-->
 					<h2>{{$t("about.contributor")}}</h2>
 					<h3>{{$t("about.dev")}}</h3>
 					<ul>
-						<li>Github <a href="https://github.com/Colter23" target="_blank">Colter23</a></li>
-								BiliBili <a href="https://space.bilibili.com/32868931" target="_blank">Colter_null</a>
-						<li>Github <a href="https://github.com/justice2001" target="_blank">justice2001</a></li>
-								BiliBili <a href="https://space.bilibili.com/30734570" target="_blank">正義desu-null</a>
+						<li>Github <a href="https://github.com/Colter23" target="_blank">Colter23</a>
+							BiliBili <a href="https://space.bilibili.com/32868931" target="_blank">Colter_null</a>
+						</li>
+						<li>Github <a href="https://github.com/justice2001" target="_blank">justice2001</a>
+							BiliBili <a href="https://space.bilibili.com/30734570" target="_blank">正義desu-null</a>
+						</li>
 					</ul>
 
+					<!--翻译-->
 					<h3>{{$t("about.translate")}}</h3>
 					<ul>
 						<li>BiliBili <a href="https://space.bilibili.com/396322336" target="_blank">リイン-シュバルツァ</a></li>
 						<li>BiliBili </li>
+					</ul>
+
+					<h3>{{$t("about.voice")}}</h3>
+					<ul>
+						<li>BiliBili <a href="https://space.bilibili.com/32868931" target="_blank">Colter_null</a></li>
 					</ul>
 
 					<h3>{{$t("about.material")}}</h3>

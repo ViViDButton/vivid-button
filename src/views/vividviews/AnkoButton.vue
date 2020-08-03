@@ -22,7 +22,6 @@
 				twitter: {name: "二和餅あんこ🍡ViViD所属",id: "ANKOchan_01"}
 			}
 		})
-
 	}
 </script>
 

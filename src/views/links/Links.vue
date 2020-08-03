@@ -8,36 +8,42 @@
 
 					<a href="https://fubuki.moe" @click="loadAudio('fbk-voice')" target="_blank">
 						<vivid-btn color="#64b5f6"
+						           :show-progress="false"
 						           :bg-img="this.$store.state.serverUrl+'img/others/fbk-btn-bg.png!web'">
 							<span  style="font-size: 21px; color: #f1f1f1">{{$t("links.fbkbutton")}}</span>
 						</vivid-btn>
 					</a>
 					<a href="https://peko.top" @click="loadAudio('peko-voice')" target="_blank">
 						<vivid-btn color="#919edf"
+						           :show-progress="false"
 						           :bg-img="this.$store.state.serverUrl+'img/others/peko-btn-bg.png!web'">
 							<span  style="font-size: 21px; color: #f1f1f1">{{$t("links.pekobutton")}}</span>
 						</vivid-btn>
 					</a>
 					<a href="https://sepeach.com" @click="loadAudio('echo-voice')" target="_blank">
 						<vivid-btn color="#f06292"
+						           :show-progress="false"
 						           :bg-img="this.$store.state.serverUrl+'img/others/echo-btn-bg.png!web'">
 							<span  style="font-size: 21px; color: #f1f1f1">{{$t("links.peachbutton")}}</span>
 						</vivid-btn>
 					</a>
 					<a href="http://shirayuri-lilly.chu.jp" @click="loadAudio('lily-voice')" target="_blank">
 						<vivid-btn color="#f9f8fd"
+						           :show-progress="false"
 						           :bg-img="this.$store.state.serverUrl+'img/others/lily-btn-bg.png!web'">
 							<span  style="font-size: 21px; color: #242424">{{$t("links.lilybutton")}}</span>
 						</vivid-btn>
 					</a>
 					<a href="https://vtbbtn.org" @click="loadAudio('mio-voice')" target="_blank">
 						<vivid-btn color="#64b5f6"
+						           :show-progress="false"
 						           :bg-img="this.$store.state.serverUrl+'img/others/vvbc-btn-bg.png'">
 							<span  style="font-size: 21px; color: #f1f1f1">{{$t("links.vtbbutton")}}</span>
 						</vivid-btn>
 					</a>
 					<a href="https://vtbmusic.com" target="_blank">
 						<vivid-btn color="#11dbfe"
+						           :show-progress="false"
 						           :bg-img="this.$store.state.serverUrl+'img/others/vm-btn-bg.png'">
 							<span  style="font-size: 21px; color: #f1f1f1">{{$t("links.vtbMusic")}}</span>
 						</vivid-btn>
@@ -51,7 +57,7 @@
 		</v-container>
 
 		<!--页脚-->
-		<v-footer padless style="position: absolute; bottom: 0; width: 100%">
+		<v-footer padless style="position: absolute; bottom: 80px; width: 100%">
 			<v-col class="text-left" cols="12" style="padding-bottom: 5px">
 				&copy;{{ new Date().getFullYear() }} — <strong><a href="https://github.com/Colter23" target="_blank">Colter</a> & <a href="https://github.com/justice2001" target="_blank">Zhengyi</a></strong><v-icon style="margin: -2px 0 0 3px">mdi-github</v-icon>
 			</v-col>
