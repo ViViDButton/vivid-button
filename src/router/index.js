@@ -77,6 +77,14 @@ Vue.use(VueRouter)
       title: 'About'
     }
   },
+  {
+    path: '/hide',
+    name: 'Hide',
+    component: () => import('../views/vividviews/Hide.vue'),
+    meta:{
+      title: 'Hide'
+    }
+  },
 
 ]
 

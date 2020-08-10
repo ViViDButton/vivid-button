@@ -153,7 +153,7 @@
         position: relative;
         z-index: 0;
         font-size: 20px;
-        font-family: "Microsoft YaHei UI", "Microsoft YaHei",serif;
+        /*font-family: "Microsoft YaHei UI", "Microsoft YaHei",serif;*/
         color: var(--text-color);
         line-height: 20px;
         font-weight: 700;

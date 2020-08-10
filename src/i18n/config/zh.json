@@ -1,13 +1,15 @@
 {
   "app": {
-    "bellbutton": "Bell按钮",
-    "memorybutton": "Memory按钮",
-    "lilybutton": "Lily按钮",
-    "elenabutton": "Elena按钮",
-    "ankobutton": "Anko按钮",
-    "lockbutton": "Lock按钮",
+    "bell": "Bell按钮",
+    "memory": "Memory按钮",
+    "lily": "Lily按钮",
+    "elena": "Elena按钮",
+    "anko": "Anko按钮",
+    "lock": "Lock按钮",
     "links": "友情链接",
     "about": "关于",
+    "hide": "隐藏页面",
+    "change_volume": "调整音量",
     "switch_dark_mode": "夜间模式",
     "switch_language": "切换语言"
   },

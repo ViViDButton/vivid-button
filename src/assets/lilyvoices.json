@@ -1,643 +1,596 @@
 {
-  "last_update": "0721",
+  "last_update": "不详",
   "groups": [
     {
-      "name": "傻笑",
+      "name": "笑",
       "translation": {
-        "zh": "傻笑",
-        "ja": "馬鹿笑い",
-        "en": ""
+        "zh": "笑",
+        "ja": "笑い",
+        "en": "Laugh"
       },
+      "all_click_count": 0,
       "voicelist": [
         {
-          "update": "0721",
-          "name": "傻笑01",
-          "path": "傻笑01.mp3",
+          "data_id": 204,
+          "name": "笑声",
+          "path": "https://img.colter.top/upload/voice/lily/笑声.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "傻笑01",
-            "ja": "馬鹿笑い01",
-            "en": ""
-          }
+            "zh": "笑声",
+            "ja": "笑い声",
+            "en": "Laughter"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "傻笑02",
-          "path": "傻笑02.mp3",
+          "data_id": 213,
+          "name": "傻笑",
+          "path": "https://img.colter.top/upload/voice/lily/傻笑.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "傻笑02",
-            "ja": "馬鹿笑い02",
-            "en": ""
-          }
+            "zh": "傻笑",
+            "ja": "馬鹿笑い",
+            "en": "Smirk"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "傻笑03",
-          "path": "傻笑03.mp3",
+          "data_id": 219,
+          "name": "擦盘子",
+          "path": "https://img.colter.top/upload/voice/lily/擦盘子.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "傻笑03",
-            "ja": "馬鹿笑い03",
-            "en": ""
-          }
-        },
-        {
-          "update": "0710",
-          "name": "傻笑04",
-          "path": "傻笑04.mp3",
-          "translation": {
-            "zh": "傻笑04",
-            "ja": "馬鹿笑い04",
-            "en": ""
-          }
-        },
-        {
-          "update": "0710",
-          "name": "傻笑05",
-          "path": "傻笑05.mp3",
-          "translation": {
-            "zh": "傻笑05",
-            "ja": "馬鹿笑い05",
-            "en": ""
-          }
-        },
-        {
-          "update": "0710",
-          "name": "傻笑06",
-          "path": "傻笑06.mp3",
-          "translation": {
-            "zh": "傻笑06",
-            "ja": "馬鹿笑い06",
-            "en": ""
-          }
+            "zh": "擦盘子",
+            "ja": "お皿を拭く",
+            "en": "Wipe the dishes"
+          },
+          "tag": "new"
         }
       ]
     },
     {
-      "name": "惨叫",
+      "name": "草",
       "translation": {
-        "zh": "惨叫",
-        "ja": "悲鳴",
-        "en": ""
+        "zh": "草",
+        "ja": "草",
+        "en": "lol"
       },
+      "all_click_count": 0,
       "voicelist": [
         {
-          "update": "0710",
-          "name": "惨叫01",
-          "path": "惨叫01.mp3",
+          "data_id": 198,
+          "name": "GKD",
+          "path": "https://img.colter.top/upload/voice/lily/GKD.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "惨叫01",
-            "ja": "悲鳴01",
-            "en": ""
-          }
+            "zh": "GKD",
+            "ja": "GKD",
+            "en": "GKD"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "惨叫02",
-          "path": "惨叫02.mp3",
+          "data_id": 200,
+          "name": "老板大气",
+          "path": "https://img.colter.top/upload/voice/lily/老板大气.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "惨叫02",
-            "ja": "悲鳴02",
-            "en": ""
-          }
+            "zh": "老板大气",
+            "ja": "ボスは大きいです",
+            "en": "Boss atmosphere"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "惨叫03",
-          "path": "惨叫03.mp3",
+          "data_id": 201,
+          "name": "登录 草",
+          "path": "https://img.colter.top/upload/voice/lily/登录 草.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "惨叫03",
-            "ja": "悲鳴03",
-            "en": ""
-          }
+            "zh": "登录 草",
+            "ja": "ログイン 草",
+            "en": "follow"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "惨叫04",
-          "path": "惨叫04.mp3",
+          "data_id": 202,
+          "name": "老板大气~",
+          "path": "https://img.colter.top/upload/voice/lily/老板大气~.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "惨叫04",
-            "ja": "悲鳴04",
-            "en": ""
-          }
+            "zh": "老板大气~",
+            "ja": "ボスは大きいです~",
+            "en": "Boss atmosphere~"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "惨叫05",
-          "path": "惨叫05.mp3",
+          "data_id": 203,
+          "name": "你好骚",
+          "path": "https://img.colter.top/upload/voice/lily/你好骚.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "惨叫05",
-            "ja": "悲鳴05",
-            "en": ""
-          }
+            "zh": "你好骚",
+            "ja": "君hだな",
+            "en": "You h"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "惨叫06",
-          "path": "惨叫06.mp3",
+          "data_id": 208,
+          "name": "白百合的山雀大大大",
+          "path": "https://img.colter.top/upload/voice/lily/白百合的山雀大大大.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "惨叫06",
-            "ja": "悲鳴06",
-            "en": ""
-          }
-        },
-        {
-          "update": "0710",
-          "name": "惨叫07",
-          "path": "惨叫07.mp3",
-          "translation": {
-            "zh": "惨叫07",
-            "ja": "悲鳴07",
-            "en": ""
-          }
-        },
-        {
-          "update": "0710",
-          "name": "惨叫08",
-          "path": "惨叫08.mp3",
-          "translation": {
-            "zh": "惨叫08",
-            "ja": "悲鳴08",
-            "en": ""
-          }
-        },
-        {
-          "update": "0710",
-          "name": "惨叫09",
-          "path": "惨叫09.mp3",
-          "translation": {
-            "zh": "惨叫09",
-            "ja": "悲鳴09",
-            "en": ""
-          }
-        },
-        {
-          "update": "0710",
-          "name": "惨叫10",
-          "path": "惨叫10.mp3",
-          "translation": {
-            "zh": "惨叫10",
-            "ja": "悲鳴10",
-            "en": ""
-          }
+            "zh": "白百合的山雀大大大",
+            "ja": "リリーのおっぱいはどんどん大きい",
+            "en": "Lily's tits are big and big"
+          },
+          "tag": "new"
         }
       ]
     },
     {
-      "name": "loli 结婚 prpr",
+      "name": "清楚天使",
       "translation": {
-        "zh": "loli 结婚 prpr",
-        "ja": "loli 結婚 prpr",
-        "en": ""
+        "zh": "清楚天使",
+        "ja": "クリアエンジェル",
+        "en": "Clear angel"
       },
+      "all_click_count": 0,
       "voicelist": [
         {
-          "update": "0710",
-          "name": "no loli",
-          "path": "no loli.mp3",
+          "data_id": 199,
+          "name": "笨蛋",
+          "path": "https://img.colter.top/upload/voice/lily/笨蛋.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "no loli",
-            "ja": "no loli",
-            "en": ""
-          }
-        },
-        {
-          "update": "0710",
-          "name": "快乐的loli~",
-          "path": "快乐的loli~.mp3",
-          "translation": {
-            "zh": "快乐的loli~",
-            "ja": "快乐的loli~",
-            "en": ""
-          }
-        },
-        {
-          "update": "0710",
-          "name": "no 结婚",
-          "path": "no 结婚.mp3",
-          "translation": {
-            "zh": "no 结婚",
-            "ja": "no 結婚",
-            "en": ""
-          }
-        },
-        {
-          "update": "0710",
-          "name": "不结婚",
-          "path": "不结婚.mp3",
-          "translation": {
-            "zh": "不结婚",
-            "ja": "結婚しない",
-            "en": ""
-          }
-        },
-        {
-          "update": "0710",
-          "name": "no prpr",
-          "path": "no prpr.mp3",
-          "translation": {
-            "zh": "no prpr",
-            "ja": "no prpr",
-            "en": ""
-          }
-        },
-        {
-          "update": "0710",
-          "name": "pr * 9",
-          "path": "pr x9.mp3",
-          "translation": {
-            "zh": "pr * 9",
-            "ja": "pr * 9",
-            "en": ""
-          }
-        },
-        {
-          "update": "0710",
-          "name": "prpr会变臭",
-          "path": "prpr会变臭.mp3",
-          "translation": {
-            "zh": "prpr会变臭",
-            "ja": "prprは臭くなる",
-            "en": ""
-          }
-        }
-      ]
-    },
-    {
-      "name": "钉宫三连",
-      "translation": {
-        "zh": "钉宫三连",
-        "ja": "釘宮三連",
-        "en": ""
-      },
-      "voicelist": [
-        {
-          "update": "0710",
-          "name": "笨蛋三连",
-          "path": "笨蛋三连.mp3",
-          "translation": {
-            "zh": "笨蛋三连",
+            "zh": "笨蛋",
             "ja": "馬鹿",
-            "en": ""
-          }
+            "en": "BAKA"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "笨蛋三连2",
-          "path": "笨蛋三连2.mp3",
+          "data_id": 205,
+          "name": "辛苦了",
+          "path": "https://img.colter.top/upload/voice/lily/辛苦了.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "笨蛋三连2",
-            "ja": "馬鹿2",
-            "en": ""
-          }
+            "zh": "辛苦了",
+            "ja": "お疲れ様です",
+            "en": "Worked hard"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "讨厌",
-          "path": "讨厌.mp3",
+          "data_id": 212,
+          "name": "我是清楚天使",
+          "path": "https://img.colter.top/upload/voice/lily/我是清楚天使.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "讨厌",
-            "ja": "嫌い",
-            "en": ""
-          }
+            "zh": "我是清楚天使",
+            "ja": "私ははっきりした天使です",
+            "en": "I am a clear angel"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "无路赛",
-          "path": "无路赛.mp3",
+          "data_id": 225,
+          "name": "要被paryi欺负了 害怕",
+          "path": "https://img.colter.top/upload/voice/lily/要被paryi欺负了 害怕.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "无路赛",
-            "ja": "うるさい",
-            "en": ""
-          }
+            "zh": "要被paryi欺负了 害怕",
+            "ja": "パリイにいじめられそうで怖いです",
+            "en": "I'm afraid of being bullied by paryi"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "笨蛋 变态 啰嗦",
-          "path": "笨蛋 变态 啰嗦.mp3",
+          "data_id": 229,
+          "name": "paryi kimo",
+          "path": "https://img.colter.top/upload/voice/lily/paryi kimo.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "笨蛋 变态 啰嗦",
-            "ja": "馬鹿 変態 うるさい",
-            "en": ""
-          }
+            "zh": "paryi kimo",
+            "ja": "paryi kimo",
+            "en": "paryi kimo"
+          },
+          "tag": "new"
         }
       ]
     },
     {
-      "name": "梗",
+      "name": "小百合",
       "translation": {
-        "zh": "梗",
-        "ja": "ネタ",
-        "en": ""
+        "zh": "小百合",
+        "ja": "さゆり",
+        "en": "Sayuri"
       },
+      "all_click_count": 0,
       "voicelist": [
         {
-          "update": "0710",
-          "name": "bell我不做人了",
-          "path": "bell我不做人了.mp3",
+          "data_id": 206,
+          "name": "poma",
+          "path": "https://img.colter.top/upload/voice/lily/poma.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "bell我不做人了",
-            "ja": "ベル俺は人間を辞めた",
-            "en": ""
-          }
+            "zh": "poma",
+            "ja": "poma",
+            "en": "poma"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "ko~ko~da~yo~",
-          "path": "ko~ko~da~yo~.mp3",
+          "data_id": 210,
+          "name": "咪啪",
+          "path": "https://img.colter.top/upload/voice/lily/咪啪.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "ko~ko~da~yo~",
-            "ja": "こ～こ～だ～よ～",
-            "en": ""
-          }
+            "zh": "咪啪",
+            "ja": "ミパ",
+            "en": "Mi Pa"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "ko~ko~da~yo~2",
-          "path": "ko~ko~da~yo~2.mp3",
+          "data_id": 211,
+          "name": "可以更多的喜欢我吗",
+          "path": "https://img.colter.top/upload/voice/lily/可以更多的喜欢我吗.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "ko~ko~da~yo~2",
-            "ja": "こ～こ～だ～よ～2",
-            "en": ""
-          }
+            "zh": "可以更多的喜欢我吗",
+            "ja": "もっと私を好きになってもいいですか",
+            "en": "Can you like me more"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "你讨厌 小拳拳砸你胸口",
-          "path": "你讨厌 小拳拳砸你胸口.mp3",
+          "data_id": 215,
+          "name": "大家从今天请叫我小百合",
+          "path": "https://img.colter.top/upload/voice/lily/大家从今天请叫我小百合.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "你讨厌 小拳拳砸你胸口",
-            "ja": "あなた嫌い、パンチであなたの胸を叩く",
-            "en": ""
-          }
+            "zh": "大家从今天请叫我小百合",
+            "ja": "皆さん、今日から小百合と呼んでください",
+            "en": "Please call me Sayuri from today"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 216,
+          "name": "不要哭了 打起精神",
+          "path": "https://img.colter.top/upload/voice/lily/不要哭了 打起精神.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "不要哭了 打起精神",
+            "ja": "泣かないで元気で",
+            "en": "Stop crying and cheer up"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 217,
+          "name": "真的要和我结婚吗",
+          "path": "https://img.colter.top/upload/voice/lily/真的要和我结婚吗.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "真的要和我结婚吗",
+            "ja": "本当に私と結婚しますか",
+            "en": "Do you really want to marry me"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 223,
+          "name": "emmm",
+          "path": "https://img.colter.top/upload/voice/lily/emmm.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "emmm",
+            "ja": "emmm",
+            "en": "emmm"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 226,
+          "name": "emmmmmmmm",
+          "path": "https://img.colter.top/upload/voice/lily/emmmmmmmm.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "emmmmmmmm",
+            "ja": "emmmmmmmm",
+            "en": "emmmmmmmm"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 232,
+          "name": "emmmmmm",
+          "path": "https://img.colter.top/upload/voice/lily/emmmmmm.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "emmmmmm",
+            "ja": "emmmmmm",
+            "en": "emmmmmm"
+          },
+          "tag": "new"
         }
       ]
     },
     {
-      "name": "BellRap",
+      "name": "ASMR",
       "translation": {
-        "zh": "BellRap",
-        "ja": "ベルラップ",
-        "en": ""
+        "zh": "ASMR",
+        "ja": "ASMR",
+        "en": "ASMR"
       },
+      "all_click_count": 0,
       "voicelist": [
         {
-          "update": "0710",
-          "name": "我爱你 爱着你 就像老鼠爱大米~",
-          "path": "我爱你 爱着你 就像老鼠爱大米~.mp3",
+          "data_id": 231,
+          "name": "prpr ASMR",
+          "path": "https://img.colter.top/upload/voice/lily/prpr ASMR.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "我爱你 爱着你 就像老鼠爱大米~",
-            "ja": "愛してる、愛してる、まるでネズミがコメを愛するように",
-            "en": ""
-          }
+            "zh": "prpr ASMR",
+            "ja": "prpr ASMR",
+            "en": "prpr ASMR"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "bell奶茶",
-          "path": "bell奶茶.mp3",
+          "data_id": 240,
+          "name": "1-100 ASMR",
+          "path": "https://img.colter.top/upload/voice/lily/1-100 ASMR.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "bell奶茶",
-            "ja": "bellミルクティー",
-            "en": ""
-          }
+            "zh": "1-100 ASMR",
+            "ja": "1-100 ASMR",
+            "en": "1-100 ASMR"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "Rap",
-          "path": "Rap.mp3",
+          "data_id": 242,
+          "name": "ASMR",
+          "path": "https://img.colter.top/upload/voice/lily/ASMR.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "Rap",
-            "ja": "Rap",
-            "en": ""
-          }
+            "zh": "ASMR",
+            "ja": "ASMR",
+            "en": "ASMR"
+          },
+          "tag": "new"
         }
       ]
     },
     {
-      "name": "日常",
+      "name": "其他",
       "translation": {
-        "zh": "日常",
-        "ja": "日常",
-        "en": ""
+        "zh": "其他",
+        "ja": "その他の",
+        "en": "Other"
       },
+      "all_click_count": 0,
       "voicelist": [
         {
-          "update": "0710",
-          "name": "114514",
-          "path": "114514.mp3",
+          "data_id": 207,
+          "name": "3Q哒呦~",
+          "path": "https://img.colter.top/upload/voice/lily/3Q哒呦~.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "114514",
-            "ja": "114514",
-            "en": ""
-          }
+            "zh": "3Q哒呦~",
+            "ja": "どうもありがとう",
+            "en": "Thank you"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "ASMR？",
-          "path": "ASMR？.mp3",
+          "data_id": 209,
+          "name": "prpr 喵喵",
+          "path": "https://img.colter.top/upload/voice/lily/prpr 喵喵.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "ASMR？",
-            "ja": "ASMR？",
-            "en": ""
-          }
+            "zh": "prpr 喵喵",
+            "ja": "prpr nyanya",
+            "en": "prpr nyanya"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "警官救我",
-          "path": "警官救我.mp3",
+          "data_id": 220,
+          "name": "我很元气~~~~~~",
+          "path": "https://img.colter.top/upload/voice/lily/我很元气~~~~~~.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "警官救我",
-            "ja": "フォローしてください",
-            "en": ""
-          }
+            "zh": "我很元气~~~~~~",
+            "ja": "私はとても元気です~~~~~",
+            "en": "I'm very energetic~~~~~"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "中二病猫",
-          "path": "中二病猫.mp3",
+          "data_id": 221,
+          "name": "啊~~~~~",
+          "path": "https://img.colter.top/upload/voice/lily/啊~~~~~.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "中二病猫",
-            "ja": "中二病猫",
-            "en": ""
-          }
+            "zh": "啊~~~~~",
+            "ja": "あ~~~~~",
+            "en": "Ah ~~~~~"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "打招呼",
-          "path": "打招呼.mp3",
+          "data_id": 222,
+          "name": "冲~~~~~",
+          "path": "https://img.colter.top/upload/voice/lily/冲~~~~~.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "打招呼",
-            "ja": "挨拶",
-            "en": ""
-          }
+            "zh": "冲~~~~~",
+            "ja": "iku~~~~~",
+            "en": "iku~~~~~"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "我不是宠物，你是宠物",
-          "path": "我不是宠物，你是宠物.mp3",
+          "data_id": 224,
+          "name": "白百合whipping POWER",
+          "path": "https://img.colter.top/upload/voice/lily/白百合whipping POWER.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "我不是宠物，你是宠物",
-            "ja": "私はペットじゃない、あなたはペット",
-            "en": ""
-          }
+            "zh": "白百合whipping POWER",
+            "ja": "白百合whipping POWER",
+            "en": "白百合whipping POWER"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "DD是bell的宠物",
-          "path": "DD是bell的宠物.mp3",
+          "data_id": 227,
+          "name": "危 DD 危",
+          "path": "https://img.colter.top/upload/voice/lily/危 DD 危.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "DD是bell的宠物",
-            "ja": "DDはベルのペット",
-            "en": ""
-          }
+            "zh": "危 DD 危",
+            "ja": "危 DD 危",
+            "en": "DD Danger"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "爱的魔力",
-          "path": "爱的魔力.mp3",
+          "data_id": 228,
+          "name": "我什么都没有吃哦",
+          "path": "https://img.colter.top/upload/voice/lily/我什么都没有吃哦.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "爱的魔力",
-            "ja": "爱の魔法",
-            "en": ""
-          }
+            "zh": "我什么都没有吃哦",
+            "ja": "何も食べていません",
+            "en": "I didn't eat anything"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "不要摸我!",
-          "path": "不要摸我！.mp3",
+          "data_id": 230,
+          "name": "把lily和bell的名字搞混了可不行哦",
+          "path": "https://img.colter.top/upload/voice/lily/把lily和bell的名字搞混了可不行哦.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "不要摸我!",
-            "ja": "触らないで",
-            "en": ""
-          }
+            "zh": "把lily和bell的名字搞混了可不行哦",
+            "ja": "リリーとベルの名前を混ぜたらだめですよ",
+            "en": "You can't confuse lily with bell"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "宠物",
-          "path": "宠物.mp3",
+          "data_id": 235,
+          "name": "团长！你在干什么呀团长！",
+          "path": "https://img.colter.top/upload/voice/lily/团长！你在干什么呀团长！.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "宠物",
-            "ja": "ペット",
-            "en": ""
-          }
+            "zh": "团长！你在干什么呀团长！",
+            "ja": "団長！何をしていますか？団長！",
+            "en": "Master! what are you doing? Master!"
+          },
+          "tag": "new"
+        }
+      ]
+    },
+    {
+      "name": "歌",
+      "translation": {
+        "zh": "歌",
+        "ja": "歌",
+        "en": "Song"
+      },
+      "all_click_count": 0,
+      "voicelist": [
+        {
+          "data_id": 233,
+          "name": "ダダダダ★天使",
+          "path": "https://img.colter.top/upload/voice/lily/ダダダダ★天使.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "ダダダダ★天使",
+            "ja": "ダダダダ★天使",
+            "en": "ダダダダ★天使"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "干杯",
-          "path": "干杯.mp3",
+          "data_id": 234,
+          "name": "月之华尔兹",
+          "path": "https://img.colter.top/upload/voice/lily/月之华尔兹.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "干杯",
-            "ja": "乾杯",
-            "en": ""
-          }
+            "zh": "月之华尔兹",
+            "ja": "月之华尔兹",
+            "en": "月之华尔兹"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "哥哥",
-          "path": "哥哥.mp3",
+          "data_id": 236,
+          "name": "クロイウタ",
+          "path": "https://img.colter.top/upload/voice/lily/クロイウタ.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "哥哥",
-            "ja": "お兄ちゃん",
-            "en": ""
-          }
+            "zh": "クロイウタ",
+            "ja": "クロイウタ",
+            "en": "クロイウタ"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "坏坏客人们",
-          "path": "坏坏客人们.mp3",
+          "data_id": 237,
+          "name": "PPAP",
+          "path": "https://img.colter.top/upload/voice/lily/PPAP.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "坏坏客人们",
-            "ja": "お客さん悪い",
-            "en": ""
-          }
+            "zh": "PPAP",
+            "ja": "PPAP",
+            "en": "PPAP"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "开什么玩笑",
-          "path": "开什么玩笑.mp3",
+          "data_id": 238,
+          "name": "かまってちょーだい",
+          "path": "https://img.colter.top/upload/voice/lily/かまってちょーだい.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "开什么玩笑",
-            "ja": "ふざけんな",
-            "en": ""
-          }
+            "zh": "かまってちょーだい",
+            "ja": "かまってちょーだい",
+            "en": "かまってちょーだい"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "老婆",
-          "path": "老婆.mp3",
+          "data_id": 239,
+          "name": "忘れじの言の葉",
+          "path": "https://img.colter.top/upload/voice/lily/忘れじの言の葉.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "老婆",
-            "ja": "お嫁さん",
-            "en": ""
-          }
+            "zh": "忘れじの言の葉",
+            "ja": "忘れじの言の葉",
+            "en": "忘れじの言の葉"
+          },
+          "tag": "new"
         },
         {
-          "update": "0710",
-          "name": "摸头光线",
-          "path": "摸头光线.mp3",
+          "data_id": 241,
+          "name": "てんしであれたら",
+          "path": "https://img.colter.top/upload/voice/lily/てんしであれたら.mp3",
+          "click_count": 0,
           "translation": {
-            "zh": "摸头光线",
-            "ja": "なでなでビーム",
-            "en": ""
-          }
-        },
-        {
-          "update": "0710",
-          "name": "无所谓",
-          "path": "无所谓.mp3",
-          "translation": {
-            "zh": "无所谓",
-            "ja": "どうでもいい",
-            "en": ""
-          }
-        },
-        {
-          "update": "0710",
-          "name": "擤鼻涕",
-          "path": "擤鼻涕.mp3",
-          "translation": {
-            "zh": "擤鼻涕",
-            "ja": "はなみずをかむ",
-            "en": ""
-          }
-        },
-        {
-          "update": "0710",
-          "name": "呦咻",
-          "path": "呦咻.mp3",
-          "translation": {
-            "zh": "呦咻",
-            "ja": "ヨイショと",
-            "en": ""
-          }
-        },
-        {
-          "update": "0710",
-          "name": "最喜欢了",
-          "path": "最喜欢了.mp3",
-          "translation": {
-            "zh": "最喜欢了",
-            "ja": "大好きです",
-            "en": ""
-          }
-        },
-        {
-          "update": "0710",
-          "name": "客人们H",
-          "path": "客人们H.mp3",
-          "translation": {
-            "zh": "客人们H",
-            "ja": "お客さんエッチ",
-            "en": ""
-          }
-        },
-        {
-          "update": "0710",
-          "name": "有意思~",
-          "path": "有意思~.mp3",
-          "translation": {
-            "zh": "有意思~",
-            "ja": "おもしろい",
-            "en": ""
-          }
+            "zh": "てんしであれたら",
+            "ja": "てんしであれたら",
+            "en": "てんしであれたら"
+          },
+          "tag": "new"
         }
       ]
     }

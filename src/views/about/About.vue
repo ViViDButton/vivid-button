@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<v-container class="fill-height" style="padding: 12px" >
+		<v-container class="fill-height" style="padding: 12px 12px 80px 12px" >
 
 			<v-card style="width: 100%; margin: 8px auto;">
 				<v-card-title class="headline mb-1"
@@ -36,27 +36,23 @@
 					<!--翻译-->
 					<h3>{{$t("about.translate")}}</h3>
 					<ul>
-						<li>BiliBili <a href="https://space.bilibili.com/396322336" target="_blank">リイン-シュバルツァ</a></li>
-						<li>BiliBili </li>
+						<li><a href="https://space.bilibili.com/396322336" target="_blank">リイン-シュバルツァ</a></li>
 					</ul>
 
 					<h3>{{$t("about.voice")}}</h3>
 					<ul>
-						<li>BiliBili <a href="https://space.bilibili.com/32868931" target="_blank">Colter_null</a></li>
+						<li><a href="https://space.bilibili.com/32868931" target="_blank">Colter_null</a></li>
 					</ul>
 
 					<h3>{{$t("about.material")}}</h3>
 					<ul>
-						<li>BiliBili <a href="https://space.bilibili.com/32868931" target="_blank">Colter_null</a></li>
+						<li><a href="https://space.bilibili.com/32868931" target="_blank">Colter_null</a></li>
 					</ul>
 					<ul>
-						<li>BiliBili <a href="https://space.bilibili.com/431153994" target="_blank">NT-mare</a></li>
+						<li><a href="https://space.bilibili.com/13514116" target="_blank">月岚空</a></li>
 					</ul>
 					<ul>
-						<li>BiliBili <a href="https://space.bilibili.com/13514116" target="_blank">月岚空</a></li>
-					</ul>
-					<ul>
-						<li>BiliBili <a href="https://space.bilibili.com/290482706" target="_blank">冬中雪初</a></li>
+						<li><a href="https://space.bilibili.com/290482706" target="_blank">冬中雪初</a></li>
 					</ul>
 
 				</v-card-text>
@@ -76,7 +72,7 @@
 		</v-container>
 
 		<!--页脚-->
-		<v-footer padless >
+		<v-footer padless style="margin-top: -80px">
 			<v-col class="text-left" cols="12" style="padding-bottom: 5px">
 				&copy;{{ new Date().getFullYear() }} — <strong><a href="https://github.com/Colter23" target="_blank">Colter</a> & <a href="https://github.com/justice2001" target="_blank">Zhengyi</a></strong><v-icon style="margin: -2px 0 0 3px">mdi-github</v-icon>
 			</v-col>

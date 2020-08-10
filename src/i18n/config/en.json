@@ -1,13 +1,15 @@
 {
   "app": {
-    "bellbutton": "BellButton",
-    "memorybutton": "MemoryButton",
-    "lilybutton": "LilyButton",
-    "elenabutton": "ElenaButton",
-    "ankobutton": "AnkoButton",
-    "lockbutton": "LockButton",
+    "bell": "Bell Button",
+    "memory": "Memory Button",
+    "lily": "Lily Button",
+    "elena": "Elena Button",
+    "anko": "Anko Button",
+    "lock": "Lock Button",
     "links": "Links",
     "about": "About",
+    "hide": "Hide Page",
+    "change_volume": "Change Volume",
     "switch_dark_mode": "Switch Dark Mode",
     "switch_language": "Switch Language"
   },

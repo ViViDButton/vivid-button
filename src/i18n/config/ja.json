@@ -1,13 +1,15 @@
 {
   "app": {
-    "bellbutton": "Bellボタン",
-    "memorybutton": "Memoryボタン",
-    "lilybutton": "Lilyボタン",
-    "elenabutton": "Elenaボタン",
-    "ankobutton": "Ankoボタン",
-    "lockbutton": "Lockボタン",
+    "bell": "Bellボタン",
+    "memory": "Memoryボタン",
+    "lily": "Lilyボタン",
+    "elena": "Elenaボタン",
+    "anko": "Ankoボタン",
+    "lock": "Lockボタン",
     "links": "友情リンク",
     "about": "について",
+    "hide": "隐藏页面",
+    "change_volume": "音量を調整する",
     "switch_dark_mode": "ナイトモードスイッチ",
     "switch_language": "言語を切り替える"
   },

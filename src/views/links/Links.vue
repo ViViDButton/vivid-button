@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<v-container class="fill-height" style="padding: 12px" >
+		<v-container class="fill-height" style="padding: 12px 12px 80px 12px" >
 
 			<v-card style="width: 100%; margin: 8px auto;">
 				<v-card-title class="headline mb-1">{{$t("app.links")}}</v-card-title>
@@ -52,12 +52,12 @@
 				</v-card-text>
 			</v-card>
 
-			<audio :src="audioSrc" ref="audioPlayer" @ended="audioSrc=''" @loadedmetadata="playAudio" class="audio-player"/>
+<!--			<audio :src="audioSrc" ref="audioPlayer" @ended="audioSrc=''" @loadedmetadata="playAudio" class="audio-player"/>-->
 
 		</v-container>
-
+<!--    style="position: absolute; bottom: 80px; width: 100%"-->
 		<!--页脚-->
-		<v-footer padless style="position: absolute; bottom: 80px; width: 100%">
+		<v-footer padless style="margin-top: -80px">
 			<v-col class="text-left" cols="12" style="padding-bottom: 5px">
 				&copy;{{ new Date().getFullYear() }} — <strong><a href="https://github.com/Colter23" target="_blank">Colter</a> & <a href="https://github.com/justice2001" target="_blank">Zhengyi</a></strong><v-icon style="margin: -2px 0 0 3px">mdi-github</v-icon>
 			</v-col>
