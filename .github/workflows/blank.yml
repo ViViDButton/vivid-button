@@ -1,56 +1,56 @@
 
-name: CI
+# name: CI
 
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+# on:
+#   push:
+#     branches: [ master ]
+#   pull_request:
+#     branches: [ master ]
 
-jobs:
-  build:
+# jobs:
+#   build:
 
-    runs-on: ubuntu-latest
+#     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [ 12.x ]
+#     strategy:
+#       matrix:
+#         node-version: [ 12.x ]
 
-    steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
+#     steps:
+#     - uses: actions/checkout@v2
+#     - name: Use Node.js ${{ matrix.node-version }}
+#       uses: actions/setup-node@v1
+#       with:
+#         node-version: ${{ matrix.node-version }}
 
-    #- name: Build  # 构建并打包
-    - run: |
-        yarn
-        yarn build --if-present
-        cd dist
-        tar -zcvf dist.tar.gz *
+#     #- name: Build  # 构建并打包
+#     - run: |
+#         yarn
+#         yarn build --if-present
+#         cd dist
+#         tar -zcvf dist.tar.gz *
       
-    - name: Deploy file to server  # 部署文件到服务器
-      uses: wlixcc/SFTP-Deploy-Action@v1.0
-      with:
-        username:  '${{ secrets.SSH_USERNAME }}' # 登陆用户名
-        server: '${{ secrets.SSH_HOST }}' # 服务器地址
-        ssh_private_key: '${{ secrets.DEPLOY_KEY }}' # SSH密钥
-        local_path: './dist/dist.tar.gz' # 本地路径
-        remote_path: '/www/wwwroot/' # 服务器部署路径  
+#     - name: Deploy file to server  # 部署文件到服务器
+#       uses: wlixcc/SFTP-Deploy-Action@v1.0
+#       with:
+#         username:  '${{ secrets.SSH_USERNAME }}' # 登陆用户名
+#         server: '${{ secrets.SSH_HOST }}' # 服务器地址
+#         ssh_private_key: '${{ secrets.DEPLOY_KEY }}' # SSH密钥
+#         local_path: './dist/dist.tar.gz' # 本地路径
+#         remote_path: '/www/wwwroot/' # 服务器部署路径  
 
-    - name: Deploy project  # 服务器上部署项目
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.SSH_HOST }}  # 服务器地址
-        username: ${{ secrets.SSH_USERNAME }} # 登陆用户名
-        key: ${{ secrets.DEPLOY_KEY }} # SSH密钥
-        # 执行的脚本
-        script: |
-          cd /www/wwwroot
-          rm -rf vividbtn.top
-          mv dist.tar.gz vividbtn.top/
-          cd /www/wwwroot/vividbtn.top
-          tar -zxvf dist.tar.gz
-          rm -rf dist.tar.gz
+#     - name: Deploy project  # 服务器上部署项目
+#       uses: appleboy/ssh-action@master
+#       with:
+#         host: ${{ secrets.SSH_HOST }}  # 服务器地址
+#         username: ${{ secrets.SSH_USERNAME }} # 登陆用户名
+#         key: ${{ secrets.DEPLOY_KEY }} # SSH密钥
+#         # 执行的脚本
+#         script: |
+#           cd /www/wwwroot
+#           rm -rf vividbtn.top
+#           mv dist.tar.gz vividbtn.top/
+#           cd /www/wwwroot/vividbtn.top
+#           tar -zxvf dist.tar.gz
+#           rm -rf dist.tar.gz
           
