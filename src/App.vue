@@ -93,12 +93,13 @@
       <v-app-bar-nav-icon :color="navIconColor" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-toolbar-title style="width: 300px" class="ml-0 pl-4">
-        <img class="hidden-sm-and-down"
-             v-show="isShowLogo&&!$vuetify.theme.dark"
-             :src="logoPath"
-             :alt="current_page"
-             style="width: 200px; margin-left: -20px; margin-bottom: -10px"/>
-        <span v-show="!isShowLogo||$vuetify.theme.dark" :style="'color:'+navIconColor">{{current_page}}</span>
+<!--        <img class="hidden-sm-and-down"-->
+<!--             v-show="isShowLogo&&!$vuetify.theme.dark"-->
+<!--             :src="logoPath"-->
+<!--             :alt="current_page"-->
+<!--             style="width: 200px; margin-left: -20px; margin-bottom: -10px"/>-->
+<!--        <span v-show="!isShowLogo||$vuetify.theme.dark" :style="'color:'+navIconColor">{{current_page}}</span>-->
+        <span :style="'color:'+navIconColor">{{current_page}}</span>
       </v-toolbar-title>
 
       <v-spacer/>
