@@ -17,7 +17,7 @@
 				lightColor: '#f8b892',
 				darkColor: '#936137',
 				progressColor: '#fc9d5c',
-				bilibili: {name: "未入住",id: ""},
+				bilibili: {name: "未入驻",id: ""},
 				youtube: {name: "勇凪エレナ/Elena Yunagi",id: "UCKwATdrcjyzNv9c56PqJbWA"},
 				twitter: {name: "勇凪エレナ🍯@ビビフェス",id: "ELENA_YUNAGI"},
         info: {zh:"音量注意！ Elena素材补充中！ Elena素材征集中！",ja:"ボリュームに注意してください！ Elena素材追加中！ Elenaの素材を募集中！",en:"Note the volume! Elena material being added! Elena material call for submissions!"},

@@ -24,6 +24,7 @@ module.exports = {
     msTileColor: '#f48fb1',
     appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: 'black',
+    skipWaiting: true,
     iconPaths: {
       favicon32: './public/img/icons/favicon-32x32.png',
       favicon16: './public/img/icons/favicon-16x16.png',

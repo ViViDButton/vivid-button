@@ -17,7 +17,7 @@
 				lightColor: '#fb7a7a',
 				darkColor: '#8b3d3d',
 				progressColor: '#f74c4c',
-				bilibili: {name: "未入住",id: ""},
+				bilibili: {name: "未入驻",id: ""},
 				youtube: {name: "クロノロク",id: "UCAvgFoTWEisO5Pp7eYVDgEw"},
 				twitter: {name: "クロノロク@マオウ軍募集中⏳",id: "cHRONO_lock"},
         info: {zh:"音量注意！ Lock素材补充中！ Lock素材征集中！",ja:"ボリュームに注意してください！ Lock素材追加中！ Lockの素材を募集中！",en:"Note the volume! Lock material being added! Lock material call for submissions!"},

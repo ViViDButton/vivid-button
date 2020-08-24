@@ -18,7 +18,7 @@
 				lightColor: '#a1b9e1',
 				darkColor: '#496f91',
         progressColor: '#86b2f5',
-				bilibili: {name: "未入住",id: ""},
+				bilibili: {name: "未入驻",id: ""},
 				youtube: {name: "二和餅あんこ",id: "UCBKxF1PHQtT78ypcVYmBtBA"},
 				twitter: {name: "二和餅あんこ🍡ViViD所属",id: "ANKOchan_01"},
         info: {zh:"音量注意！ Anko素材补充中！ Anko素材征集中！",ja:"ボリュームに注意してください！ Anko素材追加中！ Ankoの素材を募集中！",en:"Note the volume! Anko material being added! Anko material call for submissions!"},
