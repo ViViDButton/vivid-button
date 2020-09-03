@@ -20,7 +20,7 @@
             "ja": "笑い01",
             "en": "Laugh01"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 249,
@@ -32,7 +32,7 @@
             "ja": "笑い02",
             "en": "Laugh 02"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 252,
@@ -44,7 +44,7 @@
             "ja": "笑い03",
             "en": "Laugh 03"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 254,
@@ -56,7 +56,7 @@
             "ja": "笑い04",
             "en": "Laugh 04"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 259,
@@ -68,7 +68,7 @@
             "ja": "お皿を拭く",
             "en": "Wipe the dishes"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 260,
@@ -80,7 +80,7 @@
             "ja": "ははははは",
             "en": "Hahahahaha"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 261,
@@ -92,7 +92,7 @@
             "ja": "ははは",
             "en": "Hahaha"
           },
-          "tag": "new"
+          "tag": ""
         }
       ]
     },
@@ -115,7 +115,7 @@
             "ja": "駄目だ",
             "en": "No!"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 250,
@@ -127,7 +127,7 @@
             "ja": "あ 危ない",
             "en": "Ah So dangerous"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 253,
@@ -139,7 +139,7 @@
             "ja": "あ 馬鹿",
             "en": "Ah BAKA"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 257,
@@ -151,7 +151,7 @@
             "ja": "叫び声",
             "en": "Call"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 262,
@@ -163,7 +163,7 @@
             "ja": "あ~",
             "en": "ah~"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 264,
@@ -175,7 +175,7 @@
             "ja": "咕咕咕",
             "en": "Goo Goo Goo"
           },
-          "tag": "new"
+          "tag": ""
         }
       ]
     },
@@ -198,7 +198,7 @@
             "ja": "オイラー",
             "en": "Euler"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 246,
@@ -210,7 +210,7 @@
             "ja": "うんはぁ",
             "en": "Huh"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 251,
@@ -222,7 +222,7 @@
             "ja": "よひゅうっと",
             "en": "Yo Yi Xui"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 256,
@@ -234,7 +234,7 @@
             "ja": "ポッチポッチ",
             "en": "Poch Poch"
           },
-          "tag": "new"
+          "tag": ""
         }
       ]
     },
@@ -257,7 +257,7 @@
             "ja": "かわいい",
             "en": "Lovely"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 245,
@@ -269,7 +269,7 @@
             "ja": "ぽっちと",
             "en": "Poppy"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 248,
@@ -281,7 +281,7 @@
             "ja": "H",
             "en": "H"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 258,
@@ -293,7 +293,7 @@
             "ja": "こんにちは",
             "en": "Hello everyone"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 263,
@@ -305,7 +305,7 @@
             "ja": "ごちそうさまでした",
             "en": "Thanks for treatment"
           },
-          "tag": "new"
+          "tag": ""
         }
       ]
     },
@@ -328,7 +328,7 @@
             "ja": "Rain Stop,Good Bye",
             "en": "Rain Stop,Good Bye"
           },
-          "tag": "new"
+          "tag": ""
         }
       ]
     }

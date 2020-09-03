@@ -20,7 +20,7 @@
             "ja": "ねぇ、ドキドキする?",
             "en": "Is your heart beating"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 134,
@@ -32,7 +32,7 @@
             "ja": "兄はあなたが大好きです",
             "en": "Brother likes you best"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 298,
@@ -68,7 +68,7 @@
             "ja": "猫告白02",
             "en": "Cat confession 02"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 162,
@@ -80,7 +80,7 @@
             "ja": "バレンタインデーの告白",
             "en": "Valentine's Day Confession"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 282,
@@ -151,7 +151,7 @@
             "ja": "怒りますよ",
             "en": "I'm going to get angry"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 141,
@@ -163,7 +163,7 @@
             "ja": "イチゴが食べたいです。お父さん",
             "en": "I want strawberries, Dad~"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 152,
@@ -175,7 +175,7 @@
             "ja": "私の耳をくわえて噛んではいけません",
             "en": "You can't chew meow with my ears"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 153,
@@ -187,7 +187,7 @@
             "ja": "お兄さん、お姉さん、ベルさんを許してください。話を聞きます。",
             "en": "Big brother, big sister, please forgive bell meow. I'll be obedient"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 166,
@@ -199,7 +199,7 @@
             "ja": "お客さんたちにいじめられました(´；ω；`)",
             "en": "Being bullied by the guests (´；ω；`)"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 331,
@@ -234,7 +234,7 @@
             "ja": "nya~nya~",
             "en": "nya~nya~"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 280,
@@ -293,7 +293,7 @@
             "ja": "馬鹿馬鹿",
             "en": "Baka Baka"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 119,
@@ -305,7 +305,7 @@
             "ja": "かわいそうですね",
             "en": "What a pity"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 128,
@@ -317,7 +317,7 @@
             "ja": "耳かき？私に突き刺されないように気をつけてください",
             "en": "Ears? Be careful I pierce you"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 140,
@@ -329,7 +329,7 @@
             "ja": "電話を切りたくないです",
             "en": "Don't want to hang up"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 159,
@@ -341,7 +341,7 @@
             "ja": "もっと泣いて",
             "en": "Cry a little more"
           },
-          "tag": "new"
+          "tag": ""
         }
       ]
     },
@@ -364,7 +364,7 @@
             "ja": "大笑い",
             "en": "Laugh"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 352,
@@ -388,7 +388,7 @@
             "ja": "馬鹿笑い",
             "en": "Smirk"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 366,
@@ -507,7 +507,7 @@
             "ja": "叫び声",
             "en": "Call"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 314,
@@ -662,7 +662,7 @@
             "ja": "エレナが大好きです",
             "en": "Favorite Elena meow"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 131,
@@ -674,7 +674,7 @@
             "ja": "lock lock 金を貸喵",
             "en": "Hey lock, lend money to my old lady"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 142,
@@ -686,7 +686,7 @@
             "ja": "memory喵 bellは寂しいです。一緒に寝ましょう",
             "en": "I'm so lonely. Let's sleep together"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 148,
@@ -698,7 +698,7 @@
             "ja": "eleにゃん、ご自由にベルをいじってください",
             "en": "Ele meow, please feel free to play with bell"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 151,
@@ -710,7 +710,7 @@
             "ja": "もっと抱っこしてください。白百合に愛されたいです",
             "en": "Hold me more, touch me, I want to be loved by white lily"
           },
-          "tag": "new"
+          "tag": ""
         }
       ]
     },
@@ -733,7 +733,7 @@
             "ja": "セクシーロリ01",
             "en": "Sexy Loli 01"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 164,
@@ -745,7 +745,7 @@
             "ja": "セクシーロリ02",
             "en": "Sexy Loli 02"
           },
-          "tag": "new"
+          "tag": ""
         }
       ]
     },
@@ -946,7 +946,7 @@
             "ja": "お帰りなさいませ、ご主人様",
             "en": "Welcome back, master"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 150,
@@ -958,7 +958,7 @@
             "ja": "メイドベルがオムライスを作ります",
             "en": "Bell, the maid, makes rice with eggs"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 156,
@@ -970,7 +970,7 @@
             "ja": "メイドベルがシュテロガノフの牛丼を作っています",
             "en": "Bellmaid makes Stroganov beef rice"
           },
-          "tag": "new"
+          "tag": ""
         }
       ]
     },
@@ -993,7 +993,7 @@
             "ja": "Hだよう",
             "en": "H"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 126,
@@ -1005,7 +1005,7 @@
             "ja": "いやらしい",
             "en": "How obscene"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 296,
@@ -1040,7 +1040,7 @@
             "ja": "mo",
             "en": "mo"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 122,
@@ -1052,7 +1052,7 @@
             "ja": "うわあ",
             "en": "Whoa"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 123,
@@ -1064,7 +1064,7 @@
             "ja": "スハースハー",
             "en": "Siha siha"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 125,
@@ -1076,7 +1076,7 @@
             "ja": "kya--------",
             "en": "kya--------"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 127,
@@ -1088,7 +1088,7 @@
             "ja": "foo~foo~",
             "en": "foo~foo~"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 143,
@@ -1100,7 +1100,7 @@
             "ja": "neeeeeeeeee",
             "en": "neeeeeeeeee"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 303,
@@ -1112,7 +1112,7 @@
             "ja": "ようすう",
             "en": "Whew"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 334,
@@ -1136,7 +1136,7 @@
             "ja": "うわー",
             "en": "whoa"
           },
-          "tag": "new"
+          "tag": ""
         }
       ]
     },
@@ -1171,7 +1171,7 @@
             "ja": "馬鹿x25",
             "en": "Baka x25"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 309,
@@ -1301,7 +1301,7 @@
             "ja": "お父さん~",
             "en": "dad~"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 94,
@@ -1313,7 +1313,7 @@
             "ja": "おばさん",
             "en": "Aunt"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 96,
@@ -1325,7 +1325,7 @@
             "ja": "お父さん",
             "en": "dad"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 97,
@@ -1337,7 +1337,7 @@
             "ja": "兄",
             "en": "brother"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 98,
@@ -1349,7 +1349,7 @@
             "ja": "夫",
             "en": "husband"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 99,
@@ -1361,7 +1361,7 @@
             "ja": "ダーリン",
             "en": "Darling"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 102,
@@ -1373,7 +1373,7 @@
             "ja": "おばあさん",
             "en": "grandma"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 103,
@@ -1385,7 +1385,7 @@
             "ja": "お母さん",
             "en": "mom"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 107,
@@ -1397,7 +1397,7 @@
             "ja": "息子",
             "en": "son"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 108,
@@ -1409,7 +1409,7 @@
             "ja": "おじさん",
             "en": "uncle"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 110,
@@ -1421,7 +1421,7 @@
             "ja": "孫",
             "en": "grandson"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 114,
@@ -1433,7 +1433,7 @@
             "ja": "妹~",
             "en": "younger sister~"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 118,
@@ -1445,7 +1445,7 @@
             "ja": "弟",
             "en": "younger brother"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 130,
@@ -1457,7 +1457,7 @@
             "ja": "おじいさん",
             "en": "grandpa"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 132,
@@ -1469,7 +1469,7 @@
             "ja": "幼児",
             "en": "baby"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 302,
@@ -1528,7 +1528,7 @@
             "ja": "優しい心があるかもしれません",
             "en": "May have a gentle heart"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 111,
@@ -1540,7 +1540,7 @@
             "ja": "ピカチュウ",
             "en": "Pikachu"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 300,
@@ -1588,7 +1588,7 @@
             "ja": "少しいたずらが悪い、嫌い",
             "en": "Little naughty you are bad, you hate"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 346,
@@ -1623,7 +1623,7 @@
             "ja": "daydayday",
             "en": "daydayday"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 163,
@@ -1635,7 +1635,7 @@
             "ja": "jiangjiangjiang",
             "en": "jiangjiangjiang"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 155,
@@ -1647,7 +1647,7 @@
             "ja": "猫楽器01",
             "en": "Cat instrument 01"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 165,
@@ -1671,7 +1671,7 @@
             "ja": "猫楽器03",
             "en": "Cat instrument 03"
           },
-          "tag": "new"
+          "tag": ""
         }
       ]
     },
@@ -1741,7 +1741,7 @@
             "ja": "ビビドニアでぽかぽかしてるだけ",
             "en": "ビビドニアでぽかぽかしてるだけ"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 174,
@@ -1753,7 +1753,7 @@
             "ja": "おねがいダーリン！",
             "en": "おねがいダーリン！"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 169,
@@ -1765,7 +1765,7 @@
             "ja": "勾指起誓",
             "en": "勾指起誓"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 170,
@@ -1777,7 +1777,7 @@
             "ja": "学猫叫",
             "en": "学猫叫"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 171,
@@ -1789,7 +1789,7 @@
             "ja": "ふわふわ",
             "en": "ふわふわ"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 172,
@@ -1801,7 +1801,7 @@
             "ja": "黒毛和牛上塩タン焼680円",
             "en": "黒毛和牛上塩タン焼680円"
           },
-          "tag": "new"
+          "tag": ""
         }
       ]
     },
@@ -1824,7 +1824,7 @@
             "ja": "大丈夫",
             "en": "Okay"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 106,
@@ -1836,7 +1836,7 @@
             "ja": "泣かないで",
             "en": "Don't cry"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 117,
@@ -1848,7 +1848,7 @@
             "ja": "男JKはいらないです",
             "en": "No male JK"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 124,
@@ -1860,7 +1860,7 @@
             "ja": "これは残像です",
             "en": "This is the shadow"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 135,
@@ -1872,7 +1872,7 @@
             "ja": "まだ離れられません。帰らせません",
             "en": "I can't leave yet. I won't let you go back"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 137,
@@ -1884,7 +1884,7 @@
             "ja": "腰を伸ばす",
             "en": "stretch oneself"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 139,
@@ -1896,7 +1896,7 @@
             "ja": "美味しくなる Bell~Bell~Kyunn",
             "en": "Become delicious Bell~Bell~Kyunn"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 144,
@@ -1908,7 +1908,7 @@
             "ja": "男子高校生はDKです(大金剛)",
             "en": "Male high school student is DK"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 146,
@@ -1920,7 +1920,7 @@
             "ja": "あなたはいい人です",
             "en": "You're a good person"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 157,
@@ -1932,7 +1932,7 @@
             "ja": "美味しくなる魔法",
             "en": "Magic of becoming delicious"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 160,
@@ -1944,7 +1944,7 @@
             "ja": "お客さんと結婚したいです?",
             "en": "I want to marry my guests?"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 167,
@@ -1956,7 +1956,7 @@
             "ja": "皆さん、さようなら。また会う前にベルを忘れないでください(´；ω；`)",
             "en": "Goodbye, everyone. Don't forget bell before meeting next time (´；ω；`)"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 168,
@@ -1968,7 +1968,7 @@
             "ja": "私はあなたの妹です、私は私の姉です",
             "en": "I'm your sister. I'm my sister"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 279,
@@ -2052,7 +2052,7 @@
             "ja": "私はいい人ではありません",
             "en": "I am not a good guy"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 317,
@@ -2136,7 +2136,7 @@
             "ja": "割れた",
             "en": "I cracked"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 336,

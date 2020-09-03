@@ -55,6 +55,11 @@
 						<li><a href="https://space.bilibili.com/290482706" target="_blank">冬中雪初</a></li>
 					</ul>
 
+          <h3>{{$t("about.special")}}</h3>
+					<ul>
+						<li><a href="https://space.bilibili.com/518939223" target="_blank">スマホと靴ひも</a></li>
+					</ul>
+
 				</v-card-text>
 
 				<v-divider></v-divider>

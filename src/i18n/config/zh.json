@@ -39,10 +39,11 @@
     "letter": "B站私信",
     "des": "发送时带上标题、内容以及您的ID（Bilibili、Twitter等均可），贡献者名单将会有您的名字。",
     "contributor": "贡献者",
-    "dev": "开发",
-    "translate": "部分日语翻译",
-    "voice": "音频剪辑",
-    "material": "音频素材",
+    "dev": "开发：",
+    "translate": "部分日语翻译：",
+    "voice": "音频剪辑：",
+    "material": "音频素材：",
+    "special" : "特别感谢：",
     "licence": "协议",
     "copyright": "本站为舔食者创作，与ViViD官方无关"
   }

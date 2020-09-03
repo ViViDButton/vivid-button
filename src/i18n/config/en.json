@@ -39,10 +39,11 @@
     "letter": "BiliBili Direct Message",
     "des": "with title, content and your social ID(Twitter, Bilibili or so on). We will add your ID to the contributors list below.",
     "contributor": "Contributors",
-    "dev": "Development",
-    "translate": "Translation",
-    "voice": "Audio Editors",
-    "material": "Audio Material",
+    "dev": "Development:",
+    "translate": "Translation:",
+    "voice": "Audio Editors:",
+    "material": "Audio Material:",
+    "special" : "Special Thanks to:",
     "licence": "LICENCE",
     "copyright": "This site is a fan work and is not associated with the ViViD official."
   }

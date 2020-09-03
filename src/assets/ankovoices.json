@@ -20,7 +20,7 @@
             "ja": "不~~~",
             "en": "No ~~~"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 270,
@@ -32,7 +32,7 @@
             "ja": "叫び声 02",
             "en": "Scream 02"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 275,
@@ -44,7 +44,7 @@
             "ja": "叫び声 03",
             "en": "Scream 03"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 276,
@@ -56,7 +56,7 @@
             "ja": "叫び声 01",
             "en": "Scream 01"
           },
-          "tag": "new"
+          "tag": ""
         }
       ]
     },
@@ -79,7 +79,7 @@
             "ja": "やめてください~",
             "en": "Do not do that"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 269,
@@ -91,7 +91,7 @@
             "ja": "えっ~",
             "en": "Eh~"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 271,
@@ -103,7 +103,7 @@
             "ja": "chu",
             "en": "chu"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 272,
@@ -115,7 +115,7 @@
             "ja": "馬鹿~",
             "en": "BAKA~"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 273,
@@ -127,7 +127,7 @@
             "ja": "オイラー",
             "en": "Euler"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 274,
@@ -139,7 +139,7 @@
             "ja": "オパールロケット",
             "en": "Opal Rocket"
           },
-          "tag": "new"
+          "tag": ""
         },
         {
           "data_id": 277,
@@ -151,7 +151,7 @@
             "ja": "息をする",
             "en": "Breathe"
           },
-          "tag": "new"
+          "tag": ""
         }
       ]
     }

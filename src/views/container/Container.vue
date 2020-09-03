@@ -48,6 +48,12 @@
 						</v-btn>
 					</div>
 
+          <div style="margin-top: 10px">
+
+            <dialog-btn v-for="dialoginfo in dialoginfos" :dialoginfo="dialoginfo"></dialog-btn>
+
+          </div>
+
 				</v-card-text>
 			</v-card>
 
@@ -99,7 +105,8 @@
 			       @timeupdate="update"
 			       @ended="audioSrc=''"
 			       @loadedmetadata="playAudio"
-			       class="audio-player"/>
+			       class="audio-player"
+      />
 
 		</v-container>
 
@@ -120,10 +127,11 @@
 
 	import VividBtn from "components/VividBtn";
 	import {getBiliBiliFan, getYouTubeFan, getVoiceList} from "../../network/home";
+  import DialogBtn from "components/DialogBtn";
 
 	export default {
 		name: "Container",
-		components: {VividBtn},
+		components: {DialogBtn, VividBtn},
 		props: {
 			info: {
 				type: Object,
@@ -139,7 +147,13 @@
 						twitter: {name: "猫芒ベル🔔ViViD所属",id: "bell_nekonogi"}
 					}
 				}
-			}
+			},
+      dialogs: {
+			  type: Array,
+        default() {
+          return [];
+        }
+      }
 		},
 		data: () => ({
 			voiceList:{
@@ -168,7 +182,9 @@
 			voiceLength: 0,
 			currentIndex: '00',
 			progress: 0,
-			loopicon: "mdi-repeat-off"
+			loopicon: "mdi-repeat-off",
+      // dialoginfos: this.dialogs,
+
 		}),
 		computed: {
 			current_language() {
@@ -176,7 +192,10 @@
 			},
 			volume() {
 				return this.$store.state.audioVolume;
-			}
+			},
+      dialoginfos(){
+			  return this.dialogs
+      }
 		},
 		watch:{
 			volume(val){
