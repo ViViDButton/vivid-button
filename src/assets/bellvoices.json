@@ -131,6 +131,30 @@
       "voicelist": [
         {
           "data_id": 112,
+          "name": "妈妈 我想回家~",
+          "path": "https://img.colter.top/upload/voice/bell/妈妈 我想回家~.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "妈妈 我想回家~",
+            "ja": "母は家に帰りたいです",
+            "en": "Mom, I want to go home~"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 112,
+          "name": "摸头哄哄我也是可以的哦",
+          "path": "https://img.colter.top/upload/voice/bell/摸头哄哄我也是可以的哦.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "摸头哄哄我也是可以的哦",
+            "ja": "頭をなでて騒いでもいいですよ",
+            "en": "It's OK to tease me"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 112,
           "name": "猫生气",
           "path": "https://img.colter.top/upload/voice/bell/猫生气.mp3",
           "click_count": 0,
@@ -212,6 +236,18 @@
             "en": "Indifferent"
           },
           "tag": ""
+        },
+        {
+          "data_id": 331,
+          "name": "假哭01",
+          "path": "https://img.colter.top/upload/voice/bell/假哭01.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "假哭01",
+            "ja": "つくり泣き",
+            "en": "Fake crying"
+          },
+          "tag": "new"
         }
       ]
     },
@@ -354,6 +390,30 @@
       },
       "all_click_count": 0,
       "voicelist": [
+        {
+          "data_id": 104,
+          "name": "嚣张的笑01",
+          "path": "https://img.colter.top/upload/voice/bell/嚣张的笑01.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "嚣张的笑01",
+            "ja": "はびこった笑い01",
+            "en": "Arrogant smile 01"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 104,
+          "name": "嚣张的笑02",
+          "path": "https://img.colter.top/upload/voice/bell/嚣张的笑02.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "嚣张的笑02",
+            "ja": "はびこった笑い02",
+            "en": "Arrogant smile 02"
+          },
+          "tag": "new"
+        },
         {
           "data_id": 104,
           "name": "大笑",
@@ -819,6 +879,18 @@
       "voicelist": [
         {
           "data_id": 297,
+          "name": "暴躁猫",
+          "path": "https://img.colter.top/upload/voice/bell/暴躁猫.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "暴躁猫",
+            "ja": "猫が暴れる",
+            "en": "Irascible cat"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 297,
           "name": "开什么玩笑",
           "path": "https://img.colter.top/upload/voice/bell/开什么玩笑.mp3",
           "click_count": 0,
@@ -1024,7 +1096,7 @@
     {
       "name": "语气",
       "translation": {
-        "zh": "语气",
+        "zh": "语气音效",
         "ja": "語気",
         "en": "Tone"
       },
@@ -1137,6 +1209,282 @@
             "en": "whoa"
           },
           "tag": ""
+        },
+        {
+          "data_id": 359,
+          "name": "bang~",
+          "path": "https://img.colter.top/upload/voice/bell/bang~.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "bang~",
+            "ja": "bang~",
+            "en": "bang~"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 360,
+          "name": "goulin goulin",
+          "path": "https://img.colter.top/upload/voice/bell/goulin goulin.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "goulin goulin",
+            "ja": "goulin goulin",
+            "en": "goulin goulin"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 361,
+          "name": "kya",
+          "path": "https://img.colter.top/upload/voice/bell/kya.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "kya",
+            "ja": "kya",
+            "en": "kya"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 362,
+          "name": "ﾝﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞ",
+          "path": "https://img.colter.top/upload/voice/bell/ﾝﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞ.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "ﾝﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞ",
+            "ja": "ﾝﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞ",
+            "en": "ﾝﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞｭﾁﾞ"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 363,
+          "name": "啊nya",
+          "path": "https://img.colter.top/upload/voice/bell/啊nya.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "啊nya",
+            "ja": "啊nya",
+            "en": "啊nya"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 364,
+          "name": "啊nya~",
+          "path": "https://img.colter.top/upload/voice/bell/啊nya~.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "啊nya~",
+            "ja": "啊nya~",
+            "en": "啊nya~"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 364,
+          "name": "昂嗯",
+          "path": "https://img.colter.top/upload/voice/bell/昂嗯.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "昂嗯~",
+            "ja": "昂嗯~",
+            "en": "昂嗯~"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 364,
+          "name": "咚咚咚",
+          "path": "https://img.colter.top/upload/voice/bell/咚咚咚.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "咚咚咚",
+            "ja": "咚咚咚",
+            "en": "咚咚咚"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 364,
+          "name": "村民叫-哼儿",
+          "path": "https://img.colter.top/upload/voice/bell/村民叫-哼儿.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "村民叫-哼儿",
+            "ja": "村民叫-哼儿",
+            "en": "村民叫-哼儿"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 364,
+          "name": "哈？",
+          "path": "https://img.colter.top/upload/voice/bell/哈？.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "哈？",
+            "ja": "哈？",
+            "en": "哈？"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 364,
+          "name": "惊讶吸气",
+          "path": "https://img.colter.top/upload/voice/bell/惊讶吸气.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "惊讶吸气",
+            "ja": "惊讶吸气",
+            "en": "惊讶吸气"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 364,
+          "name": "嚼嚼嚼嚼嚼嚼嚼",
+          "path": "https://img.colter.top/upload/voice/bell/嚼嚼嚼嚼嚼嚼嚼.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "嚼嚼嚼嚼嚼嚼嚼",
+            "ja": "嚼嚼嚼嚼嚼嚼嚼",
+            "en": "嚼嚼嚼嚼嚼嚼嚼"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 364,
+          "name": "嗯嗯嗯嗯嗯",
+          "path": "https://img.colter.top/upload/voice/bell/嗯嗯嗯嗯嗯.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "嗯嗯嗯嗯嗯",
+            "ja": "嗯嗯嗯嗯嗯",
+            "en": "嗯嗯嗯嗯嗯"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 364,
+          "name": "哦呀",
+          "path": "https://img.colter.top/upload/voice/bell/哦呀.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "哦呀",
+            "ja": "哦呀",
+            "en": "哦呀"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 364,
+          "name": "哦呦呦",
+          "path": "https://img.colter.top/upload/voice/bell/哦呦呦.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "哦呦呦",
+            "ja": "哦呦呦",
+            "en": "哦呦呦"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 364,
+          "name": "斯哈斯哈斯哈",
+          "path": "https://img.colter.top/upload/voice/bell/斯哈斯哈斯哈.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "斯哈斯哈斯哈",
+            "ja": "斯哈斯哈斯哈",
+            "en": "斯哈斯哈斯哈"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 364,
+          "name": "哇~~~",
+          "path": "https://img.colter.top/upload/voice/bell/哇~~~.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "哇~~~",
+            "ja": "哇~~~",
+            "en": "哇~~~"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 364,
+          "name": "哇哦 amazing",
+          "path": "https://img.colter.top/upload/voice/bell/哇哦 amazing.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "哇哦 amazing",
+            "ja": "哇哦 amazing",
+            "en": "哇哦 amazing"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 364,
+          "name": "哇哦 好性感啊",
+          "path": "https://img.colter.top/upload/voice/bell/哇哦 好性感啊.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "哇哦 好性感啊",
+            "ja": "哇哦 好性感啊",
+            "en": "哇哦 好性感啊"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 364,
+          "name": "哇哦哇哦",
+          "path": "https://img.colter.top/upload/voice/bell/哇哦哇哦.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "哇哦哇哦",
+            "ja": "哇哦哇哦",
+            "en": "哇哦哇哦"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 364,
+          "name": "哇哇哇哇哇",
+          "path": "https://img.colter.top/upload/voice/bell/哇哇哇哇哇.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "哇哇哇哇哇",
+            "ja": "哇哇哇哇哇",
+            "en": "哇哇哇哇哇"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 364,
+          "name": "吸口水-呲溜",
+          "path": "https://img.colter.top/upload/voice/bell/吸口水-呲溜.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "吸口水-呲溜",
+            "ja": "吸口水-呲溜",
+            "en": "吸口水-呲溜"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 364,
+          "name": "阿巴阿巴阿巴",
+          "path": "https://img.colter.top/upload/voice/bell/阿巴阿巴阿巴.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "阿巴阿巴阿巴",
+            "ja": "阿巴阿巴阿巴",
+            "en": "阿巴阿巴阿巴"
+          },
+          "tag": "new"
         }
       ]
     },
@@ -1149,6 +1497,18 @@
       },
       "all_click_count": 0,
       "voicelist": [
+        {
+          "data_id": 115,
+          "name": "八嘎",
+          "path": "https://img.colter.top/upload/voice/bell/八嘎.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "八嘎",
+            "ja": "馬鹿",
+            "en": "Baka"
+          },
+          "tag": "new"
+        },
         {
           "data_id": 115,
           "name": "无路赛~",
@@ -1520,6 +1880,18 @@
       "voicelist": [
         {
           "data_id": 109,
+          "name": "nene 你现在什么心情啊",
+          "path": "https://img.colter.top/upload/voice/bell/nene 你现在什么心情啊.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "nene 你现在什么心情啊",
+            "ja": "nene 今の気持ちはどうですか",
+            "en": "nene What's your mood now"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 109,
           "name": "或许会有温柔的内心哦",
           "path": "https://img.colter.top/upload/voice/bell/或许会有温柔的内心哦.mp3",
           "click_count": 0,
@@ -1638,6 +2010,18 @@
           "tag": ""
         },
         {
+          "data_id": 163,
+          "name": "草莓之歌",
+          "path": "https://img.colter.top/upload/voice/bell/草莓之歌.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "草莓之歌",
+            "ja": "草莓之歌",
+            "en": "草莓之歌"
+          },
+          "tag": "new"
+        },
+        {
           "data_id": 155,
           "name": "猫乐器01",
           "path": "https://img.colter.top/upload/voice/bell/猫乐器01.mp3",
@@ -1672,6 +2056,18 @@
             "en": "Cat instrument 03"
           },
           "tag": ""
+        },
+        {
+          "data_id": 161,
+          "name": "猫乐器04",
+          "path": "https://img.colter.top/upload/voice/bell/猫乐器04.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "猫乐器04",
+            "ja": "猫楽器04",
+            "en": "Cat instrument 04"
+          },
+          "tag": "new"
         }
       ]
     },
@@ -1684,6 +2080,18 @@
       },
       "all_click_count": 0,
       "voicelist": [
+        {
+          "data_id": 342,
+          "name": "恋口上",
+          "path": "https://img.colter.top/upload/voice/bell/恋口上.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "恋口上",
+            "ja": "恋口上",
+            "en": "恋口上"
+          },
+          "tag": "new"
+        },
         {
           "data_id": 342,
           "name": "Rap",
@@ -1719,6 +2127,42 @@
             "en": "Bell milk tea"
           },
           "tag": ""
+        },
+        {
+          "data_id": 353,
+          "name": "绕口令01",
+          "path": "https://img.colter.top/upload/voice/bell/绕口令01.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "绕口令01",
+            "ja": "早口ことば01",
+            "en": "tongue twister 01"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 353,
+          "name": "绕口令02",
+          "path": "https://img.colter.top/upload/voice/bell/绕口令02.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "绕口令02",
+            "ja": "早口ことば02",
+            "en": "tongue twister 02"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 353,
+          "name": "绕口令03",
+          "path": "https://img.colter.top/upload/voice/bell/绕口令03.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "绕口令03",
+            "ja": "早口ことば03",
+            "en": "tongue twister 03"
+          },
+          "tag": "new"
         }
       ]
     },
@@ -1814,6 +2258,162 @@
       },
       "all_click_count": 0,
       "voicelist": [
+        {
+          "data_id": 101,
+          "name": "猫芒小姐",
+          "path": "https://img.colter.top/upload/voice/bell/猫芒小姐.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "猫芒小姐",
+            "ja": "猫芒小姐",
+            "en": "猫芒小姐"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 101,
+          "name": "绝对不是bell的错哦",
+          "path": "https://img.colter.top/upload/voice/bell/绝对不是bell的错哦.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "绝对不是bell的错哦",
+            "ja": "绝对不是bell的错哦",
+            "en": "绝对不是bell的错哦"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 101,
+          "name": "花痴bell",
+          "path": "https://img.colter.top/upload/voice/bell/花痴bell.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "花痴bell",
+            "ja": "花痴bell",
+            "en": "花痴bell"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 101,
+          "name": "你要蹭哪里呢 蹭蹭",
+          "path": "https://img.colter.top/upload/voice/bell/你要蹭哪里呢 蹭蹭.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "你要蹭哪里呢 蹭蹭",
+            "ja": "你要蹭哪里呢 蹭蹭",
+            "en": "你要蹭哪里呢 蹭蹭"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 101,
+          "name": "诶 想要蹭蹭脸吗",
+          "path": "https://img.colter.top/upload/voice/bell/诶 想要蹭蹭脸吗.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "诶 想要蹭蹭脸吗",
+            "ja": "诶 想要蹭蹭脸吗",
+            "en": "诶 想要蹭蹭脸吗"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 101,
+          "name": "蹭蹭",
+          "path": "https://img.colter.top/upload/voice/bell/蹭蹭.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "蹭蹭",
+            "ja": "蹭蹭",
+            "en": "蹭蹭"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 101,
+          "name": "被我摸摸头就会有精神了哦",
+          "path": "https://img.colter.top/upload/voice/bell/被我摸摸头就会有精神了哦.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "被我摸摸头就会有精神了哦",
+            "ja": "いらいらしている猫が頭をなでられたら元気が出ますよ",
+            "en": "If I touch the head of the irascible cat, it will be energetic"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 101,
+          "name": "\uD83D\uDCA9",
+          "path": "https://img.colter.top/upload/voice/bell/\uD83D\uDCA9.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "\uD83D\uDCA9",
+            "ja": "\uD83D\uDCA9",
+            "en": "\uD83D\uDCA9"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 101,
+          "name": "CLEAR！",
+          "path": "https://img.colter.top/upload/voice/bell/CLEAR！.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "CLEAR！",
+            "ja": "CLEAR！",
+            "en": "CLEAR！"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 101,
+          "name": "bell的耳朵抽纸盒",
+          "path": "https://img.colter.top/upload/voice/bell/bell的耳朵抽纸盒.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "bell的耳朵抽纸盒",
+            "ja": "ベルの耳は紙箱を引きます",
+            "en": "Bell's ear box"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 101,
+          "name": "是耳朵呦",
+          "path": "https://img.colter.top/upload/voice/bell/是耳朵呦.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "是耳朵呦",
+            "ja": "耳ですよ",
+            "en": "It's ears"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 101,
+          "name": "玩尬的",
+          "path": "https://img.colter.top/upload/voice/bell/玩尬的.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "玩尬的",
+            "ja": "困ったことをする人",
+            "en": "Play hard"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 101,
+          "name": "伤心的猫猫",
+          "path": "https://img.colter.top/upload/voice/bell/伤心的猫猫.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "伤心的猫猫",
+            "ja": "悲しい猫",
+            "en": "Sad cat"
+          },
+          "tag": "new"
+        },
         {
           "data_id": 101,
           "name": "大丈夫",

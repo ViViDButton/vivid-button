@@ -1,22 +1,17 @@
 <template>
+
+  <span @click="dialog = true">
+    <vivid-btn :color="$vuetify.theme.dark?dialoginfo.darkColor:dialoginfo.lightColor"
+               :bg-img="dialoginfo.btnBg">
+      {{dialoginfo.btnText}}
+    </vivid-btn>
     <v-dialog v-model="dialog" width="500">
-      <template v-slot:activator="{ on, attrs }">
-
-        <div v-bind="attrs" v-on="on" style="display: inline-block">
-          <vivid-btn :color="$vuetify.theme.dark?dialoginfo.darkColor:dialoginfo.lightColor"
-                     :bg-img="dialoginfo.btnBg">
-            {{dialoginfo.btnText}}
-          </vivid-btn>
-        </div>
-
-      </template>
-
       <v-card>
         <v-card-title class="headline grey lighten-2">
           {{dialoginfo.title}}
         </v-card-title>
 
-        <v-img :src="dialoginfo.img" height="500" contain></v-img>
+        <v-img :src="dialoginfo.img" :height="dialoginfo.imgHeight" contain></v-img>
 
         <v-card-text style="padding: 0">
           <p v-if="dialoginfo.text" style="font-size: 20px; margin: 10px 10px 5px 10px">{{dialoginfo.text}}</p>
@@ -34,7 +29,7 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
-
+  </span>
 </template>
 
 <script>
@@ -50,7 +45,6 @@ export default {
   data () {
     return {
       dialog: false,
-
     }
   },
 }

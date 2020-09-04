@@ -14,6 +14,11 @@ Vue.use(VueRouter)
   //   component: () => import('../views/home/Home.vue')
   // },
   {
+    path: '/',
+    name: 'BellButton',
+    component: () => import('../views/vividviews/BellButton.vue')
+  },
+  {
     path: '/bell',
     name: 'BellButton',
     component: () => import('../views/vividviews/BellButton.vue'),

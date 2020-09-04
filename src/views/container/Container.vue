@@ -50,6 +50,7 @@
 
           <div style="margin-top: 10px">
 
+
             <dialog-btn v-for="dialoginfo in dialoginfos" :dialoginfo="dialoginfo"></dialog-btn>
 
           </div>
