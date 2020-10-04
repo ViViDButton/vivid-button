@@ -59,7 +59,7 @@
 			</v-card>
 
       <!--语音按钮-->
-			<v-card v-for="(group,index1) in voiceList.groups" v-show="!(group.name==='memo小剧场'&&current_language!=='zh')" :key="index1+group.name" style="width: 100%; margin: 8px auto;">
+			<v-card v-for="(group,index1) in voiceList.groups" v-show="!((group.name==='歌'||group.name==='声音')&&area!=='china')" :key="index1+group.name" style="width: 100%; margin: 8px auto;">
 				<v-card-title class="headline mb-1">{{group.translation[current_language]}}</v-card-title>
 				<v-card-text>
 
@@ -127,7 +127,7 @@
 <script>
 
 	import VividBtn from "components/VividBtn";
-	import {getBiliBiliFan, getYouTubeFan, getVoiceList} from "../../network/home";
+  import {getBiliBiliFan, getYouTubeFan, getVoiceList, getArea} from "../../network/home";
   import DialogBtn from "components/DialogBtn";
 
 	export default {
@@ -184,6 +184,7 @@
 			currentIndex: '00',
 			progress: 0,
 			loopicon: "mdi-repeat-off",
+      area: ''
       // dialoginfos: this.dialogs,
 
 		}),
@@ -194,6 +195,9 @@
 			volume() {
 				return this.$store.state.audioVolume;
 			},
+      storeArea() {
+        return this.$store.state.area;
+      },
       dialoginfos(){
 			  return this.dialogs
       }
@@ -201,7 +205,10 @@
 		watch:{
 			volume(val){
 				this.$refs.audioPlayer.volume = val/100;
-			}
+			},
+      storeArea(val){
+        this.area = val;
+      }
 		},
 		methods: {
 			loadAudio(path,name,voice){
@@ -250,11 +257,14 @@
         })
       }
 
+
+      // getArea().then(res=>{this.area = this.$store.state.area;})
+
 			// getVoiceList(this.info.name.toLowerCase()).then(res => {
 			// 	 this.voiceList = res;
 			// })
 
-      this.voiceList = require('../../assets/'+this.info.name.toLowerCase()+'voices.json')
+      this.voiceList = require('../../../public/voice/'+this.info.name.toLowerCase()+'voices.json')
 
 		}
 	}

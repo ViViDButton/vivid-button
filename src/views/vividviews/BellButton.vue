@@ -129,6 +129,21 @@
         {
           lightColor: "#ffdbe9",
           darkColor: "#99566f",
+          btnBg: "https://img.colter.top/vivid/img/others/bell动态壁纸btn.png!web",
+          btnText: "Bell动态壁纸",
+          title: "Bell动态壁纸",
+          img: "https://img.colter.top/vivid/img/others/bell动态壁纸.png!web",
+          imgHeight: "500",
+          text: "Bell动态壁纸",
+          producer: {bid: "669254049", name: "雪迷狐"},
+          painter: {bid: "611842", name: "Syakou"},
+          download: [
+            {text:"Wallpaper Engine", link: "https://steamcommunity.com/sharedfiles/filedetails/?id=2155915122"}
+          ]
+        },
+        {
+          lightColor: "#ffdbe9",
+          darkColor: "#99566f",
           btnBg: "https://img.colter.top/vivid/files/bell头像框1.png!web",
           btnText: "Bell头像框1",
           title: "Bell头像框1",

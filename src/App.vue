@@ -207,6 +207,9 @@
 </template>
 
 <script>
+
+import {getArea} from "./network/home";
+
 export default {
   name: 'App',
   data: () => ({
@@ -220,6 +223,7 @@ export default {
     isShowLogo: true,
     drawer: null,
     volume: 60,
+    area: 'china',
     items: [
       { color: '#f48fb1', darkColor: '#c8527a',text: 'bell', link: '/bell'},
       { color: '#9575cd', darkColor: '#7255a7',text: 'memory', link: '/memory'},
@@ -230,11 +234,31 @@ export default {
     ],
   }),
   mounted() {
+    let pathname = window.location.pathname
+    console.log(pathname)
+
+
     this.scrolled();
 
     // 初始化top
     this.setTopBg();
 
+    // if (this.$store.state.area!=='china')
+      getArea().then(res => {
+        if (pathname==='/china'){
+          this.$store.commit('setArea','china');
+        } else if (res.address.search("中国")===0) {
+          this.$store.commit("setArea", 'china');
+          this.changeLanguage('zh');
+        } else if (res.address.search("日本")===0) {
+          this.$store.commit("setArea", 'japan');
+          this.changeLanguage('ja')
+        } else {
+          this.$store.commit("setArea", 'other');
+          this.changeLanguage('en')
+        }
+        // console.log(res.address)
+      })
   },
   methods: {
     scrolled() {

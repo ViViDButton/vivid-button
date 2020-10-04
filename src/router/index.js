@@ -1,11 +1,16 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import BellButton from "../views/vividviews/BellButton";
 
 Vue.use(VueRouter)
 
   const routes = [
   {
     path: '/',
+    redirect: '/bell'
+  },
+  {
+    path: '/china',
     redirect: '/bell'
   },
   // {
@@ -92,6 +97,8 @@ Vue.use(VueRouter)
   },
 
 ]
+
+
 
 const router = new VueRouter({
   mode: 'history',

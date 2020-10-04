@@ -1,0 +1,313 @@
+{
+  "last_update": "不详",
+  "groups": [
+    {
+      "name": "笑",
+      "translation": {
+        "zh": "笑",
+        "ja": "笑い",
+        "en": "Laugh"
+      },
+      "all_click_count": 0,
+      "voicelist": [
+        {
+          "data_id": 255,
+          "name": "笑",
+          "path": "https://img.colter.top/upload/voice/elena/笑.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "笑01",
+            "ja": "笑い01",
+            "en": "Laugh01"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 249,
+          "name": "笑02",
+          "path": "https://img.colter.top/upload/voice/elena/笑02.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "笑02",
+            "ja": "笑い02",
+            "en": "Laugh 02"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 252,
+          "name": "笑03",
+          "path": "https://img.colter.top/upload/voice/elena/笑03.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "笑03",
+            "ja": "笑い03",
+            "en": "Laugh 03"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 254,
+          "name": "笑04",
+          "path": "https://img.colter.top/upload/voice/elena/笑04.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "笑04",
+            "ja": "笑い04",
+            "en": "Laugh 04"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 259,
+          "name": "擦盘子",
+          "path": "https://img.colter.top/upload/voice/elena/擦盘子.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "擦盘子",
+            "ja": "お皿を拭く",
+            "en": "Wipe the dishes"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 260,
+          "name": "哈哈哈哈哈",
+          "path": "https://img.colter.top/upload/voice/elena/哈哈哈哈哈.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "哈哈哈哈哈",
+            "ja": "ははははは",
+            "en": "Hahahahaha"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 261,
+          "name": "哈哈哈",
+          "path": "https://img.colter.top/upload/voice/elena/哈哈哈.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "哈哈哈",
+            "ja": "ははは",
+            "en": "Hahaha"
+          },
+          "tag": ""
+        }
+      ]
+    },
+    {
+      "name": "叫声",
+      "translation": {
+        "zh": "叫声",
+        "ja": "叫び声",
+        "en": "Call"
+      },
+      "all_click_count": 0,
+      "voicelist": [
+        {
+          "data_id": 247,
+          "name": "不要啊！",
+          "path": "https://img.colter.top/upload/voice/elena/不要啊！.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "不要啊！",
+            "ja": "駄目だ",
+            "en": "No!"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 250,
+          "name": "啊 好危险",
+          "path": "https://img.colter.top/upload/voice/elena/啊 好危险.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "啊 好危险",
+            "ja": "あ 危ない",
+            "en": "Ah So dangerous"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 253,
+          "name": "啊 笨蛋",
+          "path": "https://img.colter.top/upload/voice/elena/啊 笨蛋.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "啊 笨蛋",
+            "ja": "あ 馬鹿",
+            "en": "Ah BAKA"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 257,
+          "name": "尖叫",
+          "path": "https://img.colter.top/upload/voice/elena/尖叫.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "叫声",
+            "ja": "叫び声",
+            "en": "Call"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 262,
+          "name": "啊~",
+          "path": "https://img.colter.top/upload/voice/elena/啊~.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "啊~",
+            "ja": "あ~",
+            "en": "ah~"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 264,
+          "name": "咕咕咕",
+          "path": "https://img.colter.top/upload/voice/elena/咕咕咕.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "咕咕咕",
+            "ja": "咕咕咕",
+            "en": "Goo Goo Goo"
+          },
+          "tag": ""
+        }
+      ]
+    },
+    {
+      "name": "语气",
+      "translation": {
+        "zh": "语气",
+        "ja": "語気",
+        "en": "Tone"
+      },
+      "all_click_count": 0,
+      "voicelist": [
+        {
+          "data_id": 243,
+          "name": "欧拉",
+          "path": "https://img.colter.top/upload/voice/elena/欧拉.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "欧拉",
+            "ja": "オイラー",
+            "en": "Euler"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 246,
+          "name": "唔哈",
+          "path": "https://img.colter.top/upload/voice/elena/唔哈.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "唔哈",
+            "ja": "うんはぁ",
+            "en": "Huh"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 251,
+          "name": "呦一咻",
+          "path": "https://img.colter.top/upload/voice/elena/呦一咻.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "呦一咻",
+            "ja": "よひゅうっと",
+            "en": "Yo Yi Xui"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 256,
+          "name": "波奇波奇",
+          "path": "https://img.colter.top/upload/voice/elena/波奇波奇.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "波奇波奇",
+            "ja": "ポッチポッチ",
+            "en": "Poch Poch"
+          },
+          "tag": ""
+        }
+      ]
+    },
+    {
+      "name": "其他",
+      "translation": {
+        "zh": "其他",
+        "ja": "その他の",
+        "en": "Other"
+      },
+      "all_click_count": 0,
+      "voicelist": [
+        {
+          "data_id": 244,
+          "name": "可爱",
+          "path": "https://img.colter.top/upload/voice/elena/可爱.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "可爱",
+            "ja": "かわいい",
+            "en": "Lovely"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 245,
+          "name": "我点",
+          "path": "https://img.colter.top/upload/voice/elena/我点.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "我点",
+            "ja": "ぽっちと",
+            "en": "Poppy"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 248,
+          "name": "H",
+          "path": "https://img.colter.top/upload/voice/elena/H.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "H",
+            "ja": "H",
+            "en": "H"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 258,
+          "name": "大家好~",
+          "path": "https://img.colter.top/upload/voice/elena/大家好~.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "大家好~",
+            "ja": "こんにちは",
+            "en": "Hello everyone"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 263,
+          "name": "多谢款待",
+          "path": "https://img.colter.top/upload/voice/elena/多谢款待.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "多谢款待",
+            "ja": "ごちそうさまでした",
+            "en": "Thanks for treatment"
+          },
+          "tag": ""
+        }
+      ]
+    }
+  ]
+}

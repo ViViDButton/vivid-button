@@ -1,0 +1,159 @@
+{
+  "last_update": "不详",
+  "groups": [
+    {
+      "name": "尖叫",
+      "translation": {
+        "zh": "叫声",
+        "ja": "叫び声",
+        "en": "Call"
+      },
+      "all_click_count": 0,
+      "voicelist": [
+        {
+          "data_id": 268,
+          "name": "不~~~",
+          "path": "https://img.colter.top/upload/voice/anko/不~~~.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "不~~~",
+            "ja": "不~~~",
+            "en": "No ~~~"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 270,
+          "name": "尖叫02",
+          "path": "https://img.colter.top/upload/voice/anko/尖叫02.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "尖叫02",
+            "ja": "叫び声 02",
+            "en": "Scream 02"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 275,
+          "name": "尖叫03",
+          "path": "https://img.colter.top/upload/voice/anko/尖叫03.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "尖叫03",
+            "ja": "叫び声 03",
+            "en": "Scream 03"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 276,
+          "name": "尖叫01",
+          "path": "https://img.colter.top/upload/voice/anko/尖叫01.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "尖叫01",
+            "ja": "叫び声 01",
+            "en": "Scream 01"
+          },
+          "tag": ""
+        }
+      ]
+    },
+    {
+      "name": "其他",
+      "translation": {
+        "zh": "其他",
+        "ja": "その他の",
+        "en": "Other"
+      },
+      "all_click_count": 0,
+      "voicelist": [
+        {
+          "data_id": 267,
+          "name": "不要这样~",
+          "path": "https://img.colter.top/upload/voice/anko/不要这样~.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "不要这样~",
+            "ja": "やめてください~",
+            "en": "Do not do that"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 269,
+          "name": "诶~",
+          "path": "https://img.colter.top/upload/voice/anko/诶~.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "诶~",
+            "ja": "えっ~",
+            "en": "Eh~"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 271,
+          "name": "chu",
+          "path": "https://img.colter.top/upload/voice/anko/chu.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "chu",
+            "ja": "chu",
+            "en": "chu"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 272,
+          "name": "笨蛋~",
+          "path": "https://img.colter.top/upload/voice/anko/笨蛋~.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "笨蛋~",
+            "ja": "馬鹿~",
+            "en": "BAKA~"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 273,
+          "name": "欧拉",
+          "path": "https://img.colter.top/upload/voice/anko/欧拉.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "欧拉",
+            "ja": "オイラー",
+            "en": "Euler"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 274,
+          "name": "欧派火箭",
+          "path": "https://img.colter.top/upload/voice/anko/欧派火箭.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "欧派火箭",
+            "ja": "オパールロケット",
+            "en": "Opal Rocket"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 277,
+          "name": "呼吸",
+          "path": "https://img.colter.top/upload/voice/anko/呼吸.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "呼吸",
+            "ja": "息をする",
+            "en": "Breathe"
+          },
+          "tag": ""
+        }
+      ]
+    }
+  ]
+}

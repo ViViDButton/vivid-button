@@ -1,0 +1,336 @@
+{
+  "last_update": "不详",
+  "groups": [
+    {
+      "name": "语气",
+      "translation": {
+        "zh": "语气",
+        "ja": "語気",
+        "en": "Tone"
+      },
+      "all_click_count": 0,
+      "voicelist": [
+        {
+          "data_id": 176,
+          "name": "neeee",
+          "path": "https://img.colter.top/upload/voice/memory/neeee.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "neeee",
+            "ja": "neeee",
+            "en": "neeee"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 180,
+          "name": "呜~",
+          "path": "https://img.colter.top/upload/voice/memory/呜~.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "呜~",
+            "ja": "ウー",
+            "en": "Woo~"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 183,
+          "name": "泡沫呼吸-嘿哈嘿哈",
+          "path": "https://img.colter.top/upload/voice/memory/泡沫呼吸-嘿哈嘿哈.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "嘿哈嘿哈",
+            "ja": "嘿哈嘿哈",
+            "en": "Hey, ha"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 191,
+          "name": "诶叽~",
+          "path": "https://img.colter.top/upload/voice/memory/诶叽~.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "诶叽~",
+            "ja": "えっと",
+            "en": "Gee"
+          },
+          "tag": ""
+        }
+      ]
+    },
+    {
+      "name": "叫声",
+      "translation": {
+        "zh": "叫声",
+        "ja": "叫び声",
+        "en": "Call"
+      },
+      "all_click_count": 0,
+      "voicelist": [
+        {
+          "data_id": 179,
+          "name": "咿呀~牙白呦",
+          "path": "https://img.colter.top/upload/voice/memory/咿呀~牙白呦.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "咿呀~牙白呦",
+            "ja": "いや〜やばい~",
+            "en": "Yiya~Oh, No"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 177,
+          "name": "咿呀~",
+          "path": "https://img.colter.top/upload/voice/memory/咿呀~.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "咿呀~",
+            "ja": "いや〜",
+            "en": "Yiya~"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 178,
+          "name": "诶~好可怕啊",
+          "path": "https://img.colter.top/upload/voice/memory/诶~好可怕啊.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "诶~好可怕啊",
+            "ja": "怖い",
+            "en": "Scary"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 182,
+          "name": "咿呀~不行~",
+          "path": "https://img.colter.top/upload/voice/memory/咿呀~不行~.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "咿呀~不行~",
+            "ja": "いや〜だめ~",
+            "en": "No~ No~"
+          },
+          "tag": ""
+        }
+      ]
+    },
+    {
+      "name": "黑化",
+      "translation": {
+        "zh": "黑化",
+        "ja": "黒化",
+        "en": "Blackening"
+      },
+      "all_click_count": 0,
+      "voicelist": [
+        {
+          "data_id": 195,
+          "name": "要永远永远在一起哦",
+          "path": "https://img.colter.top/upload/voice/memory/要永远永远在一起哦.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "要永远永远在一起哦",
+            "ja": "いつまでも一緒にいようね",
+            "en": "Always be together forever"
+          },
+          "tag": ""
+        }
+      ]
+    },
+    {
+      "name": "其他",
+      "translation": {
+        "zh": "其他",
+        "ja": "その他の",
+        "en": "Other"
+      },
+      "all_click_count": 0,
+      "voicelist": [
+        {
+          "data_id": 175,
+          "name": "笨蛋笨蛋笨蛋",
+          "path": "https://img.colter.top/upload/voice/memory/笨蛋笨蛋笨蛋.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "笨蛋笨蛋笨蛋",
+            "ja": "馬鹿馬鹿馬鹿",
+            "en": "BakaBakaBaka"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 181,
+          "name": "小哥",
+          "path": "https://img.colter.top/upload/voice/memory/小哥.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "小哥",
+            "ja": "にさん",
+            "en": "Little brother"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 184,
+          "name": "怎么了怎么了",
+          "path": "https://img.colter.top/upload/voice/memory/怎么了怎么了.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "怎么了怎么了",
+            "ja": "なになに",
+            "en": "What what"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 185,
+          "name": "太好了~",
+          "path": "https://img.colter.top/upload/voice/memory/太好了~.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "太好了~",
+            "ja": "よかったです~",
+            "en": "Great~"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 186,
+          "name": "達令I love you",
+          "path": "https://img.colter.top/upload/voice/memory/達令I love you.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "達令I love you",
+            "ja": "達令I love you",
+            "en": "達令I love you"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 187,
+          "name": "(´；ω；`)",
+          "path": "https://img.colter.top/upload/voice/memory/(´；ω；`).mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "(´；ω；`)",
+            "ja": "(´；ω；`)",
+            "en": "(´；ω；`)"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 188,
+          "name": "你是个好人",
+          "path": "https://img.colter.top/upload/voice/memory/你是个好人.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "你是个好人",
+            "ja": "あなたはいい人です",
+            "en": "You're a good person"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 189,
+          "name": "谢谢桃子",
+          "path": "https://img.colter.top/upload/voice/memory/谢谢桃子.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "谢谢桃子",
+            "ja": "ありがとう桃",
+            "en": "Thank you peach"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 190,
+          "name": "高兴 兹比兹比",
+          "path": "https://img.colter.top/upload/voice/memory/高兴 兹比兹比.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "高兴 兹比兹比",
+            "ja": "喜び  ズビズビ",
+            "en": "Happy zibizibi"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 192,
+          "name": "笑声",
+          "path": "https://img.colter.top/upload/voice/memory/笑声.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "笑声",
+            "ja": "笑い声",
+            "en": "Laughter"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 193,
+          "name": "happy birthday chuchu",
+          "path": "https://img.colter.top/upload/voice/memory/happy birthday chuchu.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "happy birthday chuchu",
+            "ja": "happy birthday chuchu",
+            "en": "happy birthday chuchu"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 194,
+          "name": "名言-人就像镜子吧,你们喜欢我,我也喜欢你们",
+          "path": "https://img.colter.top/upload/voice/memory/名言-人就像镜子吧,你们喜欢我,我也喜欢你们.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "人就像镜子吧,你们喜欢我,我也喜欢你们",
+            "ja": "人は鏡のようにしましょう。あなた達は私が好きです。私もあなた達が好きです",
+            "en": "People are like mirrors. You like me and I like you"
+          },
+          "tag": ""
+        }
+      ]
+    },
+    {
+      "name": "memo小剧场",
+      "translation": {
+        "zh": "memo小剧场",
+        "ja": "memo小劇場",
+        "en": "Memo small theater"
+      },
+      "all_click_count": 0,
+      "voicelist": [
+        {
+          "data_id": 196,
+          "name": "memo小剧场-烟火大会",
+          "path": "https://img.colter.top/upload/voice/memory/memo小剧场-烟火大会.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "memo小剧场-烟火大会",
+            "ja": "memo小剧场-烟火大会",
+            "en": "memo小剧场-烟火大会"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 197,
+          "name": "memo小剧场-雨中小故事",
+          "path": "https://img.colter.top/upload/voice/memory/memo小剧场-雨中小故事.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "memo小剧场-雨中小故事",
+            "ja": "memo小剧场-雨中小故事",
+            "en": "memo小剧场-雨中小故事"
+          },
+          "tag": ""
+        }
+      ]
+    }
+  ]
+}

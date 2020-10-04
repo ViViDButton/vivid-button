@@ -21,3 +21,21 @@ export function getVoiceList(name) {
 		}
 	})
 }
+
+export function getIp() {
+	return request({
+		url: 'https://bird.ioliu.cn/ip',
+	})
+}
+
+export function getArea() {
+	return getIp().then(res=>{
+		return request({
+			url: 'https://bird.ioliu.cn/v1?url=https://www.ip.cn/api/index?type=1',
+			params:{
+				'ip':res.data.ip
+			}
+		})
+	})
+
+}

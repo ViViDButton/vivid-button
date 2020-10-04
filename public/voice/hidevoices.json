@@ -1,0 +1,40 @@
+{
+  "last_update": "不详",
+  "groups": [
+    {
+      "name": "隐藏",
+      "translation": {
+        "zh": "隐藏",
+        "ja": "隠蔽",
+        "en": "Hide"
+      },
+      "all_click_count": 0,
+      "voicelist": [
+        {
+          "data_id": 359,
+          "name": "白百合噴嚏",
+          "path": "https://img.colter.top/upload/voice/hide/白百合噴嚏.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "白百合噴嚏",
+            "ja": "Lilyくしゃみをする",
+            "en": "Lily sneeze"
+          },
+          "tag": "new"
+        },
+        {
+          "data_id": 360,
+          "name": "bell擤鼻涕",
+          "path": "https://img.colter.top/upload/voice/hide/bell擤鼻涕.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "bell擤鼻涕",
+            "ja": "bell鼻をかむ",
+            "en": "bell blow one 's nose"
+          },
+          "tag": "new"
+        }
+      ]
+    }
+  ]
+}
