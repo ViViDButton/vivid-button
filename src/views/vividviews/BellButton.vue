@@ -1,6 +1,6 @@
 <template>
 
-	<container :info="bellInfo" :dialogs="dialogs"/>
+	<container :info="bellInfo" :dialogs="dialogs" :chart="chart"/>
 
 </template>
 
@@ -35,6 +35,20 @@
           text: "耳膜出售 敬请期待",
           producer: {bid: "32868931", name: "Colter"},
           download: [
+          ]
+        },
+        {
+          lightColor: "#ffdbe9",
+          darkColor: "#99566f",
+          btnBg: "https://img.colter.top/vivid/img/others/bell同款鼠标.png!web",
+          btnText: "Bell同款鼠标指针",
+          title: "Bell同款指针",
+          img: "https://img.colter.top/vivid/img/others/bell同款鼠标.png",
+          imgHeight: "500",
+          text: "Bell同款指针 加长了鼠标指针 体验更好",
+          painter: {bid: "0", name: "Twiter @MurasakiNeko3"},
+          download: [
+            {text:"下载", link: "https://img.colter.top/vivid/files/bell同款鼠标.cur"}
           ]
         },
         {
@@ -206,7 +220,12 @@
           text: "广告位招租😏（×",
           download: []
         }
-      ]
+      ],
+      chart: {
+			  enable: true,
+			  // url: 'http://www.colter.top:3000/',
+        name: 'bell'
+      }
 		})
 	}
 </script>

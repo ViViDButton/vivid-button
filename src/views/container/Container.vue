@@ -58,8 +58,17 @@
 				</v-card-text>
 			</v-card>
 
+      <v-card style="width: 100%; margin: 8px auto;" v-if="chart.enable">
+
+        <fan-chart :name="chart.name"></fan-chart>
+
+      </v-card>
+
       <!--语音按钮-->
-			<v-card v-for="(group,index1) in voiceList.groups" v-show="!((group.name==='歌'||group.name==='声音')&&area!=='china')" :key="index1+group.name" style="width: 100%; margin: 8px auto;">
+			<v-card v-for="(group,index1) in voiceList.groups"
+              v-show="!((group.name==='歌'||group.name==='声音')&&area!=='china')"
+              :key="index1+group.name"
+              style="width: 100%; margin: 8px auto;">
 				<v-card-title class="headline mb-1">{{group.translation[current_language]}}</v-card-title>
 				<v-card-text>
 
@@ -129,10 +138,11 @@
 	import VividBtn from "components/VividBtn";
   import {getBiliBiliFan, getYouTubeFan, getVoiceList, getArea} from "../../network/home";
   import DialogBtn from "components/DialogBtn";
+  import FanChart from "views/FanChart";
 
 	export default {
 		name: "Container",
-		components: {DialogBtn, VividBtn},
+		components: {FanChart, DialogBtn, VividBtn},
 		props: {
 			info: {
 				type: Object,
@@ -153,6 +163,15 @@
 			  type: Array,
         default() {
           return [];
+        }
+      },
+      chart: {
+        type: Object,
+        default(){
+          return {
+            enable: false,
+            name: 'bell'
+          }
         }
       }
 		},
@@ -266,11 +285,14 @@
 
       this.voiceList = require('../../../public/voice/'+this.info.name.toLowerCase()+'voices.json')
 
+
+
 		}
 	}
 </script>
 
 <style scoped>
+
 	.link-text{
 		margin-left:5px;
 		color: #fff;

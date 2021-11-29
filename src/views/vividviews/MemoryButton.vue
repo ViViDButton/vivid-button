@@ -1,6 +1,6 @@
 <template>
 
-	<container :info="memoryInfo" />
+	<container :info="memoryInfo" :chart="chart"/>
 
 </template>
 
@@ -23,7 +23,12 @@
 				twitter: {name: "泡沫メモリꉂꉂ👻ViViD所属",id: "Memory_Utakata"},
         info: {zh:"音量注意！ Memory素材补充中！ Memory素材征集中！",ja:"ボリュームに注意してください！ Memory素材追加中！ Memoryの素材を募集中！",en:"Note the volume! Memory material being added! Memory material call for submissions!"},
         歌: {zh: "如果你对哪首歌有质疑，请联系我删除！", ja: "どの曲について質問がある場合は、私に連絡して削除してください！", en: "If you have questions about which song, please contact me to delete it!"}
-			}
+			},
+      chart: {
+        enable: true,
+        // url: 'http://www.colter.top:3000/',
+        name: 'memory'
+      }
 		})
 	}
 </script>

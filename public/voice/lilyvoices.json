@@ -2,6 +2,124 @@
   "last_update": "不详",
   "groups": [
     {
+      "name": "歌",
+      "translation": {
+        "zh": "歌(中国限定)",
+        "ja": "歌",
+        "en": "Song"
+      },
+      "all_click_count": 0,
+      "voicelist": [
+        {
+          "data_id": 233,
+          "name": "ダダダダ★天使",
+          "path": "https://img.colter.top/upload/voice/lily/ダダダダ★天使.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "ダダダダ★天使",
+            "ja": "ダダダダ★天使",
+            "en": "ダダダダ★天使"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 234,
+          "name": "月之华尔兹",
+          "path": "https://img.colter.top/upload/voice/lily/月之华尔兹.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "月之华尔兹",
+            "ja": "月之华尔兹",
+            "en": "月之华尔兹"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 236,
+          "name": "クロイウタ",
+          "path": "https://img.colter.top/upload/voice/lily/クロイウタ.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "クロイウタ",
+            "ja": "クロイウタ",
+            "en": "クロイウタ"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 237,
+          "name": "PPAP",
+          "path": "https://img.colter.top/upload/voice/lily/PPAP.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "PPAP",
+            "ja": "PPAP",
+            "en": "PPAP"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 238,
+          "name": "かまってちょーだい",
+          "path": "https://img.colter.top/upload/voice/lily/かまってちょーだい.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "かまってちょーだい",
+            "ja": "かまってちょーだい",
+            "en": "かまってちょーだい"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 239,
+          "name": "忘れじの言の葉",
+          "path": "https://img.colter.top/upload/voice/lily/忘れじの言の葉.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "忘れじの言の葉",
+            "ja": "忘れじの言の葉",
+            "en": "忘れじの言の葉"
+          },
+          "tag": ""
+        },
+        {
+          "data_id": 241,
+          "name": "てんしであれたら",
+          "path": "https://img.colter.top/upload/voice/lily/てんしであれたら.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "てんしであれたら",
+            "ja": "てんしであれたら",
+            "en": "てんしであれたら"
+          },
+          "tag": ""
+        }
+      ]
+    },
+    {
+      "name": "声音",
+      "translation": {
+        "zh": "声音(中国限定)",
+        "ja": "声音",
+        "en": "声音"
+      },
+      "all_click_count": 0,
+      "voicelist": [
+        {
+          "data_id": 359,
+          "name": "打噴嚏",
+          "path": "https://img.colter.top/upload/voice/hide/白百合噴嚏.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "打噴嚏",
+            "ja": "Lilyくしゃみをする",
+            "en": "Lily sneeze"
+          },
+          "tag": ""
+        }
+      ]
+    },
+    {
       "name": "笑",
       "translation": {
         "zh": "笑",

@@ -2,6 +2,29 @@
   "last_update": "不详",
   "groups": [
     {
+      "name": "歌",
+      "translation": {
+        "zh": "歌(中国限定)",
+        "ja": "歌",
+        "en": "Song"
+      },
+      "all_click_count": 0,
+      "voicelist": [
+        {
+          "data_id": 266,
+          "name": "Rain Stop,Good Bye",
+          "path": "https://img.colter.top/upload/voice/elena/Rain Stop,Good Bye.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "Rain Stop,Good Bye",
+            "ja": "Rain Stop,Good Bye",
+            "en": "Rain Stop,Good Bye"
+          },
+          "tag": ""
+        }
+      ]
+    },
+    {
       "name": "笑",
       "translation": {
         "zh": "笑",

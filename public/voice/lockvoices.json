@@ -1,6 +1,28 @@
 {
   "last_update": "不详",
   "groups": [
-    
+    {
+      "name": "歌",
+      "translation": {
+        "zh": "歌(中国限定)",
+        "ja": "歌",
+        "en": "Song"
+      },
+      "all_click_count": 0,
+      "voicelist": [
+        {
+          "data_id": 278,
+          "name": "メトロノーム",
+          "path": "https://img.colter.top/upload/voice/lock/メトロノーム.mp3",
+          "click_count": 0,
+          "translation": {
+            "zh": "メトロノーム",
+            "ja": "メトロノーム",
+            "en": "メトロノーム"
+          },
+          "tag": ""
+        }
+      ]
+    }
   ]
 }

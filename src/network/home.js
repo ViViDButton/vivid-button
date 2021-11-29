@@ -39,3 +39,9 @@ export function getArea() {
 	})
 
 }
+
+export function getFanData(name,page,count) {
+	return request({
+		url: 'https://bird.ioliu.cn/v1?url=http://colter.top:3000/'+name+'/'+page+'/'+count
+	})
+}

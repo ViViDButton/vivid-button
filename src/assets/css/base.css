@@ -11,7 +11,7 @@
 
 body{
 	font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
-	user-select: none; /*进制用户用鼠标在页面上选取文字、图片等*/
+	/*user-select: none; !*进制用户用鼠标在页面上选取文字、图片等*!*/
 	-webkit-tap-highlight-color: transparent;
 	background: var(--color-background);
 	color: var(--color-text);
