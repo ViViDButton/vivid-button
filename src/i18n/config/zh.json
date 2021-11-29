@@ -44,6 +44,9 @@
     "voice": "音频剪辑：",
     "material": "音频素材：",
     "special" : "特别感谢：",
+    "serviceProvider": "服务提供",
+    "cors": "跨域服务: 正义OvO",
+    "webServer": "网站托管: Github Pages",
     "licence": "协议",
     "copyright": "本站为舔食者创作，与ViViD官方无关"
   }

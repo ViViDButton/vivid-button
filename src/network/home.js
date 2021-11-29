@@ -2,7 +2,7 @@ import {request} from './request'
 
 export function getBiliBiliFan(uid) {
 	return request({
-		url: 'https://bird.ioliu.cn/v1?url=https://api.bilibili.com/x/relation/stat?vmid='+uid
+		url: 'https://cors.mczhengyi.top/https://api.bilibili.com/x/relation/stat?vmid='+uid
 	})
 }
 
@@ -31,7 +31,7 @@ export function getIp() {
 export function getArea() {
 	return getIp().then(res=>{
 		return request({
-			url: 'https://bird.ioliu.cn/v1?url=https://www.ip.cn/api/index?type=1',
+			url: 'https://cors.mczhengyi.top/https://www.ip.cn/api/index?type=1',
 			params:{
 				'ip':res.data.ip
 			}
@@ -42,6 +42,6 @@ export function getArea() {
 
 export function getFanData(name,page,count) {
 	return request({
-		url: 'https://bird.ioliu.cn/v1?url=http://colter.top:3000/'+name+'/'+page+'/'+count
+		url: 'https://cors.mczhengyi.top/http://colter.top:3000/'+name+'/'+page+'/'+count
 	})
 }

@@ -44,6 +44,9 @@
     "voice": "オーディオクリップ：",
     "material": "オーディオ素材：",
     "special" : "特別協力：",
+    "serviceProvider": "服务提供",
+    "cors": "跨域服务: 正义OvO",
+    "webServer": "网站托管: Github Pages",
     "licence": "プロトコル",
     "copyright": "このサイトはファン作品であり、ViViD公式とは関係ありません"
   }

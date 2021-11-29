@@ -28,11 +28,11 @@
             {{info.info[current_language]}}
           </v-alert>
 
-					<span style="display: inline-block;color: #01affd;margin: 0 50px 5px 5px;">{{$t("container.bilifan")}}:{{bilibilifan}}</span>
-					<span style="display: inline-block;color: #ff2424;margin: 5px 0 0 5px;">{{$t("container.ytbfan")}}:{{youtubefan}}</span>
+					<span style="display: inline-block;color: #01affd;margin: 0 50px 5px 5px;" v-if="info.bilibili.id !== ''">{{$t("container.bilifan")}}:{{bilibilifan}}</span>
+					<span style="display: inline-block;color: #ff2424;margin: 5px 0 0 5px;" v-if="info.youtube.id !== ''">{{$t("container.ytbfan")}}:{{youtubefan}}</span>
 
 					<div style="margin-top: 10px">
-						<v-btn rounded color="#01affd" style="margin: 5px;" :href="'https://space.bilibili.com/'+info.bilibili.id" target="_blank">
+						<v-btn rounded color="#01affd" style="margin: 5px;" :href="'https://space.bilibili.com/'+info.bilibili.id" target="_blank" v-if="info.bilibili.id !== ''">
 							<img src="../../../public/img/bilibili.svg" alt="" style="width: 30px; height: 30px; position: absolute; left: 0px; bottom: 50%; transform: translate3d(0px, 50%, 0px);">
 							<span class="link-text" style="margin-left: 37px">{{info.bilibili.name}}</span>
 						</v-btn>

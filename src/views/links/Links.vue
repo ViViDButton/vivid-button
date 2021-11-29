@@ -5,14 +5,6 @@
 			<v-card style="width: 100%; margin: 8px auto;">
 				<v-card-title class="headline mb-1">{{$t("app.links")}}</v-card-title>
 				<v-card-text>
-
-					<a href="https://fubuki.moe" @click="loadAudio('fbk-voice')" target="_blank">
-						<vivid-btn color="#64b5f6"
-						           :show-progress="false"
-						           :bg-img="this.$store.state.serverUrl+'img/others/fbk-btn-bg.png!web'">
-							<span  style="font-size: 21px; color: #f1f1f1">{{$t("links.fbkbutton")}}</span>
-						</vivid-btn>
-					</a>
 					<a href="https://peko.top" @click="loadAudio('peko-voice')" target="_blank">
 						<vivid-btn color="#919edf"
 						           :show-progress="false"
@@ -55,7 +47,7 @@
 							<span  style="font-size: 21px; color: #242424">{{$t("links.lilybutton")}}</span>
 						</vivid-btn>
 					</a>
-					<a href="https://vtbbtn.org" @click="loadAudio('mio-voice')" target="_blank">
+					<a href="https://vbup-osc.github.io/vtuber-voice-button-collection/" @click="loadAudio('mio-voice')" target="_blank">
 						<vivid-btn color="#64b5f6"
 						           :show-progress="false"
 						           :bg-img="this.$store.state.serverUrl+'img/others/vvbc-btn-bg.png'">

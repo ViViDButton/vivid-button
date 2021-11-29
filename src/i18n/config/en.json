@@ -44,6 +44,9 @@
     "voice": "Audio Editors:",
     "material": "Audio Material:",
     "special" : "Special Thanks to:",
+    "serviceProvider": "Service Provider",
+    "cors": "CORS Server: ZhengYi_OvO",
+    "webServer": "Web Server: Github Pages",
     "licence": "LICENCE",
     "copyright": "This site is a fan work and is not associated with the ViViD official."
   }

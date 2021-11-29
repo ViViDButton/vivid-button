@@ -60,6 +60,12 @@
 						<li><a href="https://space.bilibili.com/518939223" target="_blank">スマホと靴ひも</a></li>
 					</ul>
 
+          <h3>{{$t("about.serviceProvider")}}</h3>
+          <ul>
+            <li><a href="http://blog.mczhengyi.top">{{$t("about.cors")}}</a></li>
+            <li><a href="https://www.github.com">{{$t("about.webServer")}}</a></li>
+          </ul>
+
 				</v-card-text>
 
 				<v-divider></v-divider>
