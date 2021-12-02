@@ -70,12 +70,12 @@ export default {
             onclick: function (){
               that.getData()
             }
-          },
-          dataZoom: {
-            yAxisIndex: 'none'
-          },
-          restore: {},
-          saveAsImage: {},
+          }
+          // dataZoom: {
+          //   yAxisIndex: 'none'
+          // },
+          // restore: {},
+          // saveAsImage: {},
         }
       },
       xAxis: {
@@ -105,16 +105,17 @@ export default {
       }],
       dataZoom: [{
         type: 'inside',
-        start: 80,
+        start: 20,
         end: 100
       }, {
         start: 0,
-        end: 20
+        end: 80
       }],
       series: [{
         name: '粉丝数',
         type: 'line',
         encode: {x: 0, y: 1},
+        symbol: 'none',
         markPoint: {
           data: [
             {type: 'max', name: '最大值'}
@@ -136,6 +137,7 @@ export default {
       },{
         name: '大航海',
         type: 'line',
+        symbol: 'none',
         encode: {x: 0, y: 2},
         markPoint: {
           data: [

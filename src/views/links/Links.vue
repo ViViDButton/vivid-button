@@ -19,27 +19,27 @@
 							<span  style="font-size: 21px; color: #f1f1f1">{{$t("links.peachbutton")}}</span>
 						</vivid-btn>
 					</a>
-          <a href="https://sakuramiko.org" @click="loadAudio('echo-voice')" target="_blank">
-						<vivid-btn color="#ff8e8e"
-						           :show-progress="false"
-						           :bg-img="this.$store.state.serverUrl+'img/others/miko-btn-bg.png!web'">
-							<span  style="font-size: 21px; color: #f1f1f1">{{$t("links.mikobutton")}}</span>
-						</vivid-btn>
-					</a>
-          <a href="https://okayu.icu" @click="loadAudio('echo-voice')" target="_blank">
-						<vivid-btn color="#b964c2"
-						           :show-progress="false"
-						           :bg-img="this.$store.state.serverUrl+'img/others/okayu-btn-bg.png!web'">
-							<span  style="font-size: 21px; color: #f1f1f1">{{$t("links.okayubutton")}}</span>
-						</vivid-btn>
-					</a>
-          <a href="https://korone.icu" @click="loadAudio('echo-voice')" target="_blank">
-						<vivid-btn color="#fcaa75"
-						           :show-progress="false"
-						           :bg-img="this.$store.state.serverUrl+'img/others/korone-btn-bg.png!web'">
-							<span  style="font-size: 21px; color: #f1f1f1">{{$t("links.koronebutton")}}</span>
-						</vivid-btn>
-					</a>
+<!--          <a href="https://sakuramiko.org" @click="loadAudio('echo-voice')" target="_blank">-->
+<!--						<vivid-btn color="#ff8e8e"-->
+<!--						           :show-progress="false"-->
+<!--						           :bg-img="this.$store.state.serverUrl+'img/others/miko-btn-bg.png!web'">-->
+<!--							<span  style="font-size: 21px; color: #f1f1f1">{{$t("links.mikobutton")}}</span>-->
+<!--						</vivid-btn>-->
+<!--					</a>-->
+<!--          <a href="https://okayu.icu" @click="loadAudio('echo-voice')" target="_blank">-->
+<!--						<vivid-btn color="#b964c2"-->
+<!--						           :show-progress="false"-->
+<!--						           :bg-img="this.$store.state.serverUrl+'img/others/okayu-btn-bg.png!web'">-->
+<!--							<span  style="font-size: 21px; color: #f1f1f1">{{$t("links.okayubutton")}}</span>-->
+<!--						</vivid-btn>-->
+<!--					</a>-->
+<!--          <a href="https://korone.icu" @click="loadAudio('echo-voice')" target="_blank">-->
+<!--						<vivid-btn color="#fcaa75"-->
+<!--						           :show-progress="false"-->
+<!--						           :bg-img="this.$store.state.serverUrl+'img/others/korone-btn-bg.png!web'">-->
+<!--							<span  style="font-size: 21px; color: #f1f1f1">{{$t("links.koronebutton")}}</span>-->
+<!--						</vivid-btn>-->
+<!--					</a>-->
 					<a href="http://shirayuri-lilly.chu.jp" @click="loadAudio('lily-voice')" target="_blank">
 						<vivid-btn color="#f9f8fd"
 						           :show-progress="false"
